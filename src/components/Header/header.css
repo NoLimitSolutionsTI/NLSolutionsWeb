@@ -1,0 +1,42 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0 50px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: "Montserrat", sans-serif;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    img {
+        width: 100px;
+        height: 100px;
+    }
+    h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+.nav-header {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+    li {
+        a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #192C31;
+        }
+    }
+}
