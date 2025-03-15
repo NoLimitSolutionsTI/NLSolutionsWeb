@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import '@/styles/Header/header.scss'
+import '@/styles/components/Header/header.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 export default function header() {
