@@ -7,7 +7,7 @@
             background-color: #f3f4f6;
         }
         /* Slider */
-        
+
         .slider-section {
             width: 100%;
             display: flex;
@@ -15,7 +15,7 @@
             gap: 30px;
             background: linear-gradient(to top, #788E84 90%, #EAE9E9);
         }
-        
+
         .slider-container {
             width: 90%;
             display: flex;
@@ -34,7 +34,7 @@
                 }
             }
         }
-        
+
         .slider-text {
             width: 30%;
             text-align: right;
@@ -49,25 +49,25 @@
                 font-size: 20px;
             }
         }
-        /*Section Cards*/
-        
+        /*Section 1*/
+
         .container {
             background-color: #f3f4f6;
             padding: 40px 0;
             text-align: center;
         }
-        
+
         .title {
             font-size: 24px;
             font-weight: bold;
             margin-bottom: 20px;
         }
-        
+
         .content {
             max-width: 800px;
             margin: 0 auto;
         }
-        
+
         .card {
             background: #f3f4f6;
             padding: 20px;
@@ -78,23 +78,28 @@
             justify-content: space-between;
             align-items: center;
         }
-        
+
         .card-text {
             flex: 1;
             text-align: left;
+            display: flex;
         }
-        
+
         .card-title {
             font-size: 18px;
             font-weight: bold;
         }
-        
+
         .card-list {
             list-style-type: disc;
             padding-left: 20px;
             color: #4a5568;
+            display: inline-grid;
+            margin-top: 5em;
+            position: relative;
+            right: 23em;
         }
-        
+
         .btn {
             background-color: #319795;
             color: white;
@@ -103,12 +108,17 @@
             border: none;
             cursor: pointer;
             transition: background 0.3s;
+            position: absolute;
+            left: 38em;
+            margin-top: 6em;
         }
-        
+
         .btn:hover {
             background-color: #2c7a7b;
         }
-        
+
+        /* Section 2*/
+
         .icons-section {
             background: white;
             padding: 30px 0;
@@ -116,38 +126,49 @@
             width: 100%;
             max-width: 100%;
         }
-        
+
         .icon-title {
             font-size: 20px;
             font-weight: bold;
             margin-bottom: 15px;
         }
-        
+
         .icons {
             display: flex;
             justify-content: center;
             gap: 15em;
         }
-        
+
         .icon-block {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        
+
         .icon {
             font-size: 2rem;
         }
-        
+
         .icon-text {
             color: #4a5568;
             margin-top: 5px;
         }
+        /* Section 3*/
+
+        .card-service{
+            background-color: #4494A2;
+            width: 100%;
+            max-width: unset;
+
+        }
+
+
         /* Section 4 */
-        
+
         .section-4 {
+            background-color: white;
             padding: 50px;
-            width: 75%;
+            width: 100%;
             margin: auto;
             display: flex;
             flex-direction: column;

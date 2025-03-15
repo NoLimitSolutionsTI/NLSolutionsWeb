@@ -1,5 +1,6 @@
 import React from "react";
 import "./servicespage.css";
+import Caurosel from "@/components/Carousel/Caurosel.jsx";
 
 export default function ServicesPage() {
     return (
@@ -16,7 +17,7 @@ export default function ServicesPage() {
           </div>
       </section>
 
-      <div className={'container'}>
+      <section className={'container'}>
  
   <h2 className={'title'}>Lorem ipsum dolor lorem</h2>
 
@@ -30,7 +31,7 @@ export default function ServicesPage() {
           <li>Lorem ipsum dolor sit amet consectetur dolor sit amet</li>
         </ul>
       </div>
-      <button className={'btn'}>¡Lo quiero!</button>
+      <button className={'btn'}>Lo quiero</button>
     </div>
 
     <div className={'card'}>
@@ -42,7 +43,7 @@ export default function ServicesPage() {
           <li>Lorem ipsum dolor sit amet consectetur dolor sit amet</li>
         </ul>
       </div>
-      <button className={'btn'}>¡Lo quiero!</button>
+      <button className={'btn'}>Lo quiero</button>
     </div>
 
     <div className={'card'}>
@@ -54,11 +55,11 @@ export default function ServicesPage() {
           <li>Lorem ipsum dolor sit amet consectetur dolor sit amet</li>
         </ul>
       </div>
-      <button className={'btn'}>¡Lo quiero!</button>
+      <button className={'btn'}>Lo quiero</button>
     </div>
   </div>
-  </div>
-  <div className={'icons-section container'}>
+  </section>
+  <section className={'icons-section container'}>
     <h3 className={'icon-title'}>Lorem ipsum dolor lorem ipsum ipsum</h3>
     <div className={'icons'}>
       <div className={'icon-block'}>
@@ -82,13 +83,19 @@ export default function ServicesPage() {
         <p className={'icon-text'}>Loremanzo</p>
       </div>
     </div>
-  </div>
+  </section>
+
+  <section className={'card-service container'}>
+    <h2 className={'title'}>Lorem ipsum dolor lorem ipsum</h2>
+    <h4>Lorem ipsum dolor lorem ipsumLorem ipsum dolor lorem ipsumLorem ipsum dolor lorem ipsum</h4>
+<Caurosel/>
+  </section>
 
 
 <section className={'section-4'}>
           <h2>¿Lorem ipsum dolor sit amet consectetur?</h2>
           <button type="submit">Lorem ipsum</button>
-      </section>
+</section>
 </>
     )
 }
