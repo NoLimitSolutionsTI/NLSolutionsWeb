@@ -38,7 +38,7 @@ const Carousel = () => {
             >
                 {projects.map((project, index) => (
                     <SwiperSlide key={index}>
-                        <div className="card">
+                        <div className="card-caurosel">
                             <img src={project.image}  className="card-img" />
                             <div className="card-overlay">
                                 <h3 className="card-title">{project.title}</h3>
