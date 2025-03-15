@@ -1,5 +1,6 @@
 import React from "react";
 import "./servicespage.css";
+import Caurosel from "@/components/Carousel/Caurosel.jsx";
 
 export default function ServicesPage() {
     return (
@@ -87,7 +88,7 @@ export default function ServicesPage() {
   <section className={'card-service container'}>
     <h2 className={'title'}>Lorem ipsum dolor lorem ipsum</h2>
     <h4>Lorem ipsum dolor lorem ipsumLorem ipsum dolor lorem ipsumLorem ipsum dolor lorem ipsum</h4>
-
+<Caurosel/>
   </section>
 
 
