@@ -1,3 +1,13 @@
+$color-primary: #192C31;
+$color-secondary: #2A6550;
+$color-accent: #4494A2;
+$color-text: #000;
+$background: #FFF;
+
+
+
+
+
 $grid-breakpoints: (
     sm: 0px,
     md: 520px,
@@ -10,6 +20,6 @@ $container-max-widths: (
     lg: 1050px,
     xl: 1400px,
 );
-
 $grid-gutter-width: 0;
 @import 'bootstrap/scss/bootstrap';
+
