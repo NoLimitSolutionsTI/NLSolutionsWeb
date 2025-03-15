@@ -1,5 +1,5 @@
 import React from "react";
-import "./servicespage.css";
+import '@/styles/ServicesPage/servicesPage.scss'
 import Caurosel from "@/components/Carousel/Caurosel.jsx";
 
 export default function ServicesPage() {
