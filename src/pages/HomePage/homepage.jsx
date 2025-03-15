@@ -1,6 +1,6 @@
 import React from 'react'
 import '@/styles/HomePage/homePage.scss'
-import { Helmet } from "react-helmet"
+import { Helmet} from "react-helmet"
 
 
 export default function Homepage() {

@@ -1,27 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
 
+body{
+    font-family: 'Montserrat';
+}
+main{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+section{
+    margin: 0 auto 60px auto;
+}
+
 $color-primary: #192C31;
 $color-secondary: #2A6550;
 $color-accent: #496064;
 $color-text: #000;
 $background: #FFF;
+$transitionv1: cubic-bezier(0.075, 0.82, 0.165, 1);
+$transitionv2: cubic-bezier(0.575, 0.885, 0.22, 1.275);
+$transitionv3: cubic-bezier(0.15, 0.46, 0.45, 0.94);
 
 
+h1,h2,h3,h4,h5,h6,span,b,p,a,ul,li,strong{
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+h1,h2{
+    font-weight: 900;
+}
+:root {
+    --title:40px;
+    --subtitle: 36px;
+    --subsbtitle: 28px;
+    --text: 18px;
+    --title-banner: 50px;
+    --text-banner: 22px;
+    --title-card: 20px;
+    --text-card: 14px;
+}
+@media (max-width:1050px) {
+    :root{
+        --title: 36px;
+        --subtitle: 32px;
+        --subsbtitle: 26px;
+        --text: 16px;
+        --title-banner: 40px;
+        --text-banner: 18px;
+    }
+}
+@media (max-width:520px) {
+    :root{
+        --title: 28px;
+        --subtitle: 24px;
+        --subsbtitle: 22px;
+        --text: 14px;
+        --title-banner: 30px;
+        --text-banner: 16px;
+    }
+}
 
+.btn-details {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 120px;
+    height: 35px;
+    border-radius: 15px;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    background-color: $color-primary;
+    color: white !important;
+    transition: $transitionv1 0.3s;
+}
 
-
-$grid-breakpoints: (
-    sm: 0px,
-    md: 520px,
-    lg: 1050px,
-    xl: 1400px,
-);
-$container-max-widths: (
-    sm: 90%,
-    md: 90%,
-    lg: 1050px,
-    xl: 1400px,
-);
-$grid-gutter-width: 0;
-@import 'bootstrap/scss/bootstrap';
-
+.btn-details:hover {
+    background-color: $color-secondary;
+}

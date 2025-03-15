@@ -1,0 +1,14 @@
+$grid-breakpoints: (
+    sm: 0px,
+    md: 520px,
+    lg: 1050px,
+    xl: 1400px,
+);
+$container-max-widths: (
+    sm: 90%,
+    md: 90%,
+    lg: 1050px,
+    xl: 1400px,
+);
+$grid-gutter-width: 0;
+@import 'bootstrap/scss/bootstrap';
