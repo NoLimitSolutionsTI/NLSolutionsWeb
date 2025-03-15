@@ -1,9 +1,15 @@
 import React from 'react'
-import './homepage.css'
+import '@/styles/HomePage/homePage.scss'
+import { Helmet } from "react-helmet"
+
 
 export default function Homepage() {
   return (
     <>
+        <Helmet>
+        <title>NL Solutions TI | Tienda de Mascotas - Nuestro compromiso es el bienestar de tu mascota</title>
+        <meta name="description" content="Esta es la página principal de mi aplicación."/>
+        </Helmet>
       <section className={'slider-section'}>
           <div className={'slider-container'}>
             <div>
