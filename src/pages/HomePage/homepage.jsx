@@ -7,7 +7,7 @@ export default function Homepage() {
   return (
     <>
         <Helmet>
-        <title>NL Solutions TI | Tienda de Mascotas - Nuestro compromiso es el bienestar de tu mascota</title>
+        <title>NL Solutions TI | Home </title>
         <meta name="description" content="Esta es la página principal de mi aplicación."/>
         </Helmet>
       <section className={'slider-section'}>

@@ -1,11 +1,16 @@
 import React from "react";
 import '@/styles/ServicesPage/servicesPage.scss'
 import Caurosel from "@/components/Carousel/Caurosel.jsx";
+import {Helmet} from "react-helmet";
 
 export default function ServicesPage() {
     return (
         <>
-         <section className={'slider-section'}>
+          <Helmet>
+            <title>NL Solutions TI | Services </title>
+            <meta name="description" content="Esta es la página de servicios de mi aplicación."/>
+          </Helmet>
+          <section className={'slider-section'}>
           <div className={'slider-container'}>
             <div>
               <img src="/src/assets/LogoNL.png" alt="Img-slider" />
@@ -15,61 +20,52 @@ export default function ServicesPage() {
               <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
             </div>
           </div>
-      </section>
+          </section>
 
-      <section className={'container'}>
- 
-  <h2 className={'title'}>Lorem ipsum dolor lorem</h2>
+          <section className={'section-2'}>
+            <div className={'list-container'}>
 
-  <div className={'content'}>
-    <div className={'card'}>
-      <div className={'card-text'}>
-        <h3 className={'card-title'}>Lorem ipsum dolor sit amet</h3>
-        <ul className={'card-list'}>
-          <li>Lorem ipsum dolor sit amet consectetur dolor sit amet</li>
-          <li>Lorem ipsum dolor sit amet consectetur dolor sit amet</li>
-          <li>Lorem ipsum dolor sit amet consectetur dolor sit amet</li>
-        </ul>
-      </div>
-      <button className={'btn'}>Lo quiero</button>
-    </div>
+                <h2 className={'list-title'}>Lorem Ipsum dolor lorem ipsum ipsum</h2>
 
-    <div className={'card'}>
-      <div className={'card-text'}>
-        <h3 className={'card-title'}>Lorem ipsum dolor sit amet</h3>
-        <ul className={'card-list'}>
-          <li>Lorem ipsum dolor sit amet consectetur dolor sit amet</li>
-          <li>Lorem ipsum dolor sit amet consectetur dolor sit amet</li>
-          <li>Lorem ipsum dolor sit amet consectetur dolor sit amet</li>
-        </ul>
-      </div>
-      <button className={'btn'}>Lo quiero</button>
-    </div>
+              <div className="text">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet consectetur dolor si</li>
+                  <li>Lorem ipsum dolor sit amet consectetur dolor sit amet</li>
+                </ul>
+              </div>
+              <button className="btn">Lo quiero!</button>
+              <div className="text">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet consectetur dolor si</li>
+                  <li>Lorem ipsum dolor sit amet consectetur dolor sit amet</li>
+                </ul>
+              </div>
+              <button className="btn">Lo quiero!</button>
+              <div className="text">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet consectetur dolor si</li>
+                  <li>Lorem ipsum dolor sit amet consectetur dolor sit amet</li>
+                </ul>
+              </div>
+              <button className="btn">Lo quiero!</button>
+            </div>
+          </section>
 
-    <div className={'card'}>
-      <div className={'card-text'}>
-        <h3 className={'card-title'}>Lorem ipsum dolor sit amet</h3>
-        <ul className={'card-list'}>
-          <li>Lorem ipsum dolor sit amet consectetur dolor sit amet</li>
-          <li>Lorem ipsum dolor sit amet consectetur dolor sit amet</li>
-          <li>Lorem ipsum dolor sit amet consectetur dolor sit amet</li>
-        </ul>
-      </div>
-      <button className={'btn'}>Lo quiero</button>
-    </div>
-  </div>
-  </section>
-  <section className={'icons-section container'}>
-    <h3 className={'icon-title'}>Lorem ipsum dolor lorem ipsum ipsum</h3>
-    <div className={'icons'}>
-      <div className={'icon-block'}>
-        <span className={'icon'}>X</span>
-        <p className={'icon-text'}>Loremanzo</p>
-      </div>
-      <div className={'icon-block'}>
-        <span className={'icon'}>X</span>
-        <p className={'icon-text'}>Loremanzo</p>
-      </div>
+
+          <section className={'icons-section container'}>
+            <h3 className={'icon-title'}>Lorem ipsum dolor lorem ipsum ipsum</h3>
+            <div className={'icons'}>
+              <div className={'icon-block'}>
+                <span className={'icon'}>X</span>
+                <p className={'icon-text'}>Loremanzo</p>
+              </div>
+              <div className={'icon-block'}>
+                <span className={'icon'}>X</span>
+                <p className={'icon-text'}>Loremanzo</p>
+              </div>
       <div className={'icon-block'}>
         <span className={'icon'}>X</span>
         <p className={'icon-text'}>Loremanzo</p>
