@@ -1,0 +1,52 @@
+.card-caurosel-about {
+  display: flex;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 70%;
+  margin: 5em auto auto auto;
+}
+
+.card-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  h4 {
+    color: #757575;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  p {
+    text-align: left;
+  }
+}
+
+/* Flechas */
+.swiper-button-prev-about,
+.swiper-button-next-about {
+  color: #000;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  width: 40px;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.swiper-button-prev {
+  left: -50px;
+}
+
+.swiper-button-next {
+  right: -50px;
+}

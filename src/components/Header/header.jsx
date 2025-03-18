@@ -30,7 +30,7 @@ export default function header() {
             <ul className={'nav-header'}>
                 <li><a href="/">Inicio</a></li>
                 <li><a href="services">Servicios</a></li>
-                <li><a href="">Nosotros</a></li>
+                <li><a href="about">Nosotros</a></li>
                 <li><a href="" className='btn-details'>Contacto</a></li>
             </ul>
             {showBar && (<FontAwesomeIcon icon={faBars} className="icon" />
