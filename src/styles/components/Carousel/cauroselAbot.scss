@@ -28,25 +28,8 @@
 }
 
 /* Flechas */
-.swiper-button-prev-about,
-.swiper-button-next-about {
-  color: #000;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  width: 40px;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-}
+.carousel-container{
+  .swiper-button-prev,.swiper-button-next{
 
-.swiper-button-prev {
-  left: -50px;
-}
-
-.swiper-button-next {
-  right: -50px;
+  }
 }

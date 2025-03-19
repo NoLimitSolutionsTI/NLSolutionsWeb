@@ -1,9 +1,10 @@
+import React,{ lazy } from 'react';
 import { BrowserRouter as Router,Route,Routes } from 'react-router-dom'
 import Header from '@/components/Header/header'
-import Homepage from '@/pages/HomePage/homepage.jsx'
+const Homepage = lazy(() => import('@/pages/HomePage/homepage'));
+const ServicesPage = lazy(() => import('@/pages/ServicesPage/servicespage'));
+const AboutPage = lazy(() => import('@/pages/AboutPage/aboutpage'));
 import Footer from '@/components/Footer/footer'
-import ServicesPage from './pages/ServicesPage/servicespage'
-import AboutPage from "@/pages/AboutPage/aboutpage.jsx";
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<Homepage/>}/>
-          <Route exact path="services" element={<ServicesPage/>}/>
-          <Route exact path="about" element={<AboutPage/>}/>
+          <Route exact path="/services" element={<ServicesPage/>}/>
+          <Route exact path="/about" element={<AboutPage/>}/>
         </Routes>
       </Router>
     </main>

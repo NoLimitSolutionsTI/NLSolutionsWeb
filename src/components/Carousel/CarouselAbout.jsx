@@ -42,10 +42,10 @@ const CarouselAbout = () => {
     return (
         <div className="carousel-container">
             <Swiper
-                modules={[Navigation]}
+                modules={[Navigation, Pagination]}
                 spaceBetween={20}
                 slidesPerView={1}
-                navigation={{ nextEl: ".swiper-button-next-about", prevEl: ".swiper-button-prev-about" }}
+                navigation={{ nextEl: ".carousel-container .swiper-button-next", prevEl: ".carousel-container .swiper-button-prev" }}
                 pagination={{ clickable: true }}
             >
                 {personal.map((person, index) => (
@@ -66,9 +66,8 @@ const CarouselAbout = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
-            {/* Botones de navegación */}
-            <div className="swiper-button-prev-about"></div>
-            <div className="swiper-button-next-about"></div>
+            <div className="swiper-button-prev"></div>
+            <div className="swiper-button-next"></div>
         </div>
     )
 };

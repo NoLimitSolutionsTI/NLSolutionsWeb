@@ -2,7 +2,7 @@ import React from "react";
 import '@/styles/AboutPage/aboutPage.scss'
 import {Helmet} from "react-helmet";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import Caurosel from "@/components/Carousel/Caurosel.jsx";
+import { faWhatsapp, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import CarouselAbout from "@/components/Carousel/CarouselAbout.jsx";
 
 
@@ -45,7 +45,7 @@ export default function AboutPage() {
                 <div className={'valores-list'}>
                     <ul>
                         <li>
-                            <span className={'icon'}>X</span>
+                             <FontAwesomeIcon icon={faWhatsapp} className="icon" />
                             Loremanzo
                         </li>                        <hr />
                         <li>

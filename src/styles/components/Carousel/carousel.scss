@@ -76,27 +76,3 @@
     background-color: white ;
     color: #192C31;
 }
-
-/* Flechas */
-.swiper-button-prev,
-.swiper-button-next {
-    color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-}
-
-.swiper-button-prev {
-    left: -50px;
-}
-
-.swiper-button-next {
-    right: -50px;
-}
