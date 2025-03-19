@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -42,11 +42,10 @@ const CarouselAbout = () => {
     return (
         <div className="carousel-container">
             <Swiper
-                modules={[Navigation, Pagination]}
+                modules={[Navigation]}
                 spaceBetween={20}
                 slidesPerView={1}
                 navigation={{ nextEl: ".carousel-container .swiper-button-next", prevEl: ".carousel-container .swiper-button-prev" }}
-                pagination={{ clickable: true }}
             >
                 {personal.map((person, index) => (
                     <SwiperSlide key={index}>
