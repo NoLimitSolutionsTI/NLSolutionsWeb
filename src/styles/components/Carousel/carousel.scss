@@ -63,16 +63,18 @@
 .card-button {
     background-color: #192C31;
     color: white;
-
     border: none;
     padding: 10px;
     cursor: pointer;
     transition: 0.3s;
     width: 100%;
+    font-weight: bold;
+
 
 }
 
 .card-button:hover {
-    background-color: white ;
+    background-color:  #fff ;
     color: #192C31;
+
 }

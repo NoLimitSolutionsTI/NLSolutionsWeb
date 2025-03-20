@@ -13,6 +13,7 @@ body {
     h2 {
         font-weight: bold;
         padding-bottom: 20px;
+        font-size: 50px;
     }
     hr {
         width: 100%;
@@ -26,6 +27,8 @@ body {
     gap: 100px;
     justify-content: space-around;
     padding: 20px;
+    margin-top: 5em;
+
 }
 .media-text {
     width: 50%;
@@ -45,6 +48,12 @@ body {
         background-color: #2A6550;
         color: #fff;
         border: 1px solid #2A6550;
+        font-weight: bold;
+    }
+    button:hover {
+        background-color: #fff;
+        color: #192C31;
+
     }
 }
 .media-image {
@@ -81,6 +90,7 @@ body {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    background-color: #f3f3f3;
     div {
         width: 50%;
         display: flex;
@@ -90,9 +100,12 @@ body {
         h2 {
             font-weight: bold;
             padding-bottom: 20px;
+            margin-bottom: 10px;
+
         }
         p {
             font-weight: 500;
+            
         }
         button {
             padding: 10px;
@@ -101,6 +114,12 @@ body {
             background-color: #4494A2;
             color: #fff;
             border: 1px solid #4494A2;
+            margin-top: 1em;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #fff;
+            color: #4494A2;
         }
         img {
             border: 1px solid rgba(0, 0, 0, 0.16);
@@ -129,5 +148,11 @@ body {
         background-color: #192C31;
         color: #fff;
         border: 1px solid #192C31;
+        margin-top: 2em;
+        font-weight: bold;
+    }
+    button:hover{
+        background-color: #fff;
+        color: #192C31;
     }
 }
