@@ -22,37 +22,7 @@ export default function ServicesPage() {
           </div>
           </section>
 
-          <section className={'section-2'}>
-            <div className={'list-container'}>
 
-                <h2 className={'list-title'}>Lorem Ipsum dolor lorem ipsum ipsum</h2>
-
-              <div className="text">
-                <h2>Lorem ipsum dolor sit amet</h2>
-                <ul>
-                  <li>Lorem ipsum dolor sit amet consectetur dolor si</li>
-                  <li>Lorem ipsum dolor sit amet consectetur dolor sit amet</li>
-                </ul>
-              </div>
-              <button className="btn">Lo quiero!</button>
-              <div className="text">
-                <h2>Lorem ipsum dolor sit amet</h2>
-                <ul>
-                  <li>Lorem ipsum dolor sit amet consectetur dolor si</li>
-                  <li>Lorem ipsum dolor sit amet consectetur dolor sit amet</li>
-                </ul>
-              </div>
-              <button className="btn">Lo quiero!</button>
-              <div className="text">
-                <h2>Lorem ipsum dolor sit amet</h2>
-                <ul>
-                  <li>Lorem ipsum dolor sit amet consectetur dolor si</li>
-                  <li>Lorem ipsum dolor sit amet consectetur dolor sit amet</li>
-                </ul>
-              </div>
-              <button className="btn">Lo quiero!</button>
-            </div>
-          </section>
 
 
           <section className={'icons-section container'}>

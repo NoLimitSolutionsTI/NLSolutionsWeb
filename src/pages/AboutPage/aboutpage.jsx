@@ -10,8 +10,8 @@ export default function AboutPage() {
     return (
         <>
             <Helmet>
-                    <title>NL Solutions TI | About </title>
-                <meta name="description" content="Esta es la página de servicios de mi aplicación."/>
+                <title>NL Solutions TI | About </title>
+                <meta name="description" content="Esta es la página de Nostros de mi aplicación."/>
             </Helmet>
             <section className={'slider-section'}>
                 <div className={'slider-container'}>
