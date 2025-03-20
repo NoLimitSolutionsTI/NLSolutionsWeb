@@ -1,13 +1,47 @@
 @import url('@/styles/components/Slider/sliderSection.scss');
+
 /*Section list*/
+.section-2-services {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.title-section-2 {
+    text-align: center;
+    padding: 20px;
+}
 
+.section-2-services-container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    h3 {
+        font-weight: bold;
+        padding: 10px;
+    }
+}
 
+.section-2-services-text {
+    width: 70%;
+}
 
-
-
-
-
+.section-2-services-button {
+    padding: 10px;
+    button {
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+        background: #4494A2;
+        color: white;
+        font-weight: bold;
+        border: none;
+    }
+}
 
 
 /* Section icons*/

@@ -22,8 +22,48 @@ export default function ServicesPage() {
           </div>
           </section>
 
-
-
+            <section className={'section-2-services'}>
+                <h2 className={'title-section-2'}>Lorem ipsum dolor lorem</h2>
+              <div className={'section-2-services-container'}>
+                <div className={'section-2-services-text'}>
+                    <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur</li>
+                        <li>Lorem ipsum dolor sit amet consectetur</li>
+                        <li>Lorem ipsum dolor sit amet consectetur</li>
+                    </ul>
+                </div>
+                <div className={'section-2-services-button'}>
+                    <button type="submit">Lo quiero!</button>
+                </div>
+              </div>
+                <div className={'section-2-services-container'}>
+                    <div className={'section-2-services-text'}>
+                        <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur</li>
+                            <li>Lorem ipsum dolor sit amet consectetur</li>
+                            <li>Lorem ipsum dolor sit amet consectetur</li>
+                        </ul>
+                    </div>
+                    <div className={'section-2-services-button'}>
+                        <button type="submit">Lo quiero!</button>
+                    </div>
+                </div>
+                <div className={'section-2-services-container'}>
+                <div className={'section-2-services-text'}>
+                    <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur</li>
+                        <li>Lorem ipsum dolor sit amet consectetur</li>
+                        <li>Lorem ipsum dolor sit amet consectetur</li>
+                    </ul>
+                </div>
+                    <div className={'section-2-services-button'}>
+                    <button type="submit">Lo quiero!</button>
+                </div>
+            </div>
+            </section>
 
           <section className={'icons-section container'}>
             <h3 className={'icon-title'}>Lorem ipsum dolor lorem ipsum ipsum</h3>
