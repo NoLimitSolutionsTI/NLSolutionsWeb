@@ -1,10 +1,38 @@
-import React from "react";
+import React, {useState} from "react";
 import '@/styles/ContactPage/contactpage.scss'
 import logo from '@/assets/logoNL-sin fondo-negro.png'
 import {Helmet} from "react-helmet";
 
-
 export default function ContactPage() {
+    const [formData, setFormData] = useState({
+        fullName: "",
+        email: "",
+        telephone: "",
+        message: ""
+    });
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        fetch("https://localhost:7141/api/NLWeb", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(formData)
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log("Respuesta del servidor:", data);
+                alert("Mensaje enviado con éxito");
+            })
+            .catch(error => console.error("Error:", error));
+    };
+
     return(
         <>
             <Helmet>
@@ -26,16 +54,18 @@ export default function ContactPage() {
 
 
             <section className=" contact-section contact-form-section">
-                <form>
+                <form onSubmit={handleSubmit}>
                     <div className="mb-3">
                         <h3>Envíanos un mensaje</h3>
-                        <input type="text" className="form-control" placeholder="Nombres y Apellidos" name="names"
-                               required/>
-                        <input type="email" className="form-control" placeholder="Correo" name="email" required/>
-                        <input type="email" className="form-control" placeholder="Numero de Telefono" name="telephone"
-                               required/>
+                        <input type="text" className="form-control" placeholder="Nombres y Apellidos"
+                               name="fullName" value={formData.fullName} onChange={handleChange} required/>
+                        <input type="email" className="form-control" placeholder="Correo" name="email"
+                               value={formData.email} onChange={handleChange} required/>
+                        <input type="telephone" className="form-control" placeholder="Numero de Telefono" name="telephone"
+                               value={formData.telephone} onChange={handleChange} required/>
 
-                        <textarea name="message" className="form-control" placeholder="Mensaje"></textarea>
+                        <textarea name="message" className="form-control" placeholder="Mensaje"
+                                  value={formData.message} onChange={handleChange} required></textarea>
                         <div className="form-check">
                             <input className="form-check-input" type="checkbox" name="is_agree" required/>
                             <label className="form-check-label" htmlFor="invalidCheck">
