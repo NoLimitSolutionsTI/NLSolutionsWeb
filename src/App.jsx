@@ -4,7 +4,9 @@ import Header from '@/components/Header/header'
 const Homepage = lazy(() => import('@/pages/HomePage/homepage'));
 const ServicesPage = lazy(() => import('@/pages/ServicesPage/servicespage'));
 const AboutPage = lazy(() => import('@/pages/AboutPage/aboutpage'));
+const ContactPage = lazy(() => import('@/pages/ContactPage/contactpage'));
 import Footer from '@/components/Footer/footer'
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
           <Route exact path="/" element={<Homepage/>}/>
           <Route exact path="/services" element={<ServicesPage/>}/>
           <Route exact path="/about" element={<AboutPage/>}/>
+            <Route exact path="/contact" element={<ContactPage/>}/>
         </Routes>
       </Router>
     </main>

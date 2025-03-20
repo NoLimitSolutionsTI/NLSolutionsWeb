@@ -1,0 +1,107 @@
+hr{
+  margin-top: 100px;
+  height: 5px;
+  background-color: #192C31;
+  box-shadow: 0 4px 6px #192C31;
+}
+
+.title-contact{
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+  h3{
+    font-weight: bold;
+    font-size: 3em;
+  }
+}
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 80%;
+  margin: auto;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.contact-logo-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-logo-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+}
+
+.contact-form-section {
+  width: 50%;
+  padding: 20px;
+
+}
+
+.mb-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+h3{
+  font-weight: bold;
+}
+}
+
+.form-control {
+  height: 45px;
+  padding: 10px;
+  width: 100%;
+}
+
+.input-group {
+  gap: 50px;
+}
+textarea.form-control {
+  height: 100px;
+}
+
+.button-container {
+
+  display: flex;
+  justify-content: center;
+  button {
+    width: 40%;
+    font-weight: bold;
+    background: #192C31;
+    border: 2px solid #192C31;
+  }
+  button:hover {
+    background: #fff ;
+    color: #192C31;
+    border: 2px solid #192C31;
+  }
+}
+
+.form-check {
+  label {
+    color: #192C31;
+    font-weight: 200;
+  }
+  .form-check-input:checked {
+    background-color: #192C31 ;
+    border-color: #192C31 ;
+  }
+}
+
+@media (max-width: 1170px) {
+  .contact-section {
+    flex-direction: column;
+  }
+
+}

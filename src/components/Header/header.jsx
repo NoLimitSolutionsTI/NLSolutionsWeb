@@ -23,7 +23,7 @@ export default function header() {
   return (
     <>
         <header>
-            <a href="" className={'logo'}>
+            <a href="/" className={'logo'}>
                 {logoNL}
                 <span>NL Solutions TI</span>
             </a>
@@ -31,7 +31,7 @@ export default function header() {
                 <li><a href="/">Inicio</a></li>
                 <li><a href="services">Servicios</a></li>
                 <li><a href="about">Nosotros</a></li>
-                <li><a href="" className='btn-details'>Contacto</a></li>
+                <li><a href="contact" className='btn-details'>Contacto</a></li>
             </ul>
             {showBar && (<FontAwesomeIcon icon={faBars} className="icon" />
                 )}

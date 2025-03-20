@@ -1,0 +1,65 @@
+import React from "react";
+import '@/styles/ContactPage/contactpage.scss'
+import logo from '@/assets/logoNL-sin fondo-negro.png'
+import {Helmet} from "react-helmet";
+
+
+export default function ContactPage() {
+    return(
+        <>
+            <Helmet>
+                <title>NL Solutions TI | Contact </title>
+                <meta name="description" content="Esta es la página de contacto de mi aplicación."/>
+            </Helmet>
+            <hr></hr>
+
+            <section>
+                <div className={'title-contact'}>
+                    <h3>Contáctanos</h3>
+                </div>
+            </section>
+
+            <div className={'contact-container'}>
+            <section className={'contact-logo-section'}>
+                <img src={logo} alt="Logo" />
+            </section>
+
+
+            <section className=" contact-section contact-form-section">
+                <form>
+                    <div className="mb-3">
+                        <h3>Envíanos un mensaje</h3>
+                        <input type="text" className="form-control" placeholder="Nombres y Apellidos" name="names"
+                               required/>
+                        <input type="email" className="form-control" placeholder="Correo" name="email" required/>
+                        <input type="email" className="form-control" placeholder="Numero de Telefono" name="telephone"
+                               required/>
+
+                        <textarea name="message" className="form-control" placeholder="Mensaje"></textarea>
+                        <div className="form-check">
+                            <input className="form-check-input" type="checkbox" name="is_agree" required/>
+                            <label className="form-check-label" htmlFor="invalidCheck">
+                                He leído y estoy de acuerdo con los términos y condiciones de la web.
+                            </label>
+                            <div className="invalid-feedback">
+                                Debes aceptar los términos antes de enviar.
+                            </div>
+                        </div>
+                        <div className="button-container">
+                            <button className="btn btn-primary" type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            </div>
+        </>
+    )
+}
+
+
+
+
+
+
+
+
