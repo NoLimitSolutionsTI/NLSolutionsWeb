@@ -1,40 +1,58 @@
-import React from 'react'
+import React, {useState, useRef} from 'react'
 import '@/styles/HomePage/homePage.scss'
-
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/effect-coverflow";
-import { Helmet} from "react-helmet"
-
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { HeadProvider } from "react-head"
+import ImagenPrueba from "@/assets/LogoNL.png"
+const slides_home = [
+    { image: ImagenPrueba,title: "Abraza la transformación digital", text: "Convierte tu sueño en una realidad con nuestra experiencia en consultoria de software.", link:"" },
+    { image: ImagenPrueba,title: "Slide 2", text: "Descripción del Slide 2" },
+    { image: ImagenPrueba, title: "Slide 3", text: "Descripción del Slide 3" },
+  ];
 export default function Homepage() {
+    const [activeIndex, setActiveIndex] = useState(0);
+    const swiperRef = useRef(null);
   return (
     <>
-        <Helmet>
+        <HeadProvider>
         <title>NL Solutions TI | Home </title>
         <meta name="description" content="Esta es la página principal de mi aplicación."/>
-        </Helmet>
-        <section className={'slider-section'}>
-            <div className={'slider-container'}>
-                <div>
-                    <img src="/src/assets/LogoNL.png" alt="Img-slider" />
-                </div>
-                <div className={'slider-text'}>
-                    <h1>Lorem ipsum dolor sit amet consectetur</h1>
-                    <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                    <button type="submit">Lorem ipsus prueba</button>
-                </div>
-            </div>
-            <div className={'slider-footer'}>
-                <div>
-                    <h2>Slider 1</h2>
-                </div>
-                <div className={'active'}>
-                    <h2>Slider 2</h2>
-                </div>
-                <div>
-                    <h2>Slider 3</h2>
-                </div>
+        </HeadProvider>
+        <section className="slider-section">
+            <Swiper
+                modules={[Navigation, Pagination, Autoplay]}
+                spaceBetween={50}
+                slidesPerView={1}
+                navigation
+                pagination={{ clickable: true }}
+                autoplay={{ delay: 33500 }}
+                loop={true}
+                onSwiper={(swiper) => (swiperRef.current = swiper)}
+                onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+            >
+                {slides_home.map((slide, index) => (
+                <SwiperSlide key={index}>
+                    <div className="slider-container">
+                        <img src={slide.image}/>
+                        <div className="slider-text">
+                            <h2>{slide.title}</h2>
+                            <p>{slide.text}</p>
+                            <a href={slide.link}>Ver más</a>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                ))}
+            </Swiper>
+            <div className='slides-previews'>
+                {slides_home.map((slide,index) =>(
+                    <div onClick={() => swiperRef.current?.slideTo(index)} key={index}>
+                        <b>{slide.title}</b>
+                        <span>{slide.text}</span>
+                    </div>
+                ))}
             </div>
         </section>
 

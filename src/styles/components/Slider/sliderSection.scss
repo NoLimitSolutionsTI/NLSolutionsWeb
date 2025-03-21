@@ -1,27 +1,52 @@
 .slider-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    min-height: 500px;
+    max-height: 900px;
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 30px;
     background: linear-gradient(to top, #788E84 90%, #EAE9E9);
-}
+    .swiper{
+        width: 100%;
+        padding-top: 90px;
+        height: calc(85% - 90px);
+        border: 2px solid;
+        .swiper-slide{
 
+        }
+    }
+    .slides-previews{
+        display: flex;
+        padding: 0 5%;
+        >div{
+            display: flex;
+            width: calc((100% / 3) - 2em);
+            flex-direction: column;
+            gap: 1em;
+            padding: 1em;
+            border: 2px solid;
+        }
+    }
+}
 .slider-container {
     width: 90%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    height: 100%;
     gap: 30px;
     margin: auto;
     padding: 30px;
     color : #fff;
-    div {
-        img {
-            width: 718px;
-            height: 431px;
-            margin-top: 20px;
-        }
+    img {
+        width: 718px;
+        height: 431px;
+        margin-top: 20px;
     }
 }
 
@@ -39,23 +64,25 @@
     p {
         font-size: 20px;
     }
-    button {
-        padding: 20px;
-        border-radius: 10px;
-        width: 60%;
+    a {
+        padding: 10px 20px;
+        border-radius: 30px;
         font-size: 20px;
+        width: 200px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #192C31;
         color: #fff;
         border: 1px solid #192C31;
         font-weight: bold;
         margin-top: 2em;
     }
-    button:hover {
+    a:hover{
         background-color: #fff;
         color: #192C31;
     }
-}
-
     .slider-footer {
         width: 75%;
         display: flex;
@@ -79,4 +106,4 @@
     .active {
         background-color: rgba(0, 0, 0, 0.53) !important;
     }
-
+}
