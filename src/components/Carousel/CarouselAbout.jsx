@@ -1,5 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -45,6 +47,7 @@ const CarouselAbout = () => {
                 modules={[Navigation]}
                 spaceBetween={20}
                 slidesPerView={1}
+                loop={true}
                 navigation={{ nextEl: ".carousel-container .swiper-button-next", prevEl: ".carousel-container .swiper-button-prev" }}
             >
                 {personal.map((person, index) => (
@@ -54,10 +57,16 @@ const CarouselAbout = () => {
                                 <h3>{person.names}</h3>
                                 <h4>{person.cargo}</h4>
                                 <p>{person.description}</p>
-                                <div className={'social-media'}>
-                                    <a href={person.linkedin} target="_blank"><i className="fa-brands fa-linkedin"></i></a>
-                                    <a href={person.github} target="_blank"><i className="fa-brands fa-github"></i></a>
-                                    <a href={person.instagram} target="_blank"><i className="fa-brands fa-instagram"></i></a>
+                                <div className="social-media">
+                                    <a href={person.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                        <FontAwesomeIcon icon={faLinkedin} className="icon linkedin" />
+                                    </a>
+                                    <a href={person.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                        <FontAwesomeIcon icon={faGithub} className="icon github" />
+                                    </a>
+                                    <a href={person.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                        <FontAwesomeIcon icon={faInstagram} className="icon instagram" />
+                                    </a>
                                 </div>
                             </div>
                             <img src={person.image}  className="card-img-about"  alt={person.names}/>

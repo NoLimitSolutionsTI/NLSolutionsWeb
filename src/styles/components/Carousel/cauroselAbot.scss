@@ -4,6 +4,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   width: 70%;
   margin: 5em auto auto auto;
+  border-radius: 20px;
 }
 
 .card-info {
@@ -15,21 +16,48 @@
   h3 {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
   }
   h4 {
     color: #757575;
     font-size: 1rem;
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
   }
   p {
     text-align: left;
+    display: contents;
   }
+
+}
+img{
+  width: 50%;
+  height: auto;
+}
+.social-media {
+  display: flex;
+  gap: 10px;
+  margin-top: 1em;
 }
 
-/* Flechas */
-.carousel-container{
-  .swiper-button-prev,.swiper-button-next{
-
-  }
+.icon {
+  font-size: 24px;
+  transition: transform 0.2s ease-in-out;
 }
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+
+.linkedin {
+  color: #0077b5;
+}
+
+.github {
+  color: #333;
+}
+
+.instagram {
+  color: #e4405f;
+}
+

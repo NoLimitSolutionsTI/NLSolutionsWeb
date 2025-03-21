@@ -2,7 +2,7 @@ import React from "react";
 import '@/styles/AboutPage/aboutPage.scss'
 import {Helmet} from "react-helmet";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faWhatsapp, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faLightbulb, faStar, faHandshake, faShieldAlt, faUsers } from '@fortawesome/free-solid-svg-icons';
 import CarouselAbout from "@/components/Carousel/CarouselAbout.jsx";
 
 
@@ -25,45 +25,51 @@ export default function AboutPage() {
                 </div>
             </section>
             <section className={'section-2-about'}>
-                <div>
+                <div className={'why'}>
                     <h2>¿Por qué elegir NoLimitSolutionsTI?</h2>
+                    <br/>
                     <p>Creemos que cada desafío presenta una oportunidad de crecimiento y aprendizaje. Nos apasiona encontrar soluciones a problemas complejos y estamos comprometidos con mantenernos actualizados en las últimas tendencias tecnológicas. Nuestro enfoque personalizado nos permite adaptarnos a las necesidades específicas de cada cliente y garantizar resultados sobresalientes.</p>
                 </div>
                 <div className={'mission-vision-container'}>
                     <div className={'mission'}>
                         <h2>MISION</h2>
+                        <br/>
                         <p>Ser una consultoría líder en dar soluciones innovadoras orientadas a la era digital. Resolver los desafíos actuales de manera eficiente y efectiva, mientras capacitamos y empoderamos a futuros programadores a través de una formación espeScializada. Trabajamos en colaboración con nuestros clientes para construir un camino hacia el éxito tecnológico, impulsando el crecimiento y la evolución constante de empresas y profesionales en el ámbito tecnológico.</p>
                     </div>
                     <div className={'vision'}>
                         <h2>VISIÓN</h2>
+                        <br/>
                         <p>Aspiramos a transformar la industria a través de la innovación. Buscamos ser reconocidos por nuestro enfoque hacia el futuro y nuestra capacidad para resolver los desafíos emergentes. Así forjar un futuro en el que, las empresas y negocios, encuentren soluciones eficientes y sostenibles para sus necesidades tecnológicas, mientras inspiramos y capacitamos a una nueva generación de programadores que lideren el cambio en el mundo tecnológico. A través de nuestra dedicación y compromiso, nos esforzamos por crear un impacto positivo en la sociedad y contribuir al desarrollo tecnológico global.</p>
                     </div>
                 </div>
             </section>
             <section className={'section-3-about'}>
                 <h2>VALORES DE NL</h2>
-                <div className={'valores-list'}>
+                <div className="valores-list">
                     <ul>
                         <li>
-                             <FontAwesomeIcon icon={faWhatsapp} className="icon" />
+                            <FontAwesomeIcon icon={faLightbulb} className="icon icon-lightbulb" />
                             Innovación
-                        </li>                        <hr />
+                        </li>
+                        <hr />
                         <li>
-                            <span className={'icon'}>X</span>
-                            Calidad
-                        </li>                        <hr />
-                        <li>
-                            <span className={'icon'}>X</span>
+                            <FontAwesomeIcon icon={faStar} className="icon icon-star" />
                             Calidad
                         </li>
                         <hr />
                         <li>
-                            <span className={'icon'}>X</span>
-                            Calidad
-                        </li>                        <hr />
+                            <FontAwesomeIcon icon={faHandshake} className="icon icon-handshake" />
+                            Compromiso
+                        </li>
+                        <hr />
                         <li>
-                            <span className={'icon'}>X</span>
-                            Calidad
+                            <FontAwesomeIcon icon={faShieldAlt} className="icon icon-shield" />
+                            Responsabilidad
+                        </li>
+                        <hr />
+                        <li>
+                            <FontAwesomeIcon icon={faUsers} className="icon icon-users" />
+                            Trabajo en equipo
                         </li>
                     </ul>
                 </div>

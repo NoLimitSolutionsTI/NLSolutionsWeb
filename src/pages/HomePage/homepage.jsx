@@ -65,7 +65,7 @@ export default function Homepage() {
         <div className={'first-media'}>
               <div className={'media-text'}>
                   <h3>Sistemas Empresariales a Medida</h3>
-                  <p>Optimiza la gestión de tu negocio con nuestras soluciones ERP, CRM, puntos de venta, control de inventarios, sistemas para restaurantes y mucho más. 🚀💼</p>
+                  <p>Optimiza la gestión de tu negocio con nuestras soluciones ERP, CRM, puntos de venta, control de inventarios, sistemas para restaurantes y mucho más.💼</p>
                   <button type="submit">Ver más</button>
               </div>
               <div className={'media-image'}>
@@ -77,7 +77,7 @@ export default function Homepage() {
           <div className={'section-3-content'}>
               <div>
                   <h2>Impulsamos tu negocio con tecnología</h2>
-                  <p>Somos especialistas en desarrollo web, soporte TI y sistemas empresariales. Ofrecemos soluciones personalizadas para optimizar tu empresa y llevarla al siguiente nivel. ¡Hacemos tu visión realidad! 🚀</p>
+                  <p>Somos especialistas en desarrollo web, soporte TI y sistemas empresariales. Ofrecemos soluciones personalizadas para optimizar tu empresa y llevarla al siguiente nivel. ¡Hacemos tu visión realidad!🚀</p>
                   <button type="submit">Hablemos</button>
               </div>
               <div>

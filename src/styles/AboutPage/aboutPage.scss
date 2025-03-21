@@ -1,6 +1,11 @@
 @import url('@/styles/components/Slider/sliderSection.scss');
 
 /* Section 2 */
+.why{
+  p{
+    display: contents;
+  }
+}
 .section-2-about {
   width: 80%;
   display: flex;
@@ -14,15 +19,19 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 50px 0;
+  margin-top: 3em;
 }
 
 .mission, .vision {
   width: 45%;
   h2 {
     text-align: center;
+
   }
   p {
     padding: 20px 0;
+    display: contents;
+
   }
 }
 
@@ -35,6 +44,8 @@
 
 .valores-list {
   width: 100%;
+  margin-top: 5em;
+  margin-bottom: 10em;
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -42,20 +53,43 @@
     list-style: none;
     text-align: center;
     align-items: center;
+    padding: 0;
+    margin: 0;
     li {
       display: flex;
       flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      font-size: 20px;
+      font-weight: 500;
+      padding: 12px;
+
     }
     hr {
-      width: 2px;
+      width: 1px;
       height: 100px;
       background: #000;
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 8px 0;
     }
   }
+}
+.icon{
+  font-size: 40px;
+
 }
 
 .card-personal{
+  margin-bottom: 5em;
+}
+
   .carousel-container{
     position: relative;
   }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #192C31 !important;
 }
+
