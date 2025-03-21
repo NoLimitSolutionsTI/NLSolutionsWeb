@@ -61,8 +61,8 @@ export default function ContactPage() {
                                name="fullName" value={formData.fullName} onChange={handleChange} required/>
                         <input type="email" className="form-control" placeholder="Correo" name="email"
                                value={formData.email} onChange={handleChange} required/>
-                        <input type="telephone" className="form-control" placeholder="Numero de Telefono" name="telephone"
-                               value={formData.telephone} onChange={handleChange} required/>
+                        <input type="tel" className="form-control" placeholder="Numero de Telefono" name="telephone"
+                               value={formData.telephone} onChange={handleChange} required pattern="[0-9]{9,}"/>
 
                         <textarea name="message" className="form-control" placeholder="Mensaje"
                                   value={formData.message} onChange={handleChange} required></textarea>
@@ -76,7 +76,7 @@ export default function ContactPage() {
                             </div>
                         </div>
                         <div className="button-container">
-                            <button className="btn btn-primary" type="submit">Enviar</button>
+                            <button className="btn btn-primary" type="submit" aria-label="Enviar formulario de contacto">Enviar</button>
                         </div>
                     </div>
                 </form>
