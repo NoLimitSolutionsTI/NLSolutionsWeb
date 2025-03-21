@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import '@/styles/ContactPage/contactpage.scss'
 import logo from '@/assets/logoNL-sin fondo-negro.png'
-import { Head} from "react-head"
+import { HeadProvider } from "react-head"
 
 export default function ContactPage() {
     const [formData, setFormData] = useState({
@@ -35,10 +35,10 @@ export default function ContactPage() {
 
     return(
         <>
-            <Head>
+            <HeadProvider>
                 <title>NL Solutions TI | Contact </title>
                 <meta name="description" content="Esta es la página de contacto de mi aplicación."/>
-            </Head>
+            </HeadProvider>
             <hr></hr>
 
             <section>

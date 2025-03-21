@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import { Head } from "react-head"
+import { HeadProvider } from "react-head"
 import ImagenPrueba from "@/assets/LogoNL.png"
 const slides_home = [
     { image: ImagenPrueba,title: "Abraza la transformación digital", text: "Convierte tu sueño en una realidad con nuestra experiencia en consultoria de software.", link:"" },
@@ -17,10 +17,10 @@ export default function Homepage() {
     const swiperRef = useRef(null);
   return (
     <>
-        <Head>
+        <HeadProvider>
         <title>NL Solutions TI | Home </title>
         <meta name="description" content="Esta es la página principal de mi aplicación."/>
-        </Head>
+        </HeadProvider>
         <section className="slider-section">
             <Swiper
                 modules={[Navigation, Pagination, Autoplay]}

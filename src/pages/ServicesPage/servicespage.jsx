@@ -1,15 +1,15 @@
 import React from "react";
 import '@/styles/ServicesPage/servicesPage.scss'
 import Caurosel from "@/components/Carousel/Caurosel.jsx";
-import { Head} from "react-head"
+import { HeadProvider } from "react-head"
 
 export default function ServicesPage() {
     return (
         <>
-          <Head>
+          <HeadProvider>
             <title>NL Solutions TI | Services </title>
             <meta name="description" content="Esta es la página de servicios de mi aplicación."/>
-          </Head>
+          </HeadProvider>
           <section className={'slider-section'}>
           <div className={'slider-container'}>
             <div>
