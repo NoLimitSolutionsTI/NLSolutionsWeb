@@ -19,24 +19,24 @@ export default function AboutPage() {
                         <img src="/src/assets/LogoNL.png" alt="Img-slider" />
                     </div>
                     <div className={'slider-text'}>
-                        <h1>Lorem ipsum dolor sit amet consectetur</h1>
-                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        <h1>¿Tiene interés en conocernos?</h1>
+                        <p>Nos complace compartir nuestros objetivos y la pasión que impulsó nuestra trayectoria en la industria de la consultoría de software</p>
                     </div>
                 </div>
             </section>
             <section className={'section-2-about'}>
                 <div>
-                    <h2>¿Lorem ipsum dolor lorem?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur dolor sit amet sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    <h2>¿Por qué elegir NoLimitSolutionsTI?</h2>
+                    <p>Creemos que cada desafío presenta una oportunidad de crecimiento y aprendizaje. Nos apasiona encontrar soluciones a problemas complejos y estamos comprometidos con mantenernos actualizados en las últimas tendencias tecnológicas. Nuestro enfoque personalizado nos permite adaptarnos a las necesidades específicas de cada cliente y garantizar resultados sobresalientes.</p>
                 </div>
                 <div className={'mission-vision-container'}>
                     <div className={'mission'}>
                         <h2>MISION</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur dolor sit amet sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        <p>Ser una consultoría líder en dar soluciones innovadoras orientadas a la era digital. Resolver los desafíos actuales de manera eficiente y efectiva, mientras capacitamos y empoderamos a futuros programadores a través de una formación espeScializada. Trabajamos en colaboración con nuestros clientes para construir un camino hacia el éxito tecnológico, impulsando el crecimiento y la evolución constante de empresas y profesionales en el ámbito tecnológico.</p>
                     </div>
                     <div className={'vision'}>
                         <h2>VISIÓN</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur dolor sit amet sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        <p>Aspiramos a transformar la industria a través de la innovación. Buscamos ser reconocidos por nuestro enfoque hacia el futuro y nuestra capacidad para resolver los desafíos emergentes. Así forjar un futuro en el que, las empresas y negocios, encuentren soluciones eficientes y sostenibles para sus necesidades tecnológicas, mientras inspiramos y capacitamos a una nueva generación de programadores que lideren el cambio en el mundo tecnológico. A través de nuestra dedicación y compromiso, nos esforzamos por crear un impacto positivo en la sociedad y contribuir al desarrollo tecnológico global.</p>
                     </div>
                 </div>
             </section>
@@ -46,31 +46,31 @@ export default function AboutPage() {
                     <ul>
                         <li>
                              <FontAwesomeIcon icon={faWhatsapp} className="icon" />
-                            Loremanzo
+                            Innovación
                         </li>                        <hr />
                         <li>
                             <span className={'icon'}>X</span>
-                            Loremanzo
+                            Calidad
                         </li>                        <hr />
                         <li>
                             <span className={'icon'}>X</span>
-                            Loremanzo
+                            Calidad
                         </li>
                         <hr />
                         <li>
                             <span className={'icon'}>X</span>
-                            Loremanzo
+                            Calidad
                         </li>                        <hr />
                         <li>
                             <span className={'icon'}>X</span>
-                            Loremanzo
+                            Calidad
                         </li>
                     </ul>
                 </div>
             </section>
             <section className={'card-personal container'}>
                 <h2 className={'title'}>Equipo NL</h2>
-                <h4>Lorem ipsum dolor lorem ipsumLorem ipsum dolor lorem ipsumLorem ipsum dolor lorem ipsum</h4>
+                <h4>Unimos talento, creatividad y tecnología para ofrecer soluciones innovadoras y de calidad.</h4>
                 <CarouselAbout />
             </section>
         </>
