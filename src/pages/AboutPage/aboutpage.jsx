@@ -1,6 +1,6 @@
 import React from "react";
 import '@/styles/AboutPage/aboutPage.scss'
-import {Helmet} from "react-helmet";
+import { Head} from "react-head"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faWhatsapp, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import CarouselAbout from "@/components/Carousel/CarouselAbout.jsx";
@@ -9,10 +9,10 @@ import CarouselAbout from "@/components/Carousel/CarouselAbout.jsx";
 export default function AboutPage() {
     return (
         <>
-            <Helmet>
+            <Head>
                 <title>NL Solutions TI | About </title>
                 <meta name="description" content="Esta es la página de Nostros de mi aplicación."/>
-            </Helmet>
+            </Head>
             <section className={'slider-section'}>
                 <div className={'slider-container'}>
                     <div>
