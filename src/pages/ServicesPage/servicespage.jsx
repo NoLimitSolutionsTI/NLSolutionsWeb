@@ -16,21 +16,21 @@ export default function ServicesPage() {
               <img src="/src/assets/LogoNL.png" alt="Img-slider" />
             </div>
             <div className={'slider-text'}>
-              <h1>Lorem ipsum dolor sit amet consectetur</h1>
-              <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+              <h1>¿Buscas un servicio de calidad?</h1>
+              <p>Descubre nuestras ofertas y lleva tu negocio al siguiente nivel. 🚀</p>
             </div>
           </div>
           </section>
 
             <section className={'section-2-services'}>
-                <h2 className={'title-section-2'}>Lorem ipsum dolor lorem</h2>
+                <h2 className={'title-section-2'}>Nuestros Servicios</h2>
               <div className={'section-2-services-container'}>
                 <div className={'section-2-services-text'}>
-                    <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                    <h3>Soluciones Web Personalizadas</h3>
                     <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur</li>
-                        <li>Lorem ipsum dolor sit amet consectetur</li>
-                        <li>Lorem ipsum dolor sit amet consectetur</li>
+                        <li>Diseñamos sitios web a medida, sin límites.</li>
+                        <li>Tiendas online, páginas informativas y aulas virtuales.</li>
+                        <li>Convertimos tu idea en realidad con tecnología de vanguardia.</li>
                     </ul>
                 </div>
                 <div className={'section-2-services-button'}>
@@ -39,11 +39,11 @@ export default function ServicesPage() {
               </div>
                 <div className={'section-2-services-container'}>
                     <div className={'section-2-services-text'}>
-                        <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                        <h3>Soporte TI</h3>
                         <ul>
-                            <li>Lorem ipsum dolor sit amet consectetur</li>
-                            <li>Lorem ipsum dolor sit amet consectetur</li>
-                            <li>Lorem ipsum dolor sit amet consectetur</li>
+                            <li>Mantenimiento y reparación de computadoras y laptops.</li>
+                            <li>Venta de repuestos y optimización de sistemas.</li>
+                            <li>Soluciones rápidas y efectivas para tu tecnología.</li>
                         </ul>
                     </div>
                     <div className={'section-2-services-button'}>
@@ -52,11 +52,11 @@ export default function ServicesPage() {
                 </div>
                 <div className={'section-2-services-container'}>
                 <div className={'section-2-services-text'}>
-                    <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                    <h3>Sistemas Empresariales a Medida</h3>
                     <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur</li>
-                        <li>Lorem ipsum dolor sit amet consectetur</li>
-                        <li>Lorem ipsum dolor sit amet consectetur</li>
+                        <li>ERP, CRM, puntos de venta e inventarios.</li>
+                        <li>Sistemas para restaurantes y gestión empresarial.</li>
+                        <li>Optimiza tu negocio con tecnología eficiente. 🚀</li>
                     </ul>
                 </div>
                     <div className={'section-2-services-button'}>
@@ -92,15 +92,15 @@ export default function ServicesPage() {
   </section>
 
   <section className={'card-service container'}>
-    <h2 className={'title'}>Lorem ipsum dolor lorem ipsum</h2>
-    <h4>Lorem ipsum dolor lorem ipsumLorem ipsum dolor lorem ipsumLorem ipsum dolor lorem ipsum</h4>
+    <h2 className={'title'}>Nuestros Proyectos</h2>
+    <h4>Innovamos y desarrollamos soluciones tecnológicas que transforman negocios. 🚀</h4>
 <Caurosel/>
   </section>
 
 
 <section className={'section-4'}>
-          <h2>¿Lorem ipsum dolor sit amet consectetur?</h2>
-          <button type="submit">Lorem ipsum</button>
+          <h2>¿Buscas una aplicación a medida?</h2>
+          <button type="submit">Contactenos</button>
 </section>
 </>
     )
