@@ -9,11 +9,11 @@ import { HeadProvider } from "react-head"
 import ImagenPrueba from "@/assets/LogoNL.png"
 const slides_home = [
     { image: ImagenPrueba,title: "Abraza la transformación digital", text: "Convierte tu sueño en una realidad con nuestra experiencia en consultoria de software.", link:"" },
-    { image: ImagenPrueba,title: "Slide 2", text: "Descripción del Slide 2" },
-    { image: ImagenPrueba, title: "Slide 3", text: "Descripción del Slide 3" },
+    { image: ImagenPrueba,title: "Abraza la transformación digital 2", text: "Convierte tu sueño en una realidad con nuestra experiencia en consultoria de software." },
+    { image: ImagenPrueba, title: "Abraza la transformación digital 3", text: "Convierte tu sueño en una realidad con nuestra experiencia en consultoria de software." },
   ];
 export default function Homepage() {
-    const [activeIndex, setActiveIndex] = useState(0);
+    const [activeIndex, setActiveIndex] = useState(1);
     const swiperRef = useRef(null);
   return (
     <>
@@ -26,12 +26,11 @@ export default function Homepage() {
                 modules={[Navigation, Pagination, Autoplay]}
                 spaceBetween={50}
                 slidesPerView={1}
-                navigation
-                pagination={{ clickable: true }}
+
                 autoplay={{ delay: 33500 }}
                 loop={true}
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
-                onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+                onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
             >
                 {slides_home.map((slide, index) => (
                 <SwiperSlide key={index}>
@@ -48,7 +47,11 @@ export default function Homepage() {
             </Swiper>
             <div className='slides-previews'>
                 {slides_home.map((slide,index) =>(
-                    <div onClick={() => swiperRef.current?.slideTo(index)} key={index}>
+                    <div
+                        key={index}
+                        className={`slide-preview ${activeIndex === index ? "active" : ""}`}
+                        onClick={() => swiperRef.current?.slideTo(index)}
+                    >
                         <b>{slide.title}</b>
                         <span>{slide.text}</span>
                     </div>

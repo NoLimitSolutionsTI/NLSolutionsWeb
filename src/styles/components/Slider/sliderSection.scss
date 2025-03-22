@@ -2,19 +2,17 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 85vh;
+    height: 75vh;
     min-height: 500px;
     max-height: 900px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
     gap: 30px;
     background: linear-gradient(to top, #788E84 90%, #EAE9E9);
     .swiper{
         width: 100%;
-        padding-top: 90px;
+        padding-top: 130px;
         height: calc(85% - 90px);
-        border: 2px solid;
+        border: 0px solid;
         .swiper-slide{
 
         }
@@ -22,14 +20,34 @@
     .slides-previews{
         display: flex;
         padding: 0 5%;
-        >div{
+        gap: 30px;
+        margin-bottom: 2em;
+        div{
             display: flex;
             width: calc((100% / 3) - 2em);
             flex-direction: column;
             gap: 1em;
-            padding: 1em;
-            border: 2px solid;
+            padding: 1.5em;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            color: white;
+            border: none;
+            margin-top: 2em;
         }
+    }
+
+    .slides-previews div.active {
+        background: rgba(25, 44, 49, 1);
+
+
+    }
+
+    .slides-previews div:hover {
+        background: rgba(255, 255, 255, 0.15);
+        transform: scale(1.03);
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
     }
 }
 .slider-container {
@@ -44,9 +62,9 @@
     padding: 30px;
     color : #fff;
     img {
-        width: 718px;
-        height: 431px;
-        margin-top: 20px;
+        width: 35%;
+        height: 180%;
+        margin-top: 53px;
     }
 }
 
@@ -81,7 +99,7 @@
     }
     a:hover{
         background-color: #fff;
-        color: #192C31;
+        color: #192C31 !important;
     }
     .slider-footer {
         width: 75%;
@@ -106,4 +124,9 @@
     .active {
         background-color: rgba(0, 0, 0, 0.53) !important;
     }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #192C31 !important;
 }
