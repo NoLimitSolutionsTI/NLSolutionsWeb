@@ -12,7 +12,7 @@ const personal = [
         names: "Enzo Martinez",
         cargo: "Desarrollador Fullstack",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptatibus, quisquam, quos, dolorum, consequuntur, odit, et, fugiat, voluptas, labore, aspernatur, quae, quia, ipsa, dolorem, eaque, velit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptatibus, quisquam, quos, dolorum, consequuntur, odit, et.",
         image: "https://i.imgur.com/Sup9hpK.png",
         linkedin: "https://www.linkedin.com/in/enzomartinez24/",
         github: "https://github.com/EnzoMartinez01",
@@ -22,7 +22,7 @@ const personal = [
         names: "Aldhair Lujan Nicolini",
         cargo: "Desarrollador Fullstack",
         description:
-            "Apasionado por la tecnología y el desarrollo de software, con experiencia en la creación de aplicaciones web modernas y escalables. Especializado en React, Angular, Node.js y Java, enfocado en ofrecer soluciones eficientes y optimizadas.",
+            "Apasionado por la tecnología y el desarrollo de software, con experiencia en la creación de aplicaciones web modernas y escalables. ",
         image: "https://i.imgur.com/Sup9hpK.png",
         linkedin: "https://www.linkedin.com/in/aldhair-lujan-nicolini-997278173/",
         github: "https://github.com/Aldhair11",
@@ -32,7 +32,7 @@ const personal = [
         names: "Anthony Lecarnaque",
         cargo: "Desarrollador Fullstack",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptatibus, quisquam, quos, dolorum, consequuntur, odit, et, fugiat, voluptas, labore, aspernatur, quae, quia, ipsa, dolorem, eaque, velit.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptatibus, quisquam, quos, dolorum, consequuntur, odit, et. ",
         image: "https://i.imgur.com/Sup9hpK.png",
         linkedin: "https://www.linkedin.com/in/anthonylecarnaque/",
         github: "https://github.com/",

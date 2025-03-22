@@ -13,7 +13,7 @@ const slides_home = [
     { image: ImagenPrueba, title: "Abraza la transformación digital 3", text: "Convierte tu sueño en una realidad con nuestra experiencia en consultoria de software.", link:"#" }
   ];
 export default function Homepage() {
-    const [activeIndex, setActiveIndex] = useState(1);
+    const [activeIndex, setActiveIndex] = useState(0);
     const swiperRef = useRef(null);
   return (
     <>
