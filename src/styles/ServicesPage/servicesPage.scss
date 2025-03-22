@@ -23,6 +23,10 @@
     h3 {
         font-weight: bold;
         padding: 10px;
+        margin-bottom: 15px !important;
+    }
+    li{
+        margin-bottom: 10px !important;
     }
 }
 
@@ -45,48 +49,71 @@
             color: #4494A2;
         }
     }
-
-
 }
-
-
-/* Section icons*/
-
+/* Sección de iconos */
 .icons-section {
     background: white;
-    padding: 30px 0;
-    margin-top: 30px;
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 150px;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.container{
+    margin-top: 0em !important;
 }
 
 .icon-title {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
-    margin-bottom: 15px;
+    color: black;
+}
+
+.icon-subtitle {
+    font-size: 20px;
+    color: #192C31;
+    margin-bottom: 30px;
 }
 
 .icons {
     display: flex;
+    gap: 5em;
     justify-content: center;
-    gap: 15em;
-    margin-top: 80px;
+    align-items: center;
+    max-width: 800px;
+    margin: 50px auto;
 }
 
 .icon-block {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 160px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .icon {
-    font-size: 2rem;
+    font-size: 3rem;
+    color: black;
+    transition: transform 0.3s ease;
+    margin-bottom: 10px;
 }
 
 .icon-text {
-    color: #4a5568;
-    margin-top: 5px;
+    color: black;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.icon-block:hover {
+    transform: scale(1.1);
+
+}
+
+.icon-block:hover .icon {
+    transform: rotate(10deg);
+    color: #4494A2;
 }
 
 /* Section cards*/
