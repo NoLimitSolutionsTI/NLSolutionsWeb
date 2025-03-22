@@ -1,5 +1,7 @@
 import React from "react";
 import '@/styles/ServicesPage/servicesPage.scss'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHardHat, faWrench, faGraduationCap, faHandshake, faPlane } from "@fortawesome/free-solid-svg-icons";
 import Caurosel from "@/components/Carousel/Caurosel.jsx";
 import { HeadProvider } from "react-head"
 
@@ -65,31 +67,37 @@ export default function ServicesPage() {
             </div>
             </section>
 
-          <section className={'icons-section container'}>
-            <h3 className={'icon-title'}>Lorem ipsum dolor lorem ipsum ipsum</h3>
-            <div className={'icons'}>
-              <div className={'icon-block'}>
-                <span className={'icon'}>X</span>
-                <p className={'icon-text'}>Loremanzo</p>
-              </div>
-              <div className={'icon-block'}>
-                <span className={'icon'}>X</span>
-                <p className={'icon-text'}>Loremanzo</p>
-              </div>
-      <div className={'icon-block'}>
-        <span className={'icon'}>X</span>
-        <p className={'icon-text'}>Loremanzo</p>
-      </div>
-      <div className={'icon-block'}>
-        <span className={'icon'}>X</span>
-        <p className={'icon-text'}>Loremanzo</p>
-      </div>
-      <div className={'icon-block'}>
-        <span className={'icon'}>X</span>
-        <p className={'icon-text'}>Loremanzo</p>
-      </div>
-    </div>
-  </section>
+            <section className="icons-section container">
+                <h3 className="icon-title">Soluciones flexibles en nuestro servicio </h3>
+                <h2 className="icon-subtitle">Para cada tipo de empresa</h2>
+
+                <div className="icons">
+                    <div className="icon-block">
+                        <FontAwesomeIcon icon={faHardHat} className="icon" />
+                        <p className="icon-text">Servicios Mineros</p>
+                    </div>
+
+                    <div className="icon-block">
+                        <FontAwesomeIcon icon={faWrench} className="icon" />
+                        <p className="icon-text">Ingeniería y Construcción</p>
+                    </div>
+
+                    <div className="icon-block">
+                        <FontAwesomeIcon icon={faGraduationCap} className="icon" />
+                        <p className="icon-text">Educación</p>
+                    </div>
+
+                    <div className="icon-block">
+                        <FontAwesomeIcon icon={faHandshake} className="icon" />
+                        <p className="icon-text">Servicios Profesionales</p>
+                    </div>
+
+                    <div className="icon-block">
+                        <FontAwesomeIcon icon={faPlane} className="icon" />
+                        <p className="icon-text">Aeronáutica</p>
+                    </div>
+                </div>
+            </section>
 
   <section className={'card-service container'}>
     <h2 className={'title'}>Nuestros Proyectos</h2>
