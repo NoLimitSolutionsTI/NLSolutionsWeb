@@ -8,9 +8,9 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { HeadProvider } from "react-head"
 import ImagenPrueba from "@/assets/LogoNL.png"
 const slides_home = [
-    { image: ImagenPrueba,title: "Abraza la transformación digital", text: "Convierte tu sueño en una realidad con nuestra experiencia en consultoria de software.", link:"" },
-    { image: ImagenPrueba,title: "Abraza la transformación digital 2", text: "Convierte tu sueño en una realidad con nuestra experiencia en consultoria de software." },
-    { image: ImagenPrueba, title: "Abraza la transformación digital 3", text: "Convierte tu sueño en una realidad con nuestra experiencia en consultoria de software." },
+    { image: ImagenPrueba,title: "Abraza la transformación digital", text: "Convierte tu sueño en una realidad con nuestra experiencia en consultoria de software.", link:"#"},
+    { image: ImagenPrueba,title: "Abraza la transformación digital 2", text: "Convierte tu sueño en una realidad con nuestra experiencia en consultoria de software.", link:"#" },
+    { image: ImagenPrueba, title: "Abraza la transformación digital 3", text: "Convierte tu sueño en una realidad con nuestra experiencia en consultoria de software.", link:"#" }
   ];
 export default function Homepage() {
     const [activeIndex, setActiveIndex] = useState(1);
@@ -26,8 +26,7 @@ export default function Homepage() {
                 modules={[Navigation, Pagination, Autoplay]}
                 spaceBetween={50}
                 slidesPerView={1}
-
-                autoplay={{ delay: 33500 }}
+                autoplay={{ delay: 7000 }}
                 loop={true}
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
                 onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
@@ -39,7 +38,7 @@ export default function Homepage() {
                         <div className="slider-text">
                             <h2>{slide.title}</h2>
                             <p>{slide.text}</p>
-                            <a href={slide.link}>Ver más</a>
+                            <a href={slide.link} className='btn-details'>Ver más</a>
                         </div>
                     </div>
                 </SwiperSlide>

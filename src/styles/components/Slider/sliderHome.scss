@@ -1,0 +1,149 @@
+@use '@/styles/main.scss' as main;
+.slider-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    height: 80vh;
+    min-height: 550px;
+    max-height: 900px;
+    width: 100%;
+    padding: 0 calc((100% - 1400px) /2);
+    padding-bottom: 2em;
+    background: linear-gradient(to top, #788E84 90%, #EAE9E9);
+
+    .swiper {
+        width: 100%;
+        padding-top: 130px;
+        height: calc(80% - 90px);
+        border: 0px solid;
+
+        .swiper-slide {
+            .slider-container {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                justify-content: space-between;
+                margin: auto;
+                color: #fff;
+
+                img {
+                    height: 100%;
+                }
+
+                .slider-text {
+                    width: 30%;
+                    text-align: right;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1em;
+                    align-items: flex-end;
+
+                    h1 {
+                        font-size: 40px;
+                        font-weight: bold;
+                        margin-bottom: 1em;
+                    }
+
+                    p {
+                        font-size: 20px;
+                    }
+
+                    a {
+                        width: 160px;
+                        height: 40px;
+                    }
+                    a:hover {
+                        background-color: #fff;
+                        color: #192C31;
+                    }
+
+                    .slider-footer {
+                        width: 75%;
+                        display: flex;
+                        padding-bottom: 50px;
+                        justify-content: space-between;
+                        margin: auto;
+
+                        div {
+                            width: 25%;
+                            height: 140px;
+                            border: 1px solid rgba(0, 0, 0, 0.16);
+                            color: #fff;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: rgba(0, 0, 0, 0.16);
+                            border-radius: 10px;
+                        }
+                    }
+
+                    .active {
+                        background-color: rgba(0, 0, 0, 0.53) !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .slides-previews {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 2em;
+        padding: 10px 5px;
+        overflow: scroll;
+
+        div {
+            display: flex;
+            min-width: calc((100% / 3) - 2em);
+            max-width: 400px;
+            min-height: 150px;
+            flex-direction: column;
+            gap: 1em;
+            padding: 1.5em 2.5em;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 3px 4px 0 rgba(188, 209, 212, 0.64);
+            color: white;
+            border: none;
+            cursor: pointer;
+
+            b {
+                font-size: 22px;
+                font-weight: 700;
+            }
+            span{
+                display: -webkit-box;
+                font-size: 16px;
+                font-weight: 300;
+                white-space: nowrap;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+
+        div.active {
+            background: rgba(0, 0, 0, 0.55);
+        }
+
+        div:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+    }
+
+    .slides-previews::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #192C31 !important;
+}
