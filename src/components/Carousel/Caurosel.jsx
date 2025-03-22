@@ -33,6 +33,7 @@ const Carousel = () => {
                 modules={[Navigation]}
                 spaceBetween={20}
                 slidesPerView={2}
+                loop={true}
                 navigation={{ nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }}
                 pagination={{ clickable: true }}
             >

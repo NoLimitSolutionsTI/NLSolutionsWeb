@@ -9,7 +9,7 @@ import '@/styles/components/Carousel/cauroselAbot.scss';
 
 const personal = [
     {
-        names: "Nombres Completos",
+        names: "Enzo Martinez",
         cargo: "Desarrollador Fullstack",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptatibus, quisquam, quos, dolorum, consequuntur, odit, et, fugiat, voluptas, labore, aspernatur, quae, quia, ipsa, dolorem, eaque, velit.",
@@ -19,22 +19,22 @@ const personal = [
         instagram: "https://www.instagram.com/iamenzo_01/"
     },
     {
-        names: "Nombres Completos",
+        names: "Aldhair Lujan Nicolini",
         cargo: "Desarrollador Fullstack",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptatibus, quisquam, quos, dolorum, consequuntur, odit, et, fugiat, voluptas, labore, aspernatur, quae, quia, ipsa, dolorem, eaque, velit.",
+            "Apasionado por la tecnología y el desarrollo de software, con experiencia en la creación de aplicaciones web modernas y escalables. Especializado en React, Angular, Node.js y Java, enfocado en ofrecer soluciones eficientes y optimizadas.",
         image: "https://i.imgur.com/Sup9hpK.png",
-        linkedin: "https://www.linkedin.com/in/enzomartinez24/",
-        github: "https://github.com/EnzoMartinez01",
-        instagram: "https://www.instagram.com/iamenzo_01/"
+        linkedin: "https://www.linkedin.com/in/aldhair-lujan-nicolini-997278173/",
+        github: "https://github.com/Aldhair11",
+        instagram: "https://www.instagram.com/aldhair_nicolini/"
     },
     {
-        names: "Nombres Completos",
+        names: "Anthony Lecarnaque",
         cargo: "Desarrollador Fullstack",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptatibus, quisquam, quos, dolorum, consequuntur, odit, et, fugiat, voluptas, labore, aspernatur, quae, quia, ipsa, dolorem, eaque, velit.",
         image: "https://i.imgur.com/Sup9hpK.png",
-        linkedin: "https://www.linkedin.com/in//",
+        linkedin: "https://www.linkedin.com/in/anthonylecarnaque/",
         github: "https://github.com/",
         instagram: "https://www.instagram.com//"
     }
