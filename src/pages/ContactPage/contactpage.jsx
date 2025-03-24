@@ -41,19 +41,19 @@ export default function ContactPage() {
             </HeadProvider>
             <hr></hr>
 
-            <section>
+            <section className={'container-sm'}>
                 <div className={'title-contact'}>
                     <h3>Contáctanos</h3>
                 </div>
             </section>
 
-            <div className={'contact-container'}>
-            <section className={'contact-logo-section'}>
+            <div className={'contact-container container-sm'}>
+            <section className={'contact-logo-section container-sm'}>
                 <img src={logo} alt="Logo" />
             </section>
 
 
-            <section className=" contact-section contact-form-section">
+            <section className=" contact-section contact-form-section container-sm">
                 <form onSubmit={handleSubmit}>
                     <div className="mb-3">
                         <h3>Envíanos un mensaje</h3>

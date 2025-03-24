@@ -8,7 +8,7 @@ import '@/styles/components/Footer/footer.scss'
 export default function Footer() {
   return (
     <>
-        <footer>
+        <footer >
             <div className={'footer-content'}>
                 <div className={'logo-footer'}>
                     <img src="/src/assets/nl-logotype-min.webp" alt="Logo NL"/>

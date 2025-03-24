@@ -22,7 +22,7 @@ export default function header() {
   []);
   return (
     <>
-        <header>
+        <header >
             <a href="/" className={'logo'}>
                 {logoNL}
                 <span>NL Solutions TI</span>

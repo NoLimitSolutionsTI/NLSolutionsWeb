@@ -43,7 +43,7 @@ export default function AboutPage() {
                     </div>
                 </div>
             </section>
-            <section className={'section-3-about'}>
+            <section className={'section-3-about container-sm'}>
                 <h2>VALORES DE NL</h2>
                 <div className="valores-list">
                     <ul>
@@ -74,7 +74,7 @@ export default function AboutPage() {
                     </ul>
                 </div>
             </section>
-            <section className={'card-personal container'}>
+            <section className={'card-personal container container-sm'}>
                 <h2 className={'title'}>Equipo NL</h2>
                 <h4>Unimos talento, creatividad y tecnología para ofrecer soluciones innovadoras y de calidad.</h4>
                 <CarouselAbout />

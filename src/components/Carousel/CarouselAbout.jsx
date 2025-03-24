@@ -42,7 +42,7 @@ const personal = [
 
 const CarouselAbout = () => {
     return (
-        <div className="carousel-container">
+        <div className="carousel-container container-sm">
             <Swiper
                 modules={[Navigation]}
                 spaceBetween={20}

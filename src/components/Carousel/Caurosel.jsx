@@ -28,7 +28,7 @@ const projects = [
 
 const Carousel = () => {
     return (
-        <div className="carousel-container">
+        <div className="carousel-container container-sm">
             <Swiper
                 modules={[Navigation]}
                 spaceBetween={20}

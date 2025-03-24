@@ -4,15 +4,23 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHardHat, faWrench, faGraduationCap, faHandshake, faPlane } from "@fortawesome/free-solid-svg-icons";
 import Caurosel from "@/components/Carousel/Caurosel.jsx";
 import { HeadProvider } from "react-head"
+import {useNavigate} from "react-router-dom";
+import { useState } from "react";
+
 
 export default function ServicesPage() {
+    const navigate = useNavigate();
+    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen2, setIsOpen2] = useState(false);
+    const [isOpen3, setIsOpen3] = useState(false);
+
     return (
         <>
           <HeadProvider>
             <title>NL Solutions TI | Services </title>
             <meta name="description" content="Esta es la página de servicios de mi aplicación."/>
           </HeadProvider>
-          <section className={'slider-section'}>
+          <section className={'slider-section '}>
           <div className={'slider-container'}>
             <div>
               <img src="/src/assets/LogoNL.png" alt="Img-slider" />
@@ -24,7 +32,7 @@ export default function ServicesPage() {
           </div>
           </section>
 
-            <section className={'section-2-services'}>
+            <section className={'section-2-services container-sm'}>
                 <h2 className={'title-section-2'}>Nuestros Servicios</h2>
               <div className={'section-2-services-container'}>
                 <div className={'section-2-services-text'}>
@@ -36,9 +44,10 @@ export default function ServicesPage() {
                     </ul>
                 </div>
                 <div className={'section-2-services-button'}>
-                    <button type="submit">Lo quiero!</button>
+                    <button onClick={() => setIsOpen(true)} type="submit">Lo quiero!</button>
                 </div>
               </div>
+
                 <div className={'section-2-services-container'}>
                     <div className={'section-2-services-text'}>
                         <h3>Soporte TI</h3>
@@ -49,7 +58,7 @@ export default function ServicesPage() {
                         </ul>
                     </div>
                     <div className={'section-2-services-button'}>
-                        <button type="submit">Lo quiero!</button>
+                        <button onClick={() => setIsOpen2(true)} type="submit">Lo quiero!</button>
                     </div>
                 </div>
                 <div className={'section-2-services-container'}>
@@ -62,12 +71,12 @@ export default function ServicesPage() {
                     </ul>
                 </div>
                     <div className={'section-2-services-button'}>
-                    <button type="submit">Lo quiero!</button>
+                    <button onClick={() => setIsOpen3(true)} type="submit">Lo quiero!</button>
                 </div>
             </div>
             </section>
 
-            <section className="icons-section container">
+            <section className="icons-section container container-sm">
                 <h3 className="icon-title">Soluciones flexibles en nuestro servicio </h3>
                 <h2 className="icon-subtitle">Para cada tipo de empresa</h2>
 
@@ -99,17 +108,53 @@ export default function ServicesPage() {
                 </div>
             </section>
 
-  <section className={'card-service container'}>
+  <section className={'card-service container container-sm'}>
     <h2 className={'title'}>Nuestros Proyectos</h2>
     <h4>Innovamos y desarrollamos soluciones tecnológicas que transforman negocios. 🚀</h4>
 <Caurosel/>
   </section>
 
 
-<section className={'section-4'}>
+<section className={'section-4 container-sm'}>
           <h2>¿Buscas una aplicación a medida?</h2>
-          <button type="submit">Contactenos</button>
+          <button type="submit" onClick={() => navigate("/contact")}>Contactenos</button>
 </section>
+
+            {isOpen && (
+                <div className={'modal-overlay'}>
+                    <div className={'modal-content'}>
+                        <h2 >Informacion</h2>
+                        <p >Mas Informacion</p>
+                        <button className={'btn-modal'} onClick={() => setIsOpen(false)}>
+                            Cerrar
+                        </button>
+                    </div>
+                </div>
+            )}
+            {isOpen2 && (
+                <div className={'modal-overlay'}>
+                    <div className={'modal-content'}>
+                        <h2 >Informacion 2</h2>
+                        <p >Mas Informacion</p>
+                        <button className={'btn-modal'} onClick={() => setIsOpen2(false)}>
+                            Cerrar
+                        </button>
+                    </div>
+                </div>
+            )}
+            {isOpen3 && (
+                <div className={'modal-overlay'}>
+                    <div className={'modal-content'}>
+                        <h2 >Informacion 3</h2>
+                        <p >Mas Informacion </p>
+                        <button className={'btn-modal'} onClick={() => setIsOpen3(false)}>
+                            Cerrar
+                        </button>
+                    </div>
+                </div>
+            )}
+
 </>
     )
 }
+

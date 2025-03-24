@@ -98,11 +98,12 @@
         h2 {
             font-weight: bold;
             padding-bottom: 20px;
-            margin-bottom: 10px;
+            margin-bottom: 20px !important;
 
         }
         p {
             font-weight: 500;
+
             
         }
         button {
@@ -124,6 +125,26 @@
             width: 80%;
             height: 100%;
         }
+    }
+}
+/* Responsive */
+@media (max-width: 990px) {
+    .section-3-content {
+        text-align: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section-3-content div {
+        width: 100%;
+    }
+
+    .section-3-content img {
+        max-width: 80%;
+    }
+    .section-3 button {
+        width: 100%;
+        display: block;
     }
 }
 

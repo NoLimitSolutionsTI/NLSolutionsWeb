@@ -1,6 +1,7 @@
 import React, {useState, useRef} from 'react'
 import '@/styles/HomePage/homePage.scss'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useNavigate } from "react-router-dom";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -15,13 +16,14 @@ const slides_home = [
 export default function Homepage() {
     const [activeIndex, setActiveIndex] = useState(0);
     const swiperRef = useRef(null);
+    const navigate = useNavigate();
   return (
     <>
         <HeadProvider>
         <title>NL Solutions TI | Home </title>
         <meta name="description" content="Esta es la página principal de mi aplicación."/>
         </HeadProvider>
-        <section className="slider-section">
+        <section className="slider-section ">
             <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
                 spaceBetween={50}
@@ -38,7 +40,7 @@ export default function Homepage() {
                         <div className="slider-text">
                             <h2>{slide.title}</h2>
                             <p>{slide.text}</p>
-                            <a href={slide.link} className='btn-details'>Ver más</a>
+                            <a href={slide.link} className='btn-details' onClick={() => navigate("/services")}>Ver más</a>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -58,56 +60,58 @@ export default function Homepage() {
             </div>
         </section>
 
-      <section className={'section-2'}>
+      <section className={'section-2 container-sm' }>
         <h2>Algunos de nuestros Servicios</h2>
         <div className={'first-media'}>
             <div className={'media-text'}>
                 <h3>Soluciones Web Personalizadas</h3>
                 <p>Diseñamos y desarrollamos tu sitio web a la medida, sin restricciones. Ya sea una tienda en línea, una página informativa o un aula virtual, nuestro equipo de expertos convierte tu visión en realidad. 🚀</p>
-                <button type="submit">Ver más</button>
+                <button type={"submit"} onClick={() => navigate("/services")}>Ver más</button>
             </div>
             <div className={'media-image'}>
                 <img src="" alt="Imagen" />
             </div>
         </div>
-        <hr />
+        <hr/>
         <div className={'second-media'}>
             <div className={'media-text'}>
                 <h3>Soporte TI</h3>
                 <p>Brindamos mantenimiento, reparación de laptops y computadoras, venta de repuestos y mucho más. Confía en nuestros expertos para mantener tu tecnología en óptimas condiciones. 🔧💻</p>
-                <button type="submit">Ver más</button>
+                <button type={"submit"} onClick={() => navigate("/services")}>Ver más</button>
             </div>
             <div className={'media-image'}>
                 <img src="" alt="Imagen" />
             </div>
         </div>
-        <hr />
+        <hr/>
         <div className={'first-media'}>
               <div className={'media-text'}>
                   <h3>Sistemas Empresariales a Medida</h3>
                   <p>Optimiza la gestión de tu negocio con nuestras soluciones ERP, CRM, puntos de venta, control de inventarios, sistemas para restaurantes y mucho más.💼</p>
-                  <button type="submit">Ver más</button>
+                  <button onClick={() => navigate("/services")} type="submit">Ver más</button>
               </div>
               <div className={'media-image'}>
                   <img src="" alt="Imagen" />
               </div>
         </div>
       </section>
-      <section className={'section-3'}>
+      <section className={'section-3 container'}>
           <div className={'section-3-content'}>
               <div>
                   <h2>Impulsamos tu negocio con tecnología</h2>
                   <p>Somos especialistas en desarrollo web, soporte TI y sistemas empresariales. Ofrecemos soluciones personalizadas para optimizar tu empresa y llevarla al siguiente nivel. ¡Hacemos tu visión realidad!🚀</p>
-                  <button type="submit">Hablemos</button>
+                  <button onClick={() => navigate("/contact")} type={"submit"}>Hablemos</button>
               </div>
               <div>
-                  <img src="" alt="Imagen" />
+                  <img src="" alt="Imagen" className={'img-fluid'} />
               </div>
           </div>
       </section>
-      <section className={'section-4'}>
+      <section className={'section-4 container-sm'}>
           <h2>Impulsa tu negocio con la transformación digital</h2>
-          <button type="submit">Contactenos</button>
+          <button type={"submit"} onClick={() => navigate("/contact")} >
+              Contactenos
+          </button>
       </section>
     </>
   )
