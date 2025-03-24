@@ -59,60 +59,57 @@ export default function Homepage() {
                 ))}
             </div>
         </section>
-
-      <section className={'section-2 container-sm' }>
-        <h2>Algunos de nuestros Servicios</h2>
-        <div className={'first-media'}>
-            <div className={'media-text'}>
-                <h3>Soluciones Web Personalizadas</h3>
-                <p>Diseñamos y desarrollamos tu sitio web a la medida, sin restricciones. Ya sea una tienda en línea, una página informativa o un aula virtual, nuestro equipo de expertos convierte tu visión en realidad. 🚀</p>
-                <button type={"submit"} onClick={() => navigate("/services")}>Ver más</button>
+        <section className={'container-sm services'}>
+            <h2>Algunos de nuestros Servicios</h2>
+            <div className={'row mt-5 gx-4 pb-5 flex-md-row flex-column'}>
+                <div className={'media-text col-md-5 align-self-center order-1 order-md-0 mt-4 mt-md-0'}>
+                    <h3>Soluciones Web Personalizadas</h3>
+                    <p className='py-3'>Diseñamos y desarrollamos tu sitio web a la medida, sin restricciones. Ya sea una tienda en línea, una página informativa o un aula virtual, nuestro equipo de expertos convierte tu visión en realidad. 🚀</p>
+                    <a href='/services' className='btn-details'>Ver más</a>
+                </div>
+                <div className={'media-image col-md-6 ms-auto order-0 order-md-1'}>
+                    <img src="" alt="Imagen" />
+                </div>
             </div>
-            <div className={'media-image'}>
-                <img src="" alt="Imagen" />
+            <div className={'row gx-4 py-5 flex-md-row flex-column'}>
+                <div className={'media-text order-1 col-md-5 align-self-center mt-4 mt-md-0'}>
+                    <h3>Soporte TI</h3>
+                    <p className='py-3'>Brindamos mantenimiento, reparación de laptops y computadoras, venta de repuestos y mucho más. Confía en nuestros expertos para mantener tu tecnología en óptimas condiciones. 🔧💻</p>
+                    <a href='/services' className='btn-details'>Ver más</a>
+                </div>
+                <div className={'media-image order-0 col-md-6 me-auto'}>
+                    <img src="" alt="Imagen" />
+                </div>
             </div>
-        </div>
-        <hr/>
-        <div className={'second-media'}>
-            <div className={'media-text'}>
-                <h3>Soporte TI</h3>
-                <p>Brindamos mantenimiento, reparación de laptops y computadoras, venta de repuestos y mucho más. Confía en nuestros expertos para mantener tu tecnología en óptimas condiciones. 🔧💻</p>
-                <button type={"submit"} onClick={() => navigate("/services")}>Ver más</button>
+            <div className={'row gx-4 pt-5 flex-md-row flex-column'}>
+                <div className={'media-text col-md-5 align-self-center order-1 order-md-0 mt-4 mt-md-0'}>
+                    <h3>Sistemas Empresariales a Medida</h3>
+                    <p className='py-3'>Optimiza la gestión de tu negocio con nuestras soluciones ERP, CRM, puntos de venta, control de inventarios, sistemas para restaurantes y mucho más.💼</p>
+                    <a href='/services' className='btn-details'>Ver más</a>
+                </div>
+                <div className={'media-image col-md-6 ms-auto order-0 order-md-1'}>
+                    <img src="" alt="Imagen" />
+                </div>
             </div>
-            <div className={'media-image'}>
-                <img src="" alt="Imagen" />
+        </section>
+        <section className={'short-us container-sm'}>
+            <div className={'row'}>
+                <div className='col-md-5 order-1 align-self-center mx-auto'>
+                    <h2>Impulsamos tu negocio con tecnología</h2>
+                    <p className='py-3'>Somos especialistas en desarrollo web, soporte TI y sistemas empresariales. Ofrecemos soluciones personalizadas para optimizar tu empresa y llevarla al siguiente nivel. ¡Hacemos tu visión realidad!🚀</p>
+                    <a href='/contact' className='btn-details'>Hablemos</a>
+                </div>
+                <div className='col-md-6 order-0 media'>
+                    <img src="" alt="Imagen" className={'img-fluid'} />
+                </div>
             </div>
-        </div>
-        <hr/>
-        <div className={'first-media'}>
-              <div className={'media-text'}>
-                  <h3>Sistemas Empresariales a Medida</h3>
-                  <p>Optimiza la gestión de tu negocio con nuestras soluciones ERP, CRM, puntos de venta, control de inventarios, sistemas para restaurantes y mucho más.💼</p>
-                  <button onClick={() => navigate("/services")} type="submit">Ver más</button>
-              </div>
-              <div className={'media-image'}>
-                  <img src="" alt="Imagen" />
-              </div>
-        </div>
-      </section>
-      <section className={'section-3 container'}>
-          <div className={'section-3-content'}>
-              <div>
-                  <h2>Impulsamos tu negocio con tecnología</h2>
-                  <p>Somos especialistas en desarrollo web, soporte TI y sistemas empresariales. Ofrecemos soluciones personalizadas para optimizar tu empresa y llevarla al siguiente nivel. ¡Hacemos tu visión realidad!🚀</p>
-                  <button onClick={() => navigate("/contact")} type={"submit"}>Hablemos</button>
-              </div>
-              <div>
-                  <img src="" alt="Imagen" className={'img-fluid'} />
-              </div>
-          </div>
-      </section>
-      <section className={'section-4 container-sm'}>
-          <h2>Impulsa tu negocio con la transformación digital</h2>
-          <button type={"submit"} onClick={() => navigate("/contact")} >
-              Contactenos
-          </button>
-      </section>
+        </section>
+        <section className={'section-4 container-sm'}>
+            <h2>Impulsa tu negocio con la transformación digital</h2>
+            <button type={"submit"} onClick={() => navigate("/contact")} >
+                Contactenos
+            </button>
+        </section>
     </>
   )
 }
