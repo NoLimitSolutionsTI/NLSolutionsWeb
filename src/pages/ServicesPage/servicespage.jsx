@@ -123,8 +123,25 @@ export default function ServicesPage() {
             {isOpen && (
                 <div className={'modal-overlay'}>
                     <div className={'modal-content'}>
-                        <h2 >Informacion</h2>
-                        <p >Mas Informacion</p>
+                        <h2 >Soluciones Web Personalizadas</h2>
+                        <p>Diseñamos sitios web a medida, sin límites.</p>
+                        <div className={'modal-grid'}>
+                            <div className={'modal-grid-item'}>
+                                <img src="/src/assets/LogoNL.png" alt="img-modal" />
+                                <h3>Diseñamos sitios web a medida, sin límites.</h3>
+                                <p>Diseñamos sitios web a medida, sin límites.</p>
+                            </div>
+                            <div className={'modal-grid-item'}>
+                                <img src="/src/assets/LogoNL.png" alt="img-modal" />
+                                <h3>Tiendas online, páginas informativas y aulas virtuales.</h3>
+                                <p>Tiendas online, páginas informativas y aulas virtuales.</p>
+                            </div>
+                            <div className={'modal-grid-item'}>
+                                <img src="/src/assets/LogoNL.png" alt="img-modal" />
+                                <h3>Convertimos tu idea en realidad con tecnología de vanguardia.</h3>
+                                <p>Convertimos tu idea en realidad con tecnología de vanguardia.</p>
+                            </div>
+                        </div>
                         <button className={'btn-modal'} onClick={() => setIsOpen(false)}>
                             Cerrar
                         </button>
