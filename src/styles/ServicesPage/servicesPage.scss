@@ -1,6 +1,7 @@
 @import url('@/styles/components/Slider/sliderSection.scss');
 
 /*Section list*/
+
 .section-2-services {
     width: 90%;
     display: flex;
@@ -10,7 +11,7 @@
 
 .title-section-2 {
     text-align: center;
-    padding: 20px;
+    margin-bottom: 1em !important;
 }
 
 .section-2-services-container {
@@ -44,13 +45,15 @@
         color: white;
         font-weight: bold;
         border: none;
-        button:hover {
-            background-color: #fff !important;
-            color: #4494A2 !important;
-        }
+    }
+    button:hover {
+        background-color: #fff !important;
+        color: #4494A2 !important;
+        border:1px solid #4494A2 !important;
     }
 }
-/* Sección de iconos */
+/* Section icon*/
+
 .icons-section {
     background: white;
     padding: 40px 0;
@@ -71,7 +74,7 @@
 .icon-subtitle {
     font-size: 20px;
     color: #192C31;
-    margin-bottom: 30px;
+    margin-top: 1em !important;
 }
 
 .icons {
@@ -135,7 +138,7 @@
 .title {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
 }
 
 .content {
@@ -232,4 +235,46 @@
 .btn-modal:hover{
     background-color: #fff !important;
     color: #192C31 !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: black !important;
+}
+
+@media screen and (max-width: 1000px) {
+    .section-4{
+        button{
+            width: 100%;
+        }
+    }
+    .section-2-services-text li{
+        width: 150%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .icons-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .icons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .icons {
+        margin-top: 3em;
+        margin-bottom: 5em;
+    }
 }
