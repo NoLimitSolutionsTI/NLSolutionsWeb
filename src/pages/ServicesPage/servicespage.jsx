@@ -37,11 +37,7 @@ export default function ServicesPage() {
               <div className={'section-2-services-container'}>
                 <div className={'section-2-services-text'}>
                     <h3>Soluciones Web Personalizadas</h3>
-                    <ul>
-                        <li>Diseñamos sitios web a medida, sin límites.</li>
-                        <li>Tiendas online, páginas informativas y aulas virtuales.</li>
-                        <li>Convertimos tu idea en realidad con tecnología de vanguardia.</li>
-                    </ul>
+                    <p>Diseñamos sitios web a medida, sin límites.</p>
                 </div>
                 <div className={'section-2-services-button'}>
                     <button onClick={() => setIsOpen(true)} type="submit">Lo quiero!</button>
@@ -142,9 +138,12 @@ export default function ServicesPage() {
                                 <p>Convertimos tu idea en realidad con tecnología de vanguardia.</p>
                             </div>
                         </div>
-                        <button className={'btn-modal'} onClick={() => setIsOpen(false)}>
-                            Cerrar
-                        </button>
+                        <div className={'modal-button'}>
+                            <button className={'btn-modal'} onClick={() => setIsOpen(false)}>
+                                Cerrar
+                            </button>
+                            <button type="submit" className={'btn-modal'}>Contactanos</button>
+                        </div>
                     </div>
                 </div>
             )}

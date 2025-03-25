@@ -265,6 +265,12 @@
     }
 }
 
+.modal-button {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
 /* Media Queries */
 .swiper-button-next,
 .swiper-button-prev {
