@@ -5,6 +5,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import '@/styles/components/Carousel/carousel.scss';
 
+
 const projects = [
     {
         title: "Proyecto A",
@@ -25,7 +26,6 @@ const projects = [
         image: "https://i.imgur.com/Sup9hpK.png",
     },
 ];
-
 const Carousel = () => {
     return (
         <div className="carousel-container container-sm">
@@ -46,7 +46,7 @@ const Carousel = () => {
                                 <p className="card-text">{project.description}</p>
                             </div>
                             <div className="card-footer">
-                                <button className="card-button">Más información </button>
+                                <button key={index} onClick={() => openModal(proyecto)} className="card-button">Más información </button>
                             </div>
                         </div>
                     </SwiperSlide>
