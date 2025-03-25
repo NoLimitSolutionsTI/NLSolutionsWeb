@@ -76,9 +76,33 @@ header.sticky{
         }
     }
 }
+.nav-header.open {
+    display: block;
+}
+
 .nav-header.active{
     @media (max-width: 1050px) {
         top: 0;
         justify-content: center;
+    }
+}
+
+@media (max-width: 1050px) {
+    .nav-header {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: white;
+        padding: 10px;
+    }
+
+    .nav-header.open {
+        display: flex;
+    }
+
+    .icon {
+        cursor: pointer;
     }
 }
