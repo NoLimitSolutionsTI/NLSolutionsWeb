@@ -138,6 +138,39 @@ export default function ServicesPage() {
                                 <p>Convertimos tu idea en realidad con tecnología de vanguardia.</p>
                             </div>
                         </div>
+
+                        {/* Línea de tiempo horizontal */}
+                        <div className="timeline-horizontal">
+                            <div className="timeline-item">
+                                <div className="timeline-dot"></div>
+                                <div className="timeline-content">
+                                    <h3>Inicio</h3>
+                                    <p>Definimos los objetivos y requerimientos.</p>
+                                </div>
+                            </div>
+                            <div className="timeline-item">
+                                <div className="timeline-dot"></div>
+                                <div className="timeline-content">
+                                    <h3>Diseño</h3>
+                                    <p>Creamos la interfaz y experiencia de usuario.</p>
+                                </div>
+                            </div>
+                            <div className="timeline-item">
+                                <div className="timeline-dot"></div>
+                                <div className="timeline-content">
+                                    <h3>Desarrollo</h3>
+                                    <p>Programamos y configuramos el sitio web.</p>
+                                </div>
+                            </div>
+                            <div className="timeline-item">
+                                <div className="timeline-dot"></div>
+                                <div className="timeline-content">
+                                    <h3>Lanzamiento</h3>
+                                    <p>Publicamos el sitio optimizado y funcional.</p>
+                                </div>
+                            </div>
+                        </div>
+
                         <div className={'modal-button'}>
                             <button className={'btn-modal'} onClick={() => setIsOpen(false)}>
                                 Cerrar
