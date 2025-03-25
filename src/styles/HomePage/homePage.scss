@@ -24,15 +24,22 @@
             }
         }
         .media-image{
-            border: 2px solid;
-            height: 350px;
-            border-radius: 30px;
-            overflow: hidden;
+
+            /*border: 2px solid;*/
+            height:auto;
+            /*border-radius: 30px;*/
+            overflow: visible;
         }
     }
     .row:last-child{
         border-bottom: none;
     }
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 .short-us{
@@ -59,10 +66,10 @@
             }
         }
         .media{
-            height: 400px;
-            border-radius: 30px;
+            height: auto;
+            /*border-radius: 30px;*/
             overflow: hidden;
-            border: 2px solid;
+            /*border: 2px solid;*/
         }
     }
 }

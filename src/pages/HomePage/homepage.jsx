@@ -8,6 +8,10 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { HeadProvider } from "react-head"
 import ImagenPrueba from "@/assets/LogoNL.png"
+import solucionesWeb from "@/assets/soluciones-web.png";
+import soporteTI from "@/assets/soporte-ti.png";
+import sistemaEmpresarial from "@/assets/erp.jpg";
+import cardImage from "@/assets/card-home.png";
 const slides_home = [
     { image: ImagenPrueba,title: "Abraza la transformación digital", text: "Convierte tu sueño en una realidad con nuestra experiencia en consultoria de software.", link:"#"},
     { image: ImagenPrueba,title: "Abraza la transformación digital 2", text: "Convierte tu sueño en una realidad con nuestra experiencia en consultoria de software.", link:"#" },
@@ -68,7 +72,7 @@ export default function Homepage() {
                     <a href='/services' className='btn-details'>Ver más</a>
                 </div>
                 <div className={'media-image col-md-6 ms-auto order-0 order-md-1'}>
-                    <img src="" alt="Imagen" />
+                    <img className={'img-fluid'} src={solucionesWeb} alt="Imagen" />
                 </div>
             </div>
             <div className={'row gx-4 py-5 flex-md-row flex-column'}>
@@ -78,7 +82,7 @@ export default function Homepage() {
                     <a href='/services' className='btn-details'>Ver más</a>
                 </div>
                 <div className={'media-image order-0 col-md-6 me-auto'}>
-                    <img src="" alt="Imagen" />
+                    <img className={'img-fluid'} src={soporteTI} alt="Imagen" />
                 </div>
             </div>
             <div className={'row gx-4 pt-5 flex-md-row flex-column'}>
@@ -88,7 +92,7 @@ export default function Homepage() {
                     <a href='/services' className='btn-details'>Ver más</a>
                 </div>
                 <div className={'media-image col-md-6 ms-auto order-0 order-md-1'}>
-                    <img src="" alt="Imagen" />
+                    <img className={'img-fluid'} src={sistemaEmpresarial} alt="Imagen" />
                 </div>
             </div>
         </section>
@@ -100,13 +104,13 @@ export default function Homepage() {
                     <a href='/contact' className='btn-details'>Hablemos</a>
                 </div>
                 <div className='col-md-6 order-0 media'>
-                    <img src="" alt="Imagen" className={'img-fluid'} />
+                    <img className={'img-fluid'} src={cardImage} alt="Imagen" className={'img-fluid'} />
                 </div>
             </div>
         </section>
-        <section className={'section-4 container-sm'}>
+        <section className={'section-4 '}>
             <h2>Impulsa tu negocio con la transformación digital</h2>
-            <button type={"submit"} onClick={() => navigate("/contact")} >
+            <button className={' btn-lg btn-md-sm'} type={"submit"} onClick={() => navigate("/contact")} >
                 Contactenos
             </button>
         </section>
