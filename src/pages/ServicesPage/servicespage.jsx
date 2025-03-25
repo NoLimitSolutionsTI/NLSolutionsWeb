@@ -6,6 +6,10 @@ import Caurosel from "@/components/Carousel/Caurosel.jsx";
 import { HeadProvider } from "react-head"
 import {useNavigate} from "react-router-dom";
 import { useState } from "react";
+import Smodal1 from "@/assets/modal1.jpg"
+import Smodal2 from "@/assets/modal2.jpg";
+import Smodal3 from "@/assets/modal3.jpg";
+import solucionesWeb from "@/assets/soluciones-web.png";
 
 
 export default function ServicesPage() {
@@ -123,17 +127,17 @@ export default function ServicesPage() {
                         <p>Diseñamos sitios web a medida, sin límites.</p>
                         <div className={'modal-grid'}>
                             <div className={'modal-grid-item'}>
-                                <img src="/src/assets/LogoNL.png" alt="img-modal" />
+                                <img className={'img-fluid'} src={Smodal1} alt="img-modal" />
                                 <h3>Diseñamos sitios web a medida, sin límites.</h3>
                                 <p>Diseñamos sitios web a medida, sin límites.</p>
                             </div>
                             <div className={'modal-grid-item'}>
-                                <img src="/src/assets/LogoNL.png" alt="img-modal" />
+                                <img className={'img-fluid'} src={Smodal2} alt="img-modal" />
                                 <h3>Tiendas online, páginas informativas y aulas virtuales.</h3>
                                 <p>Tiendas online, páginas informativas y aulas virtuales.</p>
                             </div>
                             <div className={'modal-grid-item'}>
-                                <img src="/src/assets/LogoNL.png" alt="img-modal" />
+                                <img className={'img-fluid'} src={Smodal3} alt="img-modal" />
                                 <h3>Convertimos tu idea en realidad con tecnología de vanguardia.</h3>
                                 <p>Convertimos tu idea en realidad con tecnología de vanguardia.</p>
                             </div>
