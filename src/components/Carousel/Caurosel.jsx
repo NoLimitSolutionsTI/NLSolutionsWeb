@@ -30,12 +30,17 @@ const Carousel = () => {
     return (
         <div className="carousel-container container-sm">
             <Swiper
+
                 modules={[Navigation]}
                 spaceBetween={20}
-                slidesPerView={2}
                 loop={true}
                 navigation={{ nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }}
                 pagination={{ clickable: true }}
+                breakpoints={{
+                    320: { slidesPerView: 1 },
+                    768: { slidesPerView: 1 },
+                    1024: { slidesPerView: 2},
+                }}
             >
                 {projects.map((project, index) => (
                     <SwiperSlide key={index}>

@@ -1,7 +1,7 @@
 import React from "react";
 import '@/styles/ServicesPage/servicesPage.scss'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHardHat, faWrench, faGraduationCap, faHandshake, faPlane } from "@fortawesome/free-solid-svg-icons";
+import {  faRocket, faGraduationCap, faHandshake, faBriefcase,faBuilding } from "@fortawesome/free-solid-svg-icons";
 import Caurosel from "@/components/Carousel/Caurosel.jsx";
 import { HeadProvider } from "react-head"
 import {useNavigate} from "react-router-dom";
@@ -82,13 +82,13 @@ export default function ServicesPage() {
 
                 <div className="icons">
                     <div className="icon-block">
-                        <FontAwesomeIcon icon={faHardHat} className="icon" />
-                        <p className="icon-text">Servicios Mineros</p>
+                        <FontAwesomeIcon icon={faBriefcase} className="icon" />
+                        <p className="icon-text">Empresarial</p>
                     </div>
 
                     <div className="icon-block">
-                        <FontAwesomeIcon icon={faWrench} className="icon" />
-                        <p className="icon-text">Ingeniería y Construcción</p>
+                        <FontAwesomeIcon icon={faBuilding} className="icon" />
+                        <p className="icon-text"> Inmobiliarias </p>
                     </div>
 
                     <div className="icon-block">
@@ -98,12 +98,12 @@ export default function ServicesPage() {
 
                     <div className="icon-block">
                         <FontAwesomeIcon icon={faHandshake} className="icon" />
-                        <p className="icon-text">Servicios Profesionales</p>
+                        <p className="icon-text">Consultorias</p>
                     </div>
 
                     <div className="icon-block">
-                        <FontAwesomeIcon icon={faPlane} className="icon" />
-                        <p className="icon-text">Aeronáutica</p>
+                        <FontAwesomeIcon icon={faRocket} className="icon" />
+                        <p className="icon-text">StartUp</p>
                     </div>
                 </div>
             </section>

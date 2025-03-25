@@ -78,3 +78,52 @@
     color: #192C31;
 
 }
+
+@media (max-width: 768px) {
+    .card-caurosel {
+        width: 90%;
+        height: auto;
+        margin-top: 2em;
+    }
+
+    .swiper {
+        padding-bottom: 10px;
+    }
+
+    .card-overlay {
+        padding: 40px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-caurosel {
+        width: 95%;
+        height: auto;
+        margin-top: 1em;
+    }
+
+    .card-overlay {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.7rem;
+    }
+
+    .card-button {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
