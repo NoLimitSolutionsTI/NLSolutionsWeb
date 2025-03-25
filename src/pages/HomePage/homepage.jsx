@@ -104,13 +104,13 @@ export default function Homepage() {
                     <a href='/contact' className='btn-details'>Hablemos</a>
                 </div>
                 <div className='col-md-6 order-0 media'>
-                    <img className={'img-fluid'} src={cardImage} alt="Imagen" className={'img-fluid'} />
+                    <img className={'img-fluid'} src={cardImage} alt="Imagen" />
                 </div>
             </div>
         </section>
         <section className={'section-4 '}>
             <h2>Impulsa tu negocio con la transformación digital</h2>
-            <button className={' btn-lg btn-md-sm'} type={"submit"} onClick={() => navigate("/contact")} >
+            <button  type={"submit"} onClick={() => navigate("/contact")} >
                 Contactenos
             </button>
         </section>
