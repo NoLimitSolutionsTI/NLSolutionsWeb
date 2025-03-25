@@ -35,29 +35,18 @@ img{
 }
 .social-media {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   margin-top: 1em;
 }
 
-.icon {
+
+.linkedin, .github, .instagram {
   font-size: 40px !important;
-
+  color: #192C31;
+  transition: color 0.2s ease-in-out;
 }
 
-.icon:hover {
+.linkedin:hover, .github:hover, .instagram:hover {
   color: #4494A2;
-}
-
-
-.linkedin {
-  color: #192C31;
-}
-
-.github {
-  color: #192C31;
-}
-
-.instagram {
-  color: #192C31;
 }
 

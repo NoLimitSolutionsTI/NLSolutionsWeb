@@ -48,27 +48,27 @@ export default function AboutPage() {
                 <div className="valores-list">
                     <ul>
                         <li>
-                            <FontAwesomeIcon icon={faLightbulb} className="icon icon-lightbulb" />
+                            <FontAwesomeIcon icon={faLightbulb} className="icon icon-lightbulb icon-valores" />
                             Innovación
                         </li>
                         <hr />
                         <li>
-                            <FontAwesomeIcon icon={faStar} className="icon icon-star" />
+                            <FontAwesomeIcon icon={faStar} className="icon icon-star icon-valores" />
                             Calidad
                         </li>
                         <hr />
                         <li>
-                            <FontAwesomeIcon icon={faHandshake} className="icon icon-handshake" />
+                            <FontAwesomeIcon icon={faHandshake} className="icon icon-handshake icon-valores" />
                             Compromiso
                         </li>
                         <hr />
                         <li>
-                            <FontAwesomeIcon icon={faShieldAlt} className="icon icon-shield" />
+                            <FontAwesomeIcon icon={faShieldAlt} className="icon icon-shield icon-valores" />
                             Responsabilidad
                         </li>
                         <hr />
                         <li>
-                            <FontAwesomeIcon icon={faUsers} className="icon icon-users" />
+                            <FontAwesomeIcon icon={faUsers} className="icon icon-users icon-valores" />
                             Trabajo en equipo
                         </li>
                     </ul>
