@@ -14,7 +14,7 @@ section{
 
 $color-primary: #192C31;
 $color-secondary: #2A6550;
-$color-accent: #496064;
+$color-accent: #4494A2;
 $color-text: #000;
 $background: #FFF;
 $transitionv1: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -68,7 +68,7 @@ h1,h2{
     justify-content: center;
     align-items: center;
     padding: 0 20px;
-    min-width: 130px;
+    width: 130px;
     height: 40px;
     border-radius: 30px;
     font-size: 16px !important;
@@ -82,4 +82,5 @@ h1,h2{
     font-size: 18px !important;
     background-color: #FFF;
     color: $color-primary !important;
+    box-shadow: 0 0 0 2px $color-accent;
 }
