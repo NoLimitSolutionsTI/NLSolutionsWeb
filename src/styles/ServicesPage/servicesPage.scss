@@ -356,6 +356,9 @@
 
 @media screen and (max-width: 1000px) {
     .section-4{
+        h2 {
+            text-align: center;
+        }
         button{
             width: 100%;
         }
@@ -364,6 +367,9 @@
         width: 150%;
     }
 }
+.section-2-services-container {
+    width: 90%;
+}
 
 @media (max-width: 1024px) {
     .icons-section {
@@ -371,7 +377,11 @@
         align-items: center;
         gap: 50px;
     }
+    .section-2-services-container {
+        width: 90%;
+    }
 }
+
 
 @media (max-width: 768px) {
     .icons {

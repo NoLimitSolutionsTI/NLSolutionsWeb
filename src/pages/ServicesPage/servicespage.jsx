@@ -9,6 +9,9 @@ import { useState } from "react";
 import Smodal1 from "@/assets/modal1.jpg"
 import Smodal2 from "@/assets/modal2.jpg";
 import Smodal3 from "@/assets/modal3.jpg";
+import Rmodal1 from "@/assets/reparacion.png"
+import Rmodal2 from "@/assets/optimizacion.png";
+import Rmodal3 from "@/assets/web.png";
 
 
 export default function ServicesPage() {
@@ -182,17 +185,17 @@ export default function ServicesPage() {
                         <p>Mantenimiento y reparación de computadoras y laptops.</p>
                         <div className={'modal-grid'}>
                             <div className={'modal-grid-item'}>
-                                <img className={'img-fluid'} src={Smodal1} alt="img-modal" />
+                                <img className={'img-fluid'} src={Rmodal1} alt="img-modal" />
                                 <h3>Mantenimiento y reparación de computadoras y laptops.</h3>
                                 <p>Mantenimiento y reparación de computadoras y laptops.</p>
                             </div>
                             <div className={'modal-grid-item'}>
-                                <img className={'img-fluid'} src={Smodal2} alt="img-modal" />
+                                <img className={'img-fluid'} src={Rmodal2} alt="img-modal" />
                                 <h3>Venta de repuestos y optimización de sistemas.</h3>
                                 <p>Venta de repuestos y optimización de sistemas.</p>
                             </div>
                             <div className={'modal-grid-item'}>
-                                <img className={'img-fluid'} src={Smodal3} alt="img-modal" />
+                                <img className={'img-fluid'} src={Rmodal3} alt="img-modal" />
                                 <h3>Soluciones rápidas y efectivas para tu tecnología.</h3>
                                 <p>Soluciones rápidas y efectivas para tu tecnología.</p>
                             </div>
