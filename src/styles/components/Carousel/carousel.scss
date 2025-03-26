@@ -127,3 +127,9 @@
         font-size: 0.9rem;
     }
 }
+@media (max-width: 480px) {
+    .card-overlay{
+        height: 85%;
+    }
+
+}

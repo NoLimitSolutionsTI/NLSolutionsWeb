@@ -12,6 +12,9 @@ import Smodal3 from "@/assets/modal3.jpg";
 import Rmodal1 from "@/assets/reparacion.png"
 import Rmodal2 from "@/assets/optimizacion.png";
 import Rmodal3 from "@/assets/web.png";
+import Emodal1 from "@/assets/GESTION.jpg";
+import Emodal2 from "@/assets/DASHBOARD.png";
+import Emodal3 from "@/assets/crm.png"
 
 
 export default function ServicesPage() {
@@ -249,17 +252,17 @@ export default function ServicesPage() {
                         <p>ERP, CRM, puntos de venta e inventarios.</p>
                         <div className={'modal-grid'}>
                             <div className={'modal-grid-item'}>
-                                <img className={'img-fluid'} src={Smodal1} alt="img-modal" />
+                                <img className={'img-fluid'} src={Emodal1} alt="img-modal" />
                                 <h3>ERP, CRM, puntos de venta e inventarios.</h3>
                                 <p>ERP, CRM, puntos de venta e inventarios.</p>
                             </div>
                             <div className={'modal-grid-item'}>
-                                <img className={'img-fluid'} src={Smodal2} alt="img-modal" />
+                                <img className={'img-fluid'} src={Emodal2} alt="img-modal" />
                                 <h3>Sistemas para restaurantes y gestión empresarial.</h3>
                                 <p>Sistemas para restaurantes y gestión empresarial.</p>
                             </div>
                             <div className={'modal-grid-item'}>
-                                <img className={'img-fluid'} src={Smodal3} alt="img-modal" />
+                                <img className={'img-fluid'} src={Emodal3} alt="img-modal" />
                                 <h3>Optimiza tu negocio con tecnología eficiente. 🚀</h3>
                                 <p>Optimiza tu negocio con tecnología eficiente. 🚀</p>
                             </div>
