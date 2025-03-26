@@ -46,7 +46,7 @@ export default function ServicesPage() {
               <div className={'section-2-services-container'}>
                 <div className={'section-2-services-text'}>
                     <h3>Soluciones Web Personalizadas</h3>
-                    <p>Diseñamos sitios web a medida, sin límites.</p>
+                    <p>Creación de sitios web a medida, sin límites, para negocios, educación y más.</p>
                 </div>
                 <div className={'section-2-services-button'}>
                     <button onClick={() => setIsOpen(true)} type="submit">Lo quiero!</button>
@@ -56,7 +56,7 @@ export default function ServicesPage() {
                 <div className={'section-2-services-container'}>
                     <div className={'section-2-services-text'}>
                         <h3>Soporte TI</h3>
-                        <p>Mantenimiento y reparación de computadoras y laptops.</p>
+                        Servicio técnico especializado en reparación, mantenimiento y optimización de equipos.
                     </div>
                     <div className={'section-2-services-button'}>
                         <button onClick={() => setIsOpen2(true)} type="submit">Lo quiero!</button>
@@ -65,7 +65,7 @@ export default function ServicesPage() {
                 <div className={'section-2-services-container'}>
                 <div className={'section-2-services-text'}>
                     <h3>Sistemas Empresariales a Medida</h3>
-                    <p>ERP, CRM, puntos de venta e inventarios.</p>
+                    <p>Desarrollamos soluciones como ERP, CRM y sistemas de gestión para optimizar tu negocio.</p>
                 </div>
                     <div className={'section-2-services-button'}>
                     <button onClick={() => setIsOpen3(true)} type="submit">Lo quiero!</button>
@@ -121,22 +121,22 @@ export default function ServicesPage() {
                 <div className={'modal-overlay'}>
                     <div className={'modal-content'}>
                         <h2 >Soluciones Web Personalizadas</h2>
-                        <p>Diseñamos sitios web a medida, sin límites.</p>
+                        <p>Creación de sitios web a medida, sin límites, para negocios, educación y más.</p>
                         <div className={'modal-grid'}>
                             <div className={'modal-grid-item'}>
                                 <img className={'img-fluid'} src={Smodal1} alt="img-modal" />
                                 <h3>Diseñamos sitios web a medida, sin límites.</h3>
-                                <p>Diseñamos sitios web a medida, sin límites.</p>
+                                <p>Webs únicas y personalizadas según tus necesidades.</p>
                             </div>
                             <div className={'modal-grid-item'}>
                                 <img className={'img-fluid'} src={Smodal2} alt="img-modal" />
                                 <h3>Tiendas online, páginas informativas y aulas virtuales.</h3>
-                                <p>Tiendas online, páginas informativas y aulas virtuales.</p>
+                                <p>Soluciones digitales para negocios, educación y más.</p>
                             </div>
                             <div className={'modal-grid-item'}>
                                 <img className={'img-fluid'} src={Smodal3} alt="img-modal" />
                                 <h3>Convertimos tu idea en realidad con tecnología de vanguardia.</h3>
-                                <p>Convertimos tu idea en realidad con tecnología de vanguardia.</p>
+                                <p>Usamos herramientas modernas para hacer crecer tu proyecto.</p>
                             </div>
                         </div>
 
@@ -185,22 +185,22 @@ export default function ServicesPage() {
                 <div className={'modal-overlay'}>
                     <div className={'modal-content'}>
                         <h2 >Soporte TI</h2>
-                        <p>Mantenimiento y reparación de computadoras y laptops.</p>
+                        <p>Servicio técnico especializado en reparación, mantenimiento y optimización de equipos.</p>
                         <div className={'modal-grid'}>
                             <div className={'modal-grid-item'}>
                                 <img className={'img-fluid'} src={Rmodal1} alt="img-modal" />
                                 <h3>Mantenimiento y reparación de computadoras y laptops.</h3>
-                                <p>Mantenimiento y reparación de computadoras y laptops.</p>
+                                <p>Diagnóstico, limpieza y reparación para mantener tu equipo en óptimas condiciones.</p>
                             </div>
                             <div className={'modal-grid-item'}>
                                 <img className={'img-fluid'} src={Rmodal2} alt="img-modal" />
                                 <h3>Venta de repuestos y optimización de sistemas.</h3>
-                                <p>Venta de repuestos y optimización de sistemas.</p>
+                                <p>Componentes de calidad y mejoras de software para mayor rendimiento.</p>
                             </div>
                             <div className={'modal-grid-item'}>
                                 <img className={'img-fluid'} src={Rmodal3} alt="img-modal" />
                                 <h3>Soluciones rápidas y efectivas para tu tecnología.</h3>
-                                <p>Soluciones rápidas y efectivas para tu tecnología.</p>
+                                <p>Soporte técnico ágil para resolver problemas y mejorar tu experiencia digital.</p>
                             </div>
                         </div>
 
@@ -249,22 +249,22 @@ export default function ServicesPage() {
                 <div className={'modal-overlay'}>
                     <div className={'modal-content'}>
                         <h2 >Sistemas Empresariales a Medida</h2>
-                        <p>ERP, CRM, puntos de venta e inventarios.</p>
+                        <p>Desarrollamos soluciones como ERP, CRM y sistemas de gestión para optimizar tu negocio.</p>
                         <div className={'modal-grid'}>
                             <div className={'modal-grid-item'}>
                                 <img className={'img-fluid'} src={Emodal1} alt="img-modal" />
                                 <h3>ERP, CRM, puntos de venta e inventarios.</h3>
-                                <p>ERP, CRM, puntos de venta e inventarios.</p>
+                                <p>Automatiza procesos con sistemas integrales que optimizan la gestión empresarial.</p>
                             </div>
                             <div className={'modal-grid-item'}>
                                 <img className={'img-fluid'} src={Emodal2} alt="img-modal" />
                                 <h3>Sistemas para restaurantes y gestión empresarial.</h3>
-                                <p>Sistemas para restaurantes y gestión empresarial.</p>
+                                <p>Soluciones digitales para mejorar la administración y eficiencia de tu negocio.</p>
                             </div>
                             <div className={'modal-grid-item'}>
                                 <img className={'img-fluid'} src={Emodal3} alt="img-modal" />
                                 <h3>Optimiza tu negocio con tecnología eficiente. 🚀</h3>
-                                <p>Optimiza tu negocio con tecnología eficiente. 🚀</p>
+                                <p>Impulsa tu empresa con herramientas diseñadas para aumentar productividad y control.</p>
                             </div>
                         </div>
 
