@@ -50,11 +50,7 @@ export default function ServicesPage() {
                 <div className={'section-2-services-container'}>
                     <div className={'section-2-services-text'}>
                         <h3>Soporte TI</h3>
-                        <ul>
-                            <li>Mantenimiento y reparación de computadoras y laptops.</li>
-                            <li>Venta de repuestos y optimización de sistemas.</li>
-                            <li>Soluciones rápidas y efectivas para tu tecnología.</li>
-                        </ul>
+                        <p>Mantenimiento y reparación de computadoras y laptops.</p>
                     </div>
                     <div className={'section-2-services-button'}>
                         <button onClick={() => setIsOpen2(true)} type="submit">Lo quiero!</button>
@@ -63,11 +59,7 @@ export default function ServicesPage() {
                 <div className={'section-2-services-container'}>
                 <div className={'section-2-services-text'}>
                     <h3>Sistemas Empresariales a Medida</h3>
-                    <ul>
-                        <li>ERP, CRM, puntos de venta e inventarios.</li>
-                        <li>Sistemas para restaurantes y gestión empresarial.</li>
-                        <li>Optimiza tu negocio con tecnología eficiente. 🚀</li>
-                    </ul>
+                    <p>ERP, CRM, puntos de venta e inventarios.</p>
                 </div>
                     <div className={'section-2-services-button'}>
                     <button onClick={() => setIsOpen3(true)} type="submit">Lo quiero!</button>
@@ -250,11 +242,64 @@ export default function ServicesPage() {
             {isOpen3 && (
                 <div className={'modal-overlay'}>
                     <div className={'modal-content'}>
-                        <h2 >Informacion 3</h2>
-                        <p >Mas Informacion </p>
-                        <button className={'btn-modal'} onClick={() => setIsOpen3(false)}>
-                            Cerrar
-                        </button>
+                        <h2 >Sistemas Empresariales a Medida</h2>
+                        <p>ERP, CRM, puntos de venta e inventarios.</p>
+                        <div className={'modal-grid'}>
+                            <div className={'modal-grid-item'}>
+                                <img className={'img-fluid'} src={Smodal1} alt="img-modal" />
+                                <h3>ERP, CRM, puntos de venta e inventarios.</h3>
+                                <p>ERP, CRM, puntos de venta e inventarios.</p>
+                            </div>
+                            <div className={'modal-grid-item'}>
+                                <img className={'img-fluid'} src={Smodal2} alt="img-modal" />
+                                <h3>Sistemas para restaurantes y gestión empresarial.</h3>
+                                <p>Sistemas para restaurantes y gestión empresarial.</p>
+                            </div>
+                            <div className={'modal-grid-item'}>
+                                <img className={'img-fluid'} src={Smodal3} alt="img-modal" />
+                                <h3>Optimiza tu negocio con tecnología eficiente. 🚀</h3>
+                                <p>Optimiza tu negocio con tecnología eficiente. 🚀</p>
+                            </div>
+                        </div>
+
+                        {/* Línea de tiempo horizontal */}
+                        <div className="timeline-horizontal">
+                            <div className="timeline-item">
+                                <div className="timeline-dot"></div>
+                                <div className="timeline-content">
+                                    <h3>Análisis de necesidades</h3>
+                                    <p>Se recopilan los requisitos del negocio para definir la mejor solución tecnológica.</p>
+                                </div>
+                            </div>
+                            <div className="timeline-item">
+                                <div className="timeline-dot"></div>
+                                <div className="timeline-content">
+                                    <h3>Desarrollo y programación</h3>
+                                    <p>Se construye el sistema, integrando módulos como ventas, inventarios y clientes.</p>
+                                </div>
+                            </div>
+                            <div className="timeline-item">
+                                <div className="timeline-dot"></div>
+                                <div className="timeline-content">
+                                    <h3>Pruebas y ajustes</h3>
+                                    <p>Se realizan pruebas funcionales y de usuario para garantizar estabilidad y rendimiento.</p>
+                                </div>
+                            </div>
+                            <div className="timeline-item">
+                                <div className="timeline-dot"></div>
+                                <div className="timeline-content">
+                                    <h3>Implementación</h3>
+                                    <p>Se instala el sistema en la empresa y se capacita al personal.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={'modal-button'}>
+                            <button className={'btn-modal'} onClick={() => setIsOpen3(false)}>
+                                Cerrar
+                            </button>
+                            <button type="submit" className={'btn-modal'}>Contactanos</button>
+                        </div>
                     </div>
                 </div>
             )}

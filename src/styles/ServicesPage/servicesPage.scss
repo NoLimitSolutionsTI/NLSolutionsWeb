@@ -325,6 +325,8 @@
                 font-size: 1rem;
                 color: #192C31;
                 font-weight: bold;
+                text-overflow: ellipsis;
+                white-space: nowrap;
             }
 
             p {
