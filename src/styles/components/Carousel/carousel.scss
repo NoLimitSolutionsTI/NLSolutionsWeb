@@ -86,9 +86,7 @@
         margin-top: 2em;
     }
 
-    .swiper {
-        padding-bottom: 10px;
-    }
+
 
     .card-overlay {
         padding: 40px;
@@ -126,6 +124,9 @@
         padding: 8px;
         font-size: 0.9rem;
     }
+}
+.swiper-pagination-bullet-active{
+    background: white !important;
 }
 @media (max-width: 480px) {
     .card-overlay{
