@@ -443,10 +443,7 @@
     }
 
     .timeline-horizontal::before {
-        top: 0;
-        left: 50%;
-        width: 4px;
-        height: 90%;
+        width: 0;
         transform: translateX(-50%);
     }
 
