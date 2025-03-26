@@ -9,7 +9,6 @@ import { useState } from "react";
 import Smodal1 from "@/assets/modal1.jpg"
 import Smodal2 from "@/assets/modal2.jpg";
 import Smodal3 from "@/assets/modal3.jpg";
-import solucionesWeb from "@/assets/soluciones-web.png";
 
 
 export default function ServicesPage() {
@@ -187,11 +186,64 @@ export default function ServicesPage() {
             {isOpen2 && (
                 <div className={'modal-overlay'}>
                     <div className={'modal-content'}>
-                        <h2 >Informacion 2</h2>
-                        <p >Mas Informacion</p>
-                        <button className={'btn-modal'} onClick={() => setIsOpen2(false)}>
-                            Cerrar
-                        </button>
+                        <h2 >Soporte TI</h2>
+                        <p>Mantenimiento y reparación de computadoras y laptops.</p>
+                        <div className={'modal-grid'}>
+                            <div className={'modal-grid-item'}>
+                                <img className={'img-fluid'} src={Smodal1} alt="img-modal" />
+                                <h3>Mantenimiento y reparación de computadoras y laptops.</h3>
+                                <p>Mantenimiento y reparación de computadoras y laptops.</p>
+                            </div>
+                            <div className={'modal-grid-item'}>
+                                <img className={'img-fluid'} src={Smodal2} alt="img-modal" />
+                                <h3>Venta de repuestos y optimización de sistemas.</h3>
+                                <p>Venta de repuestos y optimización de sistemas.</p>
+                            </div>
+                            <div className={'modal-grid-item'}>
+                                <img className={'img-fluid'} src={Smodal3} alt="img-modal" />
+                                <h3>Soluciones rápidas y efectivas para tu tecnología.</h3>
+                                <p>Soluciones rápidas y efectivas para tu tecnología.</p>
+                            </div>
+                        </div>
+
+                        {/* Línea de tiempo horizontal */}
+                        <div className="timeline-horizontal">
+                            <div className="timeline-item">
+                                <div className="timeline-dot"></div>
+                                <div className="timeline-content">
+                                    <h3>Recepción del equipo</h3>
+                                    <p>El cliente nos entrega la computadora o laptop para evaluación.</p>
+                                </div>
+                            </div>
+                            <div className="timeline-item">
+                                <div className="timeline-dot"></div>
+                                <div className="timeline-content">
+                                    <h3>Diagnóstico</h3>
+                                    <p>Realizamos pruebas para detectar fallas de hardware y software.</p>
+                                </div>
+                            </div>
+                            <div className="timeline-item">
+                                <div className="timeline-dot"></div>
+                                <div className="timeline-content">
+                                    <h3>Reparación</h3>
+                                    <p>Sustitución de repuestos, limpieza interna, eliminación de virus, etc.</p>
+                                </div>
+                            </div>
+                            <div className="timeline-item">
+                                <div className="timeline-dot"></div>
+                                <div className="timeline-content">
+                                    <h3>Entrega al cliente</h3>
+                                    <p>Se entrega el equipo reparado con recomendaciones de mantenimiento.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={'modal-button'}>
+                            <button className={'btn-modal'} onClick={() => setIsOpen2(false)}>
+                                Cerrar
+                            </button>
+                            <button type="submit" className={'btn-modal'}>Contactanos</button>
+                        </div>
                     </div>
                 </div>
             )}
