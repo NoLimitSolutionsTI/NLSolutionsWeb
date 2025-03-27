@@ -1,11 +1,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import {Navigation, Pagination} from "swiper/modules";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import '@/styles/components/Carousel/cauroselAbot.scss';
+import { useState, useEffect } from "react";
 
 const personal = [
     {
@@ -41,14 +42,21 @@ const personal = [
 ];
 
 const CarouselAbout = () => {
+    const [PantallaPequena, setPantallaPequena] = useState(window.innerWidth <= 768);
+    useEffect(() => {
+        const manejarResize = () => setPantallaPequena(window.innerWidth <= 930);
+        window.addEventListener("resize", manejarResize);
+        return () => window.removeEventListener("resize", manejarResize);
+    }, []);
     return (
         <div className="carousel-container container-sm">
             <Swiper
-                modules={[Navigation]}
+                modules={[Navigation,Pagination]}
                 spaceBetween={20}
-                slidesPerView={1}
                 loop={true}
-                navigation={{ nextEl: ".carousel-container .swiper-button-next", prevEl: ".carousel-container .swiper-button-prev" }}
+                navigation={PantallaPequena ? false :{ nextEl: ".carousel-container .swiper-button-next", prevEl: ".carousel-container .swiper-button-prev" }}
+                pagination={PantallaPequena ?{ clickable: true }: false}
+
             >
                 {personal.map((person, index) => (
                     <SwiperSlide key={index}>
@@ -69,15 +77,18 @@ const CarouselAbout = () => {
                                     </a>
                                 </div>
                             </div>
-                            <img src={person.image}  className="card-img-about"  alt={person.names}/>
+                            <img src={person.image}  className="card-img-about "  alt={person.names}/>
                         </div>
                     </SwiperSlide>
                 ))}
             </Swiper>
-            <div className="swiper-button-prev"></div>
-            <div className="swiper-button-next"></div>
+            {!PantallaPequena && (
+                <>
+                    <div className="swiper-button-prev"></div>
+                    <div className="swiper-button-next"></div>
+                </>
+            )}
         </div>
-    )
+    );
 };
-
 export default CarouselAbout;
