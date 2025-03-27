@@ -102,6 +102,8 @@ header.sticky{
 
     .nav-header.open {
         display: flex;
+        background: linear-gradient(to top, #788E84 100%, #EAE9E9);
+        top: 110px;
     }
 
     .icon {
