@@ -19,6 +19,9 @@
                 font-weight: 400;
                 color: #000;
             }
+            a {
+                margin: auto !important;
+            }
             a:hover{
                 box-shadow: 0 0 0 2px main.$color-accent;
             }
