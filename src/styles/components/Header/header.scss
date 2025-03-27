@@ -49,6 +49,7 @@ header.sticky{
     width: 70%;
     list-style: none;
     justify-content: flex-end;
+
     gap: 0 3em;
     align-items: center;
     @media (max-width: 1050px) {
@@ -78,6 +79,7 @@ header.sticky{
 }
 .nav-header.open {
     display: block;
+    justify-content: flex-start;
 }
 
 .nav-header.active{
