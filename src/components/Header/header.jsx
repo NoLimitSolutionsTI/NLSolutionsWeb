@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import '@/styles/components/Header/header.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBars, faTimes} from '@fortawesome/free-solid-svg-icons';
+import {faFacebook, faInstagram, faLinkedin, faTiktok} from "@fortawesome/free-brands-svg-icons";
 
 export default function Header() {
   const logoNL = <svg width="300" height="345" viewBox="0 0 300 345" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,6 +47,14 @@ export default function Header() {
                 <li><a href="services">Servicios</a></li>
                 <li><a href="about">Nosotros</a></li>
                 <li><a href="contact" className="btn-details">Contacto</a></li>
+                <div className={'social-header'}>
+                    <ul>
+                        <li><a href="https://facebook.com" target="_blank"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                        <li><a href="https://instagram.com" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                        <li><a href="https://linkedin.com" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                        <li><a href="https://tiktok.com" target="_blank"><FontAwesomeIcon icon={faTiktok} /></a></li>
+                    </ul>
+                </div>
             </ul>
         </header>
     );

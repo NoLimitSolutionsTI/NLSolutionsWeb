@@ -43,7 +43,9 @@ header.sticky{
         color: main.$color-text;
     }
 }
-
+.social-header{
+    display: none;
+}
 .nav-header {
     display: flex;
     width: 70%;
@@ -104,6 +106,29 @@ header.sticky{
         display: flex;
         background: linear-gradient(to top, #788E84 100%, #EAE9E9);
         top: 110px;
+        gap: 4em;
+        margin-top: 10px !important;
+        .social-header {
+            display: flex;
+            ul {
+                display: flex;
+                gap: 2em;
+                list-style: none;
+                justify-content: center;
+                justify-items: center;
+                li {
+                    a {
+                        font-size: 50px;
+                        color: #192C31;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    a:hover {
+                        color: #FFF;
+                    }
+                }
+            }
+        }
     }
 
     .icon {
