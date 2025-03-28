@@ -118,8 +118,8 @@ export default function ServicesPage() {
 </section>
 
             {isOpen && (
-                <div className={'modal-overlay'}>
-                    <div className={'modal-content'}>
+                <div className={'modal-overlay'} onClick={() => setIsOpen(false)}>
+                    <div className={'modal-content'} onClick={(e) => e.stopPropagation()}>
                         <h2 >Soluciones Web Personalizadas</h2>
                         <p>Creación de sitios web a medida, sin límites, para negocios, educación y más.</p>
                         <div className={'modal-grid'}>
@@ -176,7 +176,7 @@ export default function ServicesPage() {
                             <button className={'btn-modal'} onClick={() => setIsOpen(false)}>
                                 Cerrar
                             </button>
-                            <button type="submit" className={'btn-modal'}>Contactanos</button>
+                            <button type="submit" className={'btn-modal'} onClick={() => navigate("/contact")}>Contactanos</button>
                         </div>
                     </div>
                 </div>
@@ -240,7 +240,7 @@ export default function ServicesPage() {
                             <button className={'btn-modal'} onClick={() => setIsOpen2(false)}>
                                 Cerrar
                             </button>
-                            <button type="submit" className={'btn-modal'}>Contactanos</button>
+                            <button type="submit" className={'btn-modal'} onClick={() => navigate("/contact")}>Contactanos</button>
                         </div>
                     </div>
                 </div>
@@ -304,7 +304,7 @@ export default function ServicesPage() {
                             <button className={'btn-modal'} onClick={() => setIsOpen3(false)}>
                                 Cerrar
                             </button>
-                            <button type="submit" className={'btn-modal'}>Contactanos</button>
+                            <button type="submit" className={'btn-modal'} onClick={() => navigate("/contact")}>Contactanos</button>
                         </div>
                     </div>
                 </div>
