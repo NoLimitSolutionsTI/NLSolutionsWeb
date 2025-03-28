@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react'
+import React, {useState, useRef, useEffect} from 'react'
 import '@/styles/HomePage/homePage.scss'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useNavigate } from "react-router-dom";
@@ -21,6 +21,15 @@ export default function Homepage() {
     const [activeIndex, setActiveIndex] = useState(0);
     const swiperRef = useRef(null);
     const navigate = useNavigate();
+    const [Movil, esmovil] = useState(window.innerWidth <= 768);
+    useEffect(() => {
+        const handleResize = () => {
+            esmovil(window.innerWidth <= 768);
+        };
+
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
   return (
     <>
         <HeadProvider>
@@ -34,6 +43,7 @@ export default function Homepage() {
                 slidesPerView={1}
                 autoplay={{ delay: 7000 }}
                 loop={true}
+                pagination={Movil ? { clickable: true } : false}
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
                 onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
             >
