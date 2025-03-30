@@ -81,8 +81,8 @@ export default function Homepage() {
                     <p className='py-3'>Diseñamos y desarrollamos tu sitio web a la medida, sin restricciones. Ya sea una tienda en línea, una página informativa o un aula virtual, nuestro equipo de expertos convierte tu visión en realidad. 🚀</p>
                     <a href='/services' className='btn-details'>Ver más</a>
                 </div>
-                <div className={'media-image col-md-6 ms-md-auto m-sm-auto order-sm-0 order-md-1 d-flex'}>
-                    <img className={'img-fluid mx-auto'} src={solucionesWeb} alt="Imagen" />
+                <div className={'media-image col-md-6 ms-md-auto order-sm-0 order-md-1 d-flex'}>
+                    <img className={'img-fluid m-md-auto ms-lg-auto'} src={solucionesWeb} alt="Imagen" />
                 </div>
             </div>
             <div className={'row gx-4 py-5 flex-md-row flex-sm-column'}>
@@ -92,7 +92,7 @@ export default function Homepage() {
                     <a href='/services' className='btn-details'>Ver más</a>
                 </div>
                 <div className={'media-image order-sm-0 col-md-6 me-md-auto m-sm-auto d-flex'}>
-                    <img className={'img-fluid mx-auto'} src={soporteTI} alt="Imagen" />
+                    <img className={'img-fluid me-lg-auto'} src={soporteTI} alt="Imagen" />
                 </div>
             </div>
             <div className={'row gx-4 pt-5 flex-md-row flex-sm-column'}>
@@ -102,13 +102,13 @@ export default function Homepage() {
                     <a href='/services' className='btn-details'>Ver más</a>
                 </div>
                 <div className={'media-image col-md-6 ms-md-auto m-sm-auto order-sm-0 order-md-1 d-flex'}>
-                    <img className={'img-fluid mx-auto'} src={sistemaEmpresarial} alt="Imagen" />
+                    <img className={'img-fluid ms-lg-auto'} src={sistemaEmpresarial} alt="Imagen" />
                 </div>
             </div>
         </section>
         <section className={'short-us container-md'}>
             <div className={'row'}>
-                <div className='col-md-5 order-1 align-self-center mx-auto'>
+                <div className='col-md-5 order-1 align-self-center mx-auto mt-lg-0 mt-sm-4'>
                     <h2>Impulsamos tu negocio con tecnología</h2>
                     <p className='py-3'>Somos especialistas en desarrollo web, soporte TI y sistemas empresariales. Ofrecemos soluciones personalizadas para optimizar tu empresa y llevarla al siguiente nivel. ¡Hacemos tu visión realidad!🚀</p>
                     <a href='/contact' className='btn-details'>Hablemos</a>

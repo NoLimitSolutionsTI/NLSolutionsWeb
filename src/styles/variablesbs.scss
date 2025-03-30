@@ -1,6 +1,6 @@
 $body-color: #000;
 $grid-breakpoints: (
-    sm: 520px,
+    sm: 0px,
     md: 890px,
     lg: 1050px,
     xl: 1400px,
@@ -11,5 +11,4 @@ $container-max-widths: (
     lg: 1050px,
     xl: 1400px,
 );
-
 @import 'bootstrap/scss/bootstrap';
