@@ -75,38 +75,38 @@ export default function Homepage() {
         </section>
         <section className={'container-sm services'}>
             <h2>Algunos de nuestros Servicios</h2>
-            <div className={'row mt-5 gx-4 pb-5 flex-md-row flex-column'}>
-                <div className={'media-text col-md-5 align-self-center order-1 order-md-0 mt-4 mt-md-0'}>
+            <div className={'row mt-5 gx-4 pb-5 flex-md-row flex-sm-column'}>
+                <div className={'media-text col-md-5 align-self-center order-sm-1 order-md-0 mt-4 mt-md-0'}>
                     <h3>Soluciones Web Personalizadas</h3>
                     <p className='py-3'>Diseñamos y desarrollamos tu sitio web a la medida, sin restricciones. Ya sea una tienda en línea, una página informativa o un aula virtual, nuestro equipo de expertos convierte tu visión en realidad. 🚀</p>
                     <a href='/services' className='btn-details'>Ver más</a>
                 </div>
-                <div className={'media-image col-md-6 ms-auto order-0 order-md-1'}>
-                    <img className={'img-fluid'} src={solucionesWeb} alt="Imagen" />
+                <div className={'media-image col-md-6 ms-md-auto m-sm-auto order-sm-0 order-md-1 d-flex'}>
+                    <img className={'img-fluid mx-auto'} src={solucionesWeb} alt="Imagen" />
                 </div>
             </div>
-            <div className={'row gx-4 py-5 flex-md-row flex-column'}>
-                <div className={'media-text order-1 col-md-5 align-self-center mt-4 mt-md-0'}>
+            <div className={'row gx-4 py-5 flex-md-row flex-sm-column'}>
+                <div className={'media-text order-sm-1 col-md-5 align-self-center mt-4 mt-md-0'}>
                     <h3>Soporte TI</h3>
                     <p className='py-3'>Brindamos mantenimiento, reparación de laptops y computadoras, venta de repuestos y mucho más. Confía en nuestros expertos para mantener tu tecnología en óptimas condiciones. 🔧💻</p>
                     <a href='/services' className='btn-details'>Ver más</a>
                 </div>
-                <div className={'media-image order-0 col-md-6 me-auto'}>
-                    <img className={'img-fluid'} src={soporteTI} alt="Imagen" />
+                <div className={'media-image order-sm-0 col-md-6 me-md-auto m-sm-auto d-flex'}>
+                    <img className={'img-fluid mx-auto'} src={soporteTI} alt="Imagen" />
                 </div>
             </div>
-            <div className={'row gx-4 pt-5 flex-md-row flex-column'}>
-                <div className={'media-text col-md-5 align-self-center order-1 order-md-0 mt-4 mt-md-0'}>
+            <div className={'row gx-4 pt-5 flex-md-row flex-sm-column'}>
+                <div className={'media-text col-md-5 align-self-center order-sm-1 order-md-0 mt-4 mt-md-0'}>
                     <h3>Sistemas Empresariales a Medida</h3>
                     <p className='py-3'>Optimiza la gestión de tu negocio con nuestras soluciones ERP, CRM, puntos de venta, control de inventarios, sistemas para restaurantes y mucho más.💼</p>
                     <a href='/services' className='btn-details'>Ver más</a>
                 </div>
-                <div className={'media-image col-md-6 ms-auto order-0 order-md-1'}>
-                    <img className={'img-fluid'} src={sistemaEmpresarial} alt="Imagen" />
+                <div className={'media-image col-md-6 ms-md-auto m-sm-auto order-sm-0 order-md-1 d-flex'}>
+                    <img className={'img-fluid mx-auto'} src={sistemaEmpresarial} alt="Imagen" />
                 </div>
             </div>
         </section>
-        <section className={'short-us container-sm'}>
+        <section className={'short-us container-md'}>
             <div className={'row'}>
                 <div className='col-md-5 order-1 align-self-center mx-auto'>
                     <h2>Impulsamos tu negocio con tecnología</h2>
