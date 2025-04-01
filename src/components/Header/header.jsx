@@ -14,6 +14,7 @@ export default function Header() {
 
     const [showBar, setShowBar] = useState(window.innerWidth < 1050);
     const [menuOpen, setMenuOpen] = useState(false);
+    const [stickyNav, setStickyNav] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
@@ -26,9 +27,20 @@ export default function Header() {
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
+    useEffect(()=>{
+        const handleScroll= () =>{
+            if (window.scrollY >= 90){
+                setStickyNav(true)
+            } else{
+                setStickyNav(false)
+            }
+        }
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    })
 
     return (
-        <header>
+        <header className={`${menuOpen ? "active" : ""} ${stickyNav ? "sticky" : ""}`}>
             <a href="/" className="logo">
                 {logoNL}
                 <span>NL Solutions TI</span>
@@ -47,14 +59,16 @@ export default function Header() {
                 <li><a href="services">Servicios</a></li>
                 <li><a href="about">Nosotros</a></li>
                 <li><a href="contact" className="btn-details">Contacto</a></li>
-                <div className={'social-header'}>
-                    <ul>
-                        <li><a href="https://facebook.com" target="_blank"><FontAwesomeIcon icon={faFacebook} /></a></li>
-                        <li><a href="https://instagram.com" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                        <li><a href="https://linkedin.com" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a></li>
-                        <li><a href="https://tiktok.com" target="_blank"><FontAwesomeIcon icon={faTiktok} /></a></li>
-                    </ul>
-                </div>
+                {showBar && (
+                    <div className={'social-header'}>
+                        <ul>
+                            <li><a href="https://facebook.com" target="_blank"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                            <li><a href="https://instagram.com" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                            <li><a href="https://linkedin.com" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                            <li><a href="https://tiktok.com" target="_blank"><FontAwesomeIcon icon={faTiktok} /></a></li>
+                        </ul>
+                    </div>
+                )}
             </ul>
         </header>
     );

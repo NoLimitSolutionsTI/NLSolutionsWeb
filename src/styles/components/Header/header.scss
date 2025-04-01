@@ -12,101 +12,98 @@ header {
     background-color: transparent;
     padding: 10px calc((100% - 1400px) /2);
     z-index: 99;
+    transition: .5s var(--transitionv2) all;
     @media (max-width:1050px) {
-        padding: 10px calc((100% - 1050px) /2);
+        padding: 10px 5%;
+        height: 85px;
     }
     @media (max-width:520px) {
-        padding: 10px 5%;
+        height: 75px;
+    }
+    .logo {
+        display: flex;
+        gap: .5em;
+        align-items: center;
+        height: 100%;
+        z-index: 20;
+        svg {
+            width: auto;
+            height: 100%;
+            path{
+                fill: #000;
+            }
+        }
+        span {
+            font-size: calc(var(--text) + 2px);
+            font-weight: 700;
+            text-transform: uppercase;
+            color: main.$color-text;
+        }
+    }
+    .icon{
+        z-index: 20;
+    }
+    .nav-header {
+        display: flex;
+        width: 70%;
+        list-style: none;
+        justify-content: flex-end;
+        gap: 0 3em;
+        align-items: center;
+        z-index: 1;
+        @media (max-width: 1050px) {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100vw;
+            top: -120vw;
+            right: 0;
+            height: calc(100vh - 84px);
+            z-index: 10;
+            opacity: 0;
+            gap: .5em;
+            background-color: #FFF;
+            transition: .5s main.$transitionv1 all;
+        }
+        @media (max-width: 520px) {
+            height: calc(100vh - 74px);
+        }
+        li {
+            a {
+                text-decoration: none;
+                color: #000;
+                font-weight: 700;
+                font-size: 16px;
+                box-shadow: unset !important;
+            }
+            a:hover {
+                color: #192C31;
+            }
+        }
     }
 }
 header.sticky{
+    position: fixed;
     margin: 0 auto;
     background-color: #FFF;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-.logo {
-    display: flex;
-    gap: .5em;
-    align-items: center;
-    height: 100%;
-    svg {
-        width: auto;
-        height: 100%;
-        path{
-            fill: #000;
-        }
-    }
-    span {
-        font-size: 20px;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: main.$color-text;
-    }
-}
-.social-header{
-    display: none;
-}
-.nav-header {
-    display: flex;
-    width: 70%;
-    list-style: none;
-    justify-content: flex-end;
-    gap: 0 3em;
-    align-items: center;
-    @media (max-width: 1050px) {
-        width: 100vw;
-        position: absolute;
-        top: -120vw;
-        right: 0;
-        height: auto;
-        min-height: 100vh;
-        z-index: 10;
-        flex-direction: column;
-        gap: .5em;
-        background-color: #FFF;
-    }
-    li {
-        a {
-            text-decoration: none;
-            color: #000;
-            font-weight: 700;
-            font-size: 16px;
-            box-shadow: unset !important;
-        }
-        a:hover {
-            color: #192C31;
-        }
-    }
-}
-.nav-header.open {
-    display: block;
-    justify-content: flex-start;
-}
 
-.nav-header.active{
+
+header.active{
     @media (max-width: 1050px) {
-        top: 0;
-        justify-content: center;
+        position: fixed;
+        background-color: #FFF;
     }
 }
 
 @media (max-width: 1050px) {
-    .nav-header {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background: white;
-        padding: 10px;
-    }
-
     .nav-header.open {
-        display: flex;
-        background: linear-gradient(to top, #788E84 100%, #EAE9E9);
-        top: 100px;
+        top: 84px;
         gap: 4em;
-        margin-top: 10px !important;
+        opacity: 1;
+        pointer-events: all;
         .social-header {
             display: flex;
             ul {
@@ -129,9 +126,13 @@ header.sticky{
             }
         }
     }
-
     .icon {
         cursor: pointer;
         font-size: 40px;
+    }
+}
+@media (max-width: 520px) {
+    .nav-header.open {
+        top: 74px;
     }
 }

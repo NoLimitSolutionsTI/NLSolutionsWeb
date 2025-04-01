@@ -120,7 +120,8 @@
     }
     a{
         min-width: 250px;
-        max-width: 90%;
+        max-width: 90%;    
+        padding: 25px 0 !important;
         margin: 0 auto !important;
         @media (max-width: 520px) {
             min-width: 90%;
