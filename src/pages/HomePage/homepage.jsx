@@ -21,10 +21,10 @@ export default function Homepage() {
     const [activeIndex, setActiveIndex] = useState(0);
     const swiperRef = useRef(null);
     const navigate = useNavigate();
-    const [Movil, esmovil] = useState(window.innerWidth <= 768);
+    const [Movil, esmovil] = useState(window.innerWidth <= 890);
     useEffect(() => {
         const handleResize = () => {
-            esmovil(window.innerWidth <= 768);
+            esmovil(window.innerWidth <= 890);
         };
 
         window.addEventListener("resize", handleResize);
@@ -36,12 +36,12 @@ export default function Homepage() {
         <title>NL Solutions TI | Home </title>
         <meta name="description" content="Esta es la página principal de mi aplicación."/>
         </HeadProvider>
-        <section className="slider-section ">
+        <section className="slider-section">
             <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
                 spaceBetween={50}
-                slidesPerView={1}
-                autoplay={{ delay: 7000 }}
+                slidesPerView={1}/* 
+                autoplay={{ delay: 7000 }} */
                 loop={true}
                 pagination={Movil ? { clickable: true } : false}
                 onSwiper={(swiper) => (swiperRef.current = swiper)}

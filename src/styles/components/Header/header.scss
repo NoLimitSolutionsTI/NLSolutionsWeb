@@ -1,3 +1,4 @@
+@use '@/styles/variablesbs.scss' as bs;
 @use '@/styles/main.scss' as main;
 header {
     position: absolute;
@@ -13,11 +14,11 @@ header {
     padding: 10px calc((100% - 1400px) /2);
     z-index: 99;
     transition: .5s var(--transitionv2) all;
-    @media (max-width:1050px) {
+    @media (max-width: #{map-get(bs.$grid-breakpoints, xl)}) {
         padding: 10px 5%;
         height: 85px;
     }
-    @media (max-width:520px) {
+    @media (max-width: #{map-get(bs.$grid-breakpoints, md)}) {
         height: 75px;
     }
     .logo {

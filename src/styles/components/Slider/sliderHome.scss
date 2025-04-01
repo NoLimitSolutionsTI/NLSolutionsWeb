@@ -1,3 +1,4 @@
+@use '@/styles/variablesbs.scss' as bs;
 @use '@/styles/main.scss' as main;
 .slider-section {
     position: relative;
@@ -11,13 +12,24 @@
     padding: 0 calc((100% - 1400px) /2);
     padding-bottom: 2em;
     background: linear-gradient(to top, #788E84 90%, #EAE9E9);
-
+    @media (max-width: #{map-get(bs.$grid-breakpoints, xl)}) {
+        padding: 0 5%;
+    }
+    @media (max-width: #{map-get(bs.$grid-breakpoints, md)}) {
+        height: 65vh;
+        max-height: 750px;
+    }
+    @media (max-width: 520px) {
+        height: calc(100vh - 75px);
+    }
     .swiper {
         width: 100%;
         padding-top: 130px;
         height: calc(80% - 90px);
-        border: 0px solid;
-
+        @media (max-width: #{map-get(bs.$grid-breakpoints, md)}) {
+            height: calc(100% - 75px);
+            padding-top: 75px;
+        }
         .swiper-slide {
             .slider-container {
                 display: flex;
@@ -27,11 +39,9 @@
                 justify-content: space-between;
                 margin: auto;
                 color: #fff;
-
                 img {
                     height: 100%;
                 }
-
                 .slider-text {
                     width: 35%;
                     text-align: right;
@@ -84,17 +94,49 @@
                         background-color: rgba(0, 0, 0, 0.53) !important;
                     }
                 }
+                @media (max-width: #{map-get(bs.$grid-breakpoints, md)}) {
+                    flex-direction: column;
+                    justify-content: center;
+                    img{
+                        width: 100%;
+                        object-fit: contain;
+                        max-height: 350px;
+                    }
+                    .slider-text{
+                        width: 100%;
+                        text-align: center;
+                        align-items: center;
+                    }
+                    .swiper-pagination {
+                        position: relative !important;
+                        bottom: 10px !important;
+                        z-index: 10;
+                    }
+                    .swiper-pagination-bullet-active{
+                        background:#192C31 !important;
+                    }
+                    .swiper-pagination-bullet {
+                        width: 10px !important;
+                        height: 10px !important;
+                        background-color: #757575;
+                        margin: 0 3px !important;
+                        transition: transform 0.2s ease-in-out, opacity  ;
+                        margin-top: 2em !important;
+                
+                    }
+                }
             }
         }
     }
-
-
     .slides-previews {
         display: flex;
         justify-content: space-evenly;
         gap: 2em;
         padding: 10px 5px;
         overflow: scroll;
+        @media (max-width: #{map-get(bs.$grid-breakpoints, md)}) {
+            display: none;
+        }
         div {
             display: flex;
             width: calc((100% / 3) - 2em);
@@ -136,7 +178,6 @@
             background: rgba(255, 255, 255, 0.15);
         }
     }
-
     .slides-previews::-webkit-scrollbar {
         width: 0;
         height: 0;
@@ -147,69 +188,3 @@
 .swiper-button-prev {
     color: #192C31 !important;
 }
-
-/*Responsive de slider Home*/
-@media (max-width: 768px) {
-    .slides-previews {
-        display: none !important;
-    }
-}
-
-@media (max-width: 768px) {
-    .slider-section {
-        height: auto;
-        min-height: unset;
-        padding: 0 1em;
-    }
-
-    .swiper {
-        padding-top: 50px !important;
-        height: auto !important;
-    }
-
-    .swiper-slide .slider-container {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .swiper-slide .slider-container img {
-        width: 100%;
-        height: auto;
-        max-height: 300px;
-        object-fit: contain;
-        margin-top: 4em;
-    }
-
-    .slider-text {
-        width: 100% !important;
-        text-align: center !important;
-        align-items: center !important;
-    }
-
-    .slides-previews {
-        display: none !important;
-    }
-
-    .swiper-pagination {
-        position: relative !important;
-        bottom: 10px !important;
-        z-index: 10;
-    }
-    .swiper-pagination-bullet-active{
-        background:#192C31 !important;
-    }
-
-
-    .swiper-pagination-bullet {
-        width: 10px !important;
-        height: 10px !important;
-        background-color: #757575;
-        margin: 0 3px !important;
-        transition: transform 0.2s ease-in-out, opacity  ;
-        margin-top: 2em !important;
-
-    }
-}
-
