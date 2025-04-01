@@ -188,3 +188,11 @@
         color: #192C31;
     }
 }
+
+@media (max-width: 768px) {
+    .section-4 {
+        button {
+            width: 100%;
+        }
+    }
+}
