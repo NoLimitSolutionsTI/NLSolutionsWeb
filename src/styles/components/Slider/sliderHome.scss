@@ -17,18 +17,39 @@
     }
     @media (max-width: #{map-get(bs.$grid-breakpoints, md)}) {
         height: 65vh;
+        min-height: 650px;
         max-height: 750px;
     }
     @media (max-width: 520px) {
-        height: calc(100vh - 75px);
+        min-height: 500px;
+        height: 75vh;
     }
     .swiper {
         width: 100%;
         padding-top: 130px;
         height: calc(80% - 90px);
         @media (max-width: #{map-get(bs.$grid-breakpoints, md)}) {
-            height: calc(100% - 75px);
+            height: 100%;
             padding-top: 75px;
+            .swiper-wrapper{
+                height: 90%;
+            }
+            .swiper-pagination {
+                position: relative;
+                margin-top: 1em;
+                bottom: 0;
+                z-index: 10;
+            }
+            .swiper-pagination-bullet-active{
+                background: main.$color-primary !important;
+            }
+            .swiper-pagination-bullet {
+                width: 10px !important;
+                height: 10px !important;
+                background-color: #FFF !important;
+                margin: 0 3px !important;
+                transition: transform 0.2s var(--transitionv2), opacity ;
+            }
         }
         .swiper-slide {
             .slider-container {
@@ -107,24 +128,12 @@
                         text-align: center;
                         align-items: center;
                     }
-                    .swiper-pagination {
-                        position: relative !important;
-                        bottom: 10px !important;
-                        z-index: 10;
-                    }
-                    .swiper-pagination-bullet-active{
-                        background:#192C31 !important;
-                    }
-                    .swiper-pagination-bullet {
-                        width: 10px !important;
-                        height: 10px !important;
-                        background-color: #757575;
-                        margin: 0 3px !important;
-                        transition: transform 0.2s ease-in-out, opacity  ;
-                        margin-top: 2em !important;
-                
-                    }
                 }
+                @media (max-width: 520px) {
+                    img{
+                        max-height: 250px;
+                    }
+                } 
             }
         }
     }

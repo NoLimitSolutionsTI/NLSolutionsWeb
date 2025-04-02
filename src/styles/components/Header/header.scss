@@ -43,6 +43,12 @@ header {
     }
     .icon{
         z-index: 20;
+        @media (max-width: #{map-get(bs.$grid-breakpoints, lg)}) {
+            font-size: 2em;
+        }
+        @media (max-width: #{map-get(bs.$grid-breakpoints, md)}) {
+            font-size: 1.8em;
+        }
     }
     .nav-header {
         display: flex;
@@ -126,10 +132,6 @@ header.active{
                 }
             }
         }
-    }
-    .icon {
-        cursor: pointer;
-        font-size: 40px;
     }
 }
 @media (max-width: 520px) {
