@@ -90,6 +90,13 @@ header {
         }
     }
 }
+.nav-header-container-list{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0 3em;
+    justify-content: flex-end;
+}
 header.sticky{
     position: fixed;
     margin: 0 auto;
@@ -111,6 +118,15 @@ header.active{
         gap: 4em;
         opacity: 1;
         pointer-events: all;
+        justify-content: space-around;
+        .nav-header-container-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 30rem;
+            gap: 1em;
+        }
         .social-header {
             display: flex;
             ul {

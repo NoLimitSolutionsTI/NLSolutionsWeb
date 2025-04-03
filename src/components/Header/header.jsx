@@ -55,10 +55,12 @@ export default function Header() {
             )}
 
             <ul className={`nav-header ${menuOpen ? "open" : ""}`}>
-                <li><a href="/">Inicio</a></li>
-                <li><a href="services">Servicios</a></li>
-                <li><a href="about">Nosotros</a></li>
-                <li><a href="contact" className="btn-details">Contacto</a></li>
+                <div className={'nav-header-container-list'}>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="services">Servicios</a></li>
+                    <li><a href="about">Nosotros</a></li>
+                    <li><a href="contact" className="btn-details">Contacto</a></li>
+                </div>
                 {showBar && (
                     <div className={'social-header'}>
                         <ul>
