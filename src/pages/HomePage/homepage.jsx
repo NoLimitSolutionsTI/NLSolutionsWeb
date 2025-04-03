@@ -14,8 +14,8 @@ import sistemaEmpresarial from "@/assets/erp.jpg";
 import cardImage from "@/assets/card-home.png";
 const slides_home = [
     { image: ImagenPrueba,title: "Abraza la transformación digital", text: "Convierte tu sueño en una realidad con nuestra experiencia en consultoria de software.", link:"#"},
-    { image: ImagenPrueba,title: "Abraza la transformación digital 2", text: "Convierte tu sueño en una realidad con nuestra experiencia en consultoria de software.", link:"#" },
-    { image: ImagenPrueba, title: "Abraza la transformación digital 3", text: "Convierte tu sueño en una realidad con nuestra experiencia en consultoria de software.", link:"#" }
+    { image: ImagenPrueba,title: "Impulsa tu negocio con tecnología", text: "Desarrollamos soluciones digitales a medida para optimizar procesos y hacer crecer tu empresa.", link:"#" },
+    { image: ImagenPrueba, title: "Del sueño a la realidad digital", text: "Llevamos tus ideas al siguiente nivel con software innovador y eficiente.", link:"#" }
   ];
 export default function Homepage() {
     const [activeIndex, setActiveIndex] = useState(0);
