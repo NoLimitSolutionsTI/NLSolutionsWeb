@@ -62,8 +62,10 @@
                 color: #fff;
                 img {
                     height: 100%;
+                    width: 50%;
                     display: flex;
-                    margin-left: 15em;
+                    object-fit: contain;
+                    margin-left: 5em;
                     margin-bottom: 1em;
 
                 }
