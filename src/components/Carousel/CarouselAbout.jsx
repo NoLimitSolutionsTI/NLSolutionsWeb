@@ -13,7 +13,7 @@ const personal = [
         names: "Enzo Martinez",
         cargo: "Desarrollador Fullstack",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptatibus, quisquam, quos, dolorum, consequuntur, odit, et.",
+            "Me encanta convertir ideas en soluciones tecnológicas funcionales, intuitivas y escalables. Siempre explorando nuevas herramientas y enfoques para optimizar cada proyecto.",
         image: "https://i.imgur.com/Sup9hpK.png",
         linkedin: "https://www.linkedin.com/in/enzomartinez24/",
         github: "https://github.com/EnzoMartinez01",
