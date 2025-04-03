@@ -4,6 +4,7 @@ import { HeadProvider } from "react-head"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faLightbulb, faStar, faHandshake, faShieldAlt, faUsers } from '@fortawesome/free-solid-svg-icons';
 import CarouselAbout from "@/components/Carousel/CarouselAbout.jsx";
+import SliderAbout from "@/assets/about-slider.png"
 
 
 export default function AboutPage() {
@@ -16,11 +17,11 @@ export default function AboutPage() {
             <section className={'slider-section'}>
                 <div className={'slider-container'}>
                     <div>
-                        <img src="/src/assets/LogoNL.png" alt="Img-slider" />
+                        <img src={SliderAbout} alt="Img-slider" />
                     </div>
                     <div className={'slider-text'}>
                         <h1>¿Tiene interés en conocernos?</h1>
-                        <p>Nos complace compartir nuestros objetivos y la pasión que impulsó nuestra trayectoria en la industria de la consultoría de software</p>
+                        <p>Nos complace compartir la pasión que nos impulsó  en la industria de software.</p>
                     </div>
                 </div>
             </section>

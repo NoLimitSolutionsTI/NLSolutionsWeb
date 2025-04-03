@@ -7,15 +7,17 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { HeadProvider } from "react-head"
-import ImagenPrueba from "@/assets/LogoNL.png"
+import Abraza from "@/assets/abraza.png"
+import Impulsa from "@/assets/impulsa.png"
+import Sueño from "@/assets/sueño.png"
 import solucionesWeb from "@/assets/soluciones-web.png";
 import soporteTI from "@/assets/soporte-ti.png";
 import sistemaEmpresarial from "@/assets/erp.jpg";
 import cardImage from "@/assets/card-home.png";
 const slides_home = [
-    { image: ImagenPrueba,title: "Abraza la transformación digital", text: "Convierte tu sueño en una realidad con nuestra experiencia en consultoria de software.", link:"#"},
-    { image: ImagenPrueba,title: "Impulsa tu negocio con tecnología", text: "Desarrollamos soluciones digitales a medida para optimizar procesos y hacer crecer tu empresa.", link:"#" },
-    { image: ImagenPrueba, title: "Del sueño a la realidad digital", text: "Llevamos tus ideas al siguiente nivel con software innovador y eficiente.", link:"#" }
+    { image: Abraza,title: "Abraza la transformación digital", text: "Convierte tu sueño en una realidad con nuestra experiencia en consultoria de software.", link:"#"},
+    { image: Impulsa,title: "Impulsa tu negocio con tecnología", text: "Desarrollamos soluciones digitales a medida para optimizar procesos y hacer crecer tu empresa.", link:"#" },
+    { image: Sueño, title: "Del sueño a la realidad digital", text: "Llevamos tus ideas al siguiente nivel con software innovador y eficiente.", link:"#" }
   ];
 export default function Homepage() {
     const [activeIndex, setActiveIndex] = useState(0);

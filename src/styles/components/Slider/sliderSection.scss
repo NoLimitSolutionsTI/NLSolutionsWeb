@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     gap: 2em;
-    height: 80vh;
+    height: 50vh;
     min-height: 550px;
     max-height: 900px;
     width: 100%;
@@ -23,12 +23,14 @@
 
         img {
 
-            width: 30%;
+            width: 65%;
             height: 100%;
+            margin-top: 4em;
+
         }
 
         .slider-text {
-            width: 30%;
+            width: 60%;
             text-align: right;
             display: flex;
             flex-direction: column;
@@ -36,13 +38,13 @@
             align-items: flex-end;
 
             h1 {
-                font-size: 40px;
+                font-size: 50px;
                 font-weight: bold;
                 margin-bottom: 1em;
             }
 
             p {
-                font-size: 20px;
+                font-size: 30px;
             }
 
             a {
@@ -94,7 +96,7 @@
     }
 
     .slider-container img {
-        width: 50% !important;
+        width: 75% !important;
         height: auto !important;
         margin-top: 5em;
     }

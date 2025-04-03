@@ -15,6 +15,7 @@ import Rmodal3 from "@/assets/web.png";
 import Emodal1 from "@/assets/GESTION.jpg";
 import Emodal2 from "@/assets/DASHBOARD.png";
 import Emodal3 from "@/assets/crm.png"
+import SliderImage from "@/assets/slider-services.png"
 
 
 export default function ServicesPage() {
@@ -32,7 +33,7 @@ export default function ServicesPage() {
           <section className={'slider-section '}>
           <div className={'slider-container'}>
             <div>
-              <img src="/src/assets/LogoNL.png" alt="Img-slider" />
+              <img  src={SliderImage} alt="Img-slider" />
             </div>
             <div className={'slider-text'}>
               <h1>¿Buscas un servicio de calidad?</h1>
@@ -56,7 +57,7 @@ export default function ServicesPage() {
                 <div className={'section-2-services-container'}>
                     <div className={'section-2-services-text'}>
                         <h3>Soporte TI</h3>
-                        Servicio técnico especializado en reparación, mantenimiento y optimización de equipos.
+                        <p>Servicio técnico especializado en reparación, mantenimiento y optimización de equipos.</p>
                     </div>
                     <div className={'section-2-services-button'}>
                         <button onClick={() => setIsOpen2(true)} type="submit">Lo quiero!</button>
