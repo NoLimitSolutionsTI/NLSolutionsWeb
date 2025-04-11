@@ -66,7 +66,7 @@ header {
             width: 100vw;
             top: -120vw;
             right: 0;
-            height: calc(100vh - 84px);
+            height: calc(100vh - 74px);
             z-index: 10;
             opacity: 0;
             gap: .5em;
@@ -114,7 +114,7 @@ header.active{
 
 @media (max-width: 1050px) {
     .nav-header.open {
-        top: 84px;
+        top: 74px;
         gap: 4em;
         opacity: 1;
         pointer-events: all;
