@@ -3,7 +3,7 @@
 /*Section list*/
 
 .section-2-services {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,6 +12,7 @@
 .title-section-2 {
     text-align: center;
     margin-bottom: 1em !important;
+    font-size: 35px;
 }
 
 .section-2-services-container {
@@ -316,7 +317,7 @@
             margin-top: 10px;
 
             h3 {
-                font-size: 1rem;
+                font-size: 1.5rem;
                 color: #192C31;
                 font-weight: bold;
                 text-overflow: ellipsis;
@@ -364,6 +365,20 @@
     object-fit: contain;
 }
 
+.modal-content{
+    h2{
+        margin-bottom: 8px !important;
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.7rem;
+        margin-bottom: 8px !important;
+    }
+    p{
+        font-size: 1.5rem !important;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .section-4{
         h2 {
@@ -388,13 +403,18 @@
         gap: 50px;
     }
     .section-2-services-container {
-        width: 90%;
+        width: 100%;
         margin: auto;
     }
     .section-2-services-text {
         margin: auto;
         h3 {
             text-align: center;
+            font-size: 25px;
+        }
+        p{
+            text-align: center;
+            font-size: 20px !important;
         }
     }
     .section-2-services-button {
