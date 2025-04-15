@@ -94,7 +94,8 @@
                     a:hover {
                         background-color: #fff;
                         color: #192C31;
-                        box-shadow: unset !important;
+                        box-shadow: unset main.$color-primary !important;
+
                     }
 
                     .slider-footer {

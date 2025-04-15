@@ -40,7 +40,7 @@
                 }
             }
             a:hover{
-                box-shadow: 0 0 0 2px main.$color-accent;
+                box-shadow: 0 0 0 2px main.$color-primary;
             }
         }
         .media-image{
@@ -82,10 +82,12 @@
             a{
                 background-color: main.$color-accent;
                 color: #FFF !important;
+
             }
             a:hover{
                 background-color: #FFF;
                 color: main.$color-accent !important;
+                box-shadow: 0 0 0 2px main.$color-accent;
             }                
             @media (max-width: #{map-get(bs.$grid-breakpoints, md)}) {
                 width: 90%;
