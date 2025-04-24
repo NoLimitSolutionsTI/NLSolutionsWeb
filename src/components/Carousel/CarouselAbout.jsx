@@ -33,11 +33,11 @@ const personal = [
         names: "Anthony Lecarnaque",
         cargo: "Desarrollador Fullstack",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptatibus, quisquam, quos, dolorum, consequuntur, odit, et. ",
+            "Apasionado por la programación y el desarrollo web, siempre en busca de nuevos retos que impulsen mi creatividad y aprendizaje en el mundo digital.",
         image: "https://i.imgur.com/Sup9hpK.png",
         linkedin: "https://www.linkedin.com/in/anthonylecarnaque/",
-        github: "https://github.com/",
-        instagram: "https://www.instagram.com//"
+        github: "https://github.com/Thony-Leca/",
+        instagram: "https://www.instagram.com/thony__leca/"
     }
 ];
 

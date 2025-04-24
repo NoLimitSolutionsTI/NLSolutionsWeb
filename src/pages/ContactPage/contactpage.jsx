@@ -39,7 +39,6 @@ export default function ContactPage() {
                 <title>NL Solutions TI | Contact </title>
                 <meta name="description" content="Esta es la página de contacto de mi aplicación."/>
             </HeadProvider>
-            <hr></hr>
 
             <section className={'container-sm'}>
                 <div className={'title-contact'}>
