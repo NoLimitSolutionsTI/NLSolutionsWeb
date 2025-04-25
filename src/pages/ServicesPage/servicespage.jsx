@@ -6,6 +6,7 @@ import Caurosel from "@/components/Carousel/Caurosel.jsx";
 import { HeadProvider } from "react-head"
 import {useNavigate} from "react-router-dom";
 import { useState } from "react";
+import AOS from 'aos';
 import Smodal1 from "@/assets/modal1.jpg"
 import Smodal2 from "@/assets/modal2.jpg";
 import Smodal3 from "@/assets/modal3.jpg";
@@ -43,8 +44,8 @@ export default function ServicesPage() {
           </section>
 
             <section className={'section-2-services container-sm'}>
-                <h2 className={'title-section-2'}>Nuestros Servicios</h2>
-              <div className={'section-2-services-container'}>
+                <h2 data-aos="fade-up" className={'title-section-2'}>Nuestros Servicios</h2>
+              <div className={'section-2-services-container'} data-aos="fade-up" data-aos-delay="100">
                 <div className={'section-2-services-text'}>
                     <h3>Soluciones Web Personalizadas</h3>
                     <p>Creación de sitios web a medida, sin límites, para negocios, educación y más.</p>
@@ -54,7 +55,7 @@ export default function ServicesPage() {
                 </div>
               </div>
 
-                <div className={'section-2-services-container'}>
+                <div className={'section-2-services-container'} data-aos="fade-up" data-aos-delay="100">
                     <div className={'section-2-services-text'}>
                         <h3>Soporte TI</h3>
                         <p>Servicio técnico especializado en reparación, mantenimiento y optimización de equipos.</p>
@@ -63,7 +64,7 @@ export default function ServicesPage() {
                         <button onClick={() => setIsOpen2(true)} type="submit">Lo quiero!</button>
                     </div>
                 </div>
-                <div className={'section-2-services-container'}>
+                <div className={'section-2-services-container'} data-aos="fade-up" data-aos-delay="100">
                 <div className={'section-2-services-text'}>
                     <h3>Sistemas Empresariales a Medida</h3>
                     <p>Desarrollamos soluciones como ERP, CRM y sistemas de gestión para optimizar tu negocio.</p>
@@ -74,48 +75,48 @@ export default function ServicesPage() {
             </div>
             </section>
 
-            <section className="icons-section container container-sm">
+            <section className="icons-section container container-sm" data-aos="fade-up" data-aos-delay="100">
                 <h3 className="icon-title">Soluciones flexibles en nuestro servicio </h3>
                 <h2 className="icon-subtitle">Para cada tipo de empresa</h2>
 
                 <div className="icons">
-                    <div className="icon-block">
+                    <div className="icon-block" data-aos="fade-up" data-aos-delay="200">
                         <FontAwesomeIcon icon={faBriefcase} className="icon" />
                         <p className="icon-text">Empresarial</p>
                     </div>
 
-                    <div className="icon-block">
+                    <div className="icon-block" data-aos="fade-up" data-aos-delay="200">
                         <FontAwesomeIcon icon={faBuilding} className="icon" />
                         <p className="icon-text"> Inmobiliarias </p>
                     </div>
 
-                    <div className="icon-block">
+                    <div className="icon-block" data-aos="fade-up" data-aos-delay="200">
                         <FontAwesomeIcon icon={faGraduationCap} className="icon" />
                         <p className="icon-text">Educación</p>
                     </div>
 
-                    <div className="icon-block">
+                    <div className="icon-block" data-aos="fade-up" data-aos-delay="200">
                         <FontAwesomeIcon icon={faHandshake} className="icon" />
                         <p className="icon-text">Consultorias</p>
                     </div>
 
-                    <div className="icon-block">
+                    <div className="icon-block" data-aos="fade-up" data-aos-delay="200">
                         <FontAwesomeIcon icon={faRocket} className="icon" />
                         <p className="icon-text">StartUp</p>
                     </div>
                 </div>
             </section>
 
-  <section className={'card-service container container-sm'}>
-    <h2 className={'title'}>Nuestros Proyectos</h2>
-    <h4>Innovamos y desarrollamos soluciones tecnológicas que transforman negocios. 🚀</h4>
+  <section className={'card-service container container-sm'} data-aos="fade-up">
+    <h2 data-aos="fade-up" data-aos-delay="100" className={'title'}>Nuestros Proyectos</h2>
+    <h4 data-aos="fade-up" data-aos-delay="200">Innovamos y desarrollamos soluciones tecnológicas que transforman negocios. 🚀</h4>
 <Caurosel/>
   </section>
 
 
 <section className={'section-4 container-sm'}>
-          <h2>¿Buscas una aplicación a medida?</h2>
-          <button type="submit" onClick={() => navigate("/contact")}>Contactenos</button>
+          <h2 data-aos="fade-up">¿Buscas una aplicación a medida?</h2>
+          <button data-aos="fade-up" data-aos-delay="100" type="submit" onClick={() => navigate("/contact")}>Contactenos</button>
 </section>
 
             {isOpen && (

@@ -6,7 +6,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import '@/styles/components/Carousel/cauroselAbot.scss';
-import { useState, useEffect } from "react";
+import {useState, useEffect, useRef} from "react";
+import AOS from "aos";
 
 const personal = [
     {
@@ -42,6 +43,7 @@ const personal = [
 ];
 
 const CarouselAbout = () => {
+    const swiperRef = useRef(null);
     const [PantallaPequena, setPantallaPequena] = useState(window.innerWidth <= 768);
     useEffect(() => {
         const manejarResize = () => setPantallaPequena(window.innerWidth <= 930);
@@ -56,7 +58,10 @@ const CarouselAbout = () => {
                 loop={true}
                 navigation={PantallaPequena ? false :{ nextEl: ".carousel-container .swiper-button-next", prevEl: ".carousel-container .swiper-button-prev" }}
                 pagination={PantallaPequena ?{ clickable: true }: false}
-
+                onSwiper={(swiper) => {
+                    swiperRef.current = swiper;
+                    AOS.refresh();
+                }}
             >
                 {personal.map((person, index) => (
                     <SwiperSlide key={index}>

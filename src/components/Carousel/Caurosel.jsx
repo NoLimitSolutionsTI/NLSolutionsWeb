@@ -1,10 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
+import AOS from "aos";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import '@/styles/components/Carousel/carousel.scss';
-import { useState, useEffect } from "react";
+import {useState, useEffect, useRef} from "react";
 
 
 
@@ -29,6 +30,7 @@ const projects = [
     },
 ];
 const Carousel = () => {
+    const swiperRef = useRef(null);
     const [PantallaPequena, setPantallaPequena] = useState(window.innerWidth <= 768);
     useEffect(() => {
         const manejarResize = () => setPantallaPequena(window.innerWidth <= 768);
@@ -44,6 +46,10 @@ const Carousel = () => {
                 loop={true}
                 navigation={{ nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }}
                 pagination={PantallaPequena ?{ clickable: true }: false}
+                onSwiper={(swiper) => {
+                    swiperRef.current = swiper;
+                    AOS.refresh();
+                }}
                 breakpoints={{
                     320: { slidesPerView: 1 },
                     768: { slidesPerView: 1 },

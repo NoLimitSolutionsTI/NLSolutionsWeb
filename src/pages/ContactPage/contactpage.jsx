@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import '@/styles/ContactPage/contactpage.scss'
 import logo from '@/assets/logoNL-sin fondo-negro.png'
 import { HeadProvider } from "react-head"
+import AOS from 'aos';
 
 export default function ContactPage() {
     const [formData, setFormData] = useState({
@@ -42,19 +43,19 @@ export default function ContactPage() {
 
             <section className={'container-sm'}>
                 <div className={'title-contact'}>
-                    <h3>Contáctanos</h3>
+                    <h3 data-aos="fade-up">Contáctanos</h3>
                 </div>
             </section>
 
             <div className={'contact-container container-sm'}>
-            <section className={'contact-logo-section container-sm'}>
+            <section className={'contact-logo-section container-sm'} data-aos="fade-up" data-aos-delay="100">
                 <img src={logo} alt="Logo" />
             </section>
 
 
             <section className=" contact-section contact-form-section container-sm">
                 <form onSubmit={handleSubmit}>
-                    <div className="mb-3">
+                    <div className="mb-3" data-aos="fade-up" data-aos-delay="200">
                         <h3>Envíanos un mensaje</h3>
                         <input type="text" className="form-control" placeholder="Nombres y Apellidos"
                                name="fullName" value={formData.fullName} onChange={handleChange} required/>
