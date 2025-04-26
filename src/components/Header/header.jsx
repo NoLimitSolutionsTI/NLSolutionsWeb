@@ -59,7 +59,7 @@ export default function Header() {
                     <li><a href="/">Inicio</a></li>
                     <li><a href="services">Servicios</a></li>
                     <li><a href="about">Nosotros</a></li>
-                    <li><a href="contact" className="btn-details">Contacto</a></li>
+                    <li><a href="contact" className="btn-details-contact">Contacto</a></li>
                 </div>
                 {showBar && (
                     <div className={'social-header'}>

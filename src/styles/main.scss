@@ -84,6 +84,74 @@ h1,h2{
     color: $color-primary !important;
     box-shadow: 0 0 0 2px $color-primary;
 }
+.btn-details-services {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    background-color: $color-accent;
+    color: white !important;
+    transition: all 0.3s;
+}
+
+.btn-details-services:hover {
+    font-size: 18px !important;
+    background-color: #FFF;
+    color: $color-accent !important;
+    box-shadow: 0 0 0 2px $color-accent !important;
+}
+
+.btn-details-contact{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 130px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    background-color: $color-primary;
+    color: white !important;
+    transition: all 0.3s;
+}
+
+.btn-details-contact:hover {
+    font-size: 18px !important;
+    background-color: #FFF;
+    color: $color-primary !important;
+    box-shadow: 0 0 0 2px $color-primary !important;
+}
+
+.btn-details-modal {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 230px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    background-color: $color-primary;
+    color: white !important;
+    transition: all 0.3s;
+}
+
+.btn-details-modal:hover {
+    font-size: 18px !important;
+    background-color: #FFF;
+    color: $color-primary !important;
+    box-shadow: 0 0 0 2px $color-primary;
+}
 
 
 

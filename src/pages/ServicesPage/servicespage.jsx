@@ -51,7 +51,7 @@ export default function ServicesPage() {
                     <p>Creación de sitios web a medida, sin límites, para negocios, educación y más.</p>
                 </div>
                 <div className={'section-2-services-button'}>
-                    <button onClick={() => setIsOpen(true)} type="submit">Lo quiero!</button>
+                    <a onClick={() => setIsOpen(true)} type="submit" className='btn-details-services'>Lo quiero!</a>
                 </div>
               </div>
 
@@ -61,16 +61,16 @@ export default function ServicesPage() {
                         <p>Servicio técnico especializado en reparación, mantenimiento y optimización de equipos.</p>
                     </div>
                     <div className={'section-2-services-button'}>
-                        <button onClick={() => setIsOpen2(true)} type="submit">Lo quiero!</button>
+                        <a onClick={() => setIsOpen2(true)} type="submit" className='btn-details-services'>Lo quiero!</a>
                     </div>
                 </div>
-                <div className={'section-2-services-container'} data-aos="fade-up" data-aos-delay="100">
+                <div className={'section-2-services-container'} >
                 <div className={'section-2-services-text'}>
                     <h3>Sistemas Empresariales a Medida</h3>
                     <p>Desarrollamos soluciones como ERP, CRM y sistemas de gestión para optimizar tu negocio.</p>
                 </div>
                     <div className={'section-2-services-button'}>
-                    <button onClick={() => setIsOpen3(true)} type="submit">Lo quiero!</button>
+                    <a onClick={() => setIsOpen3(true)} type="submit" className='btn-details-services'>Lo quiero!</a>
                 </div>
             </div>
             </section>
@@ -114,10 +114,10 @@ export default function ServicesPage() {
   </section>
 
 
-<section className={'section-4 container-sm'}>
-          <h2 data-aos="fade-up">¿Buscas una aplicación a medida?</h2>
-          <button data-aos="fade-up" data-aos-delay="100" type="submit" onClick={() => navigate("/contact")}>Contactenos</button>
-</section>
+            <section className={'contact-us container-sm py-2'}>
+                <h2 className='mb-3' data-aos="fade-up">¿Buscas una aplicación a medida?</h2>
+                <a href="/contact" className='btn-details' data-aos="fade-up" data-aos-delay="100">Contáctenos</a>
+            </section>
 
             {isOpen && (
                 <div className={'modal-overlay'} onClick={() => setIsOpen(false)}>
@@ -175,10 +175,10 @@ export default function ServicesPage() {
                         </div>
 
                         <div className={'modal-button'}>
-                            <button className={'btn-modal'} onClick={() => setIsOpen(false)}>
+                            <a className='btn-details-modal' onClick={() => setIsOpen(false)}>
                                 Cerrar
-                            </button>
-                            <button type="submit" className={'btn-modal'} onClick={() => navigate("/contact")}>Contactanos</button>
+                            </a>
+                            <a type="submit" className='btn-details-modal' onClick={() => navigate("/contact")}>Contactanos</a>
                         </div>
                     </div>
                 </div>
@@ -239,10 +239,10 @@ export default function ServicesPage() {
                         </div>
 
                         <div className={'modal-button'}>
-                            <button className={'btn-modal'} onClick={() => setIsOpen2(false)}>
+                            <a className='btn-details-modal' onClick={() => setIsOpen2(false)}>
                                 Cerrar
-                            </button>
-                            <button type="submit" className={'btn-modal'} onClick={() => navigate("/contact")}>Contactanos</button>
+                            </a>
+                            <a type="submit" className='btn-details-modal' onClick={() => navigate("/contact")}>Contactanos</a>
                         </div>
                     </div>
                 </div>
@@ -302,11 +302,11 @@ export default function ServicesPage() {
                             </div>
                         </div>
 
-                        <div className={'modal-button'}>
-                            <button className={'btn-modal'} onClick={() => setIsOpen3(false)}>
+                        <div className={'contact-us container-sm py-2'}>
+                            <a className='btn-details-modal' onClick={() => setIsOpen3(false)}>
                                 Cerrar
-                            </button>
-                            <button type="submit" className={'btn-modal'} onClick={() => navigate("/contact")}>Contactanos</button>
+                            </a>
+                            <a type="submit" className='btn-details-modal' onClick={() => navigate("/contact")}>Contactanos</a>
                         </div>
                     </div>
                 </div>

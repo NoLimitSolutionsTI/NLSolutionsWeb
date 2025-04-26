@@ -76,7 +76,7 @@ export default function ContactPage() {
                             </div>
                         </div>
                         <div className="button-container">
-                            <button className="btn btn-primary" type="submit" aria-label="Enviar formulario de contacto">Enviar</button>
+                            <a className="btn-details" type="submit" aria-label="Enviar formulario de contacto">Enviar</a>
                         </div>
                     </div>
                 </form>
