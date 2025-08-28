@@ -124,9 +124,9 @@ export default function Homepage() {
                 </div>
             </div>
         </section>
-        <section className={'contact-us container-sm py-2'}>
-            <h2 className='mb-3' data-aos="fade-up">Impulsa tu negocio con la transformación digital</h2>
-            <a href="/contact" className='btn-details' data-aos="fade-up" data-aos-delay="100">Contáctenos</a>
+        <section className={'contact-us container-sm py-2'}  data-aos="fade-up" data-aos-delay="100">
+            <h2 className='mb-3'>Impulsa tu negocio con la transformación digital</h2>
+            <a href="/contact" className='btn-details'>Contáctenos</a>
         </section>
     </>
   )

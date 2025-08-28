@@ -8,7 +8,7 @@
         text-align: center;
     }
     .row{
-        border-bottom: 2px solid main.$color-primary;
+        border-bottom: 3px solid main.$color-accentv2;
         width: 90%;
         margin: auto;
         flex-wrap: nowrap;
@@ -62,8 +62,8 @@
 .short-us{
     background-color: #F3F3F3;
     border-radius: 30px;
-    padding: 0;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    padding: 0;/* 
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); */
     @media (max-width: #{map-get(bs.$grid-breakpoints, md)}) {
         max-width: 100%;
         padding: 2em 0;

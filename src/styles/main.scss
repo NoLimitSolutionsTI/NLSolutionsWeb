@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
 
-body{
-    font-family: 'Montserrat';
-}
 main{
     max-width: 1920px;
     margin: 0 auto;
@@ -15,6 +12,7 @@ section{
 $color-primary: #192C31;
 $color-secondary: #2A6550;
 $color-accent: #4494A2;
+$color-accentv2: #F3F3F3;
 $color-text: #000;
 $background: #FFF;
 $transitionv1: cubic-bezier(0.075, 0.82, 0.165, 1);
