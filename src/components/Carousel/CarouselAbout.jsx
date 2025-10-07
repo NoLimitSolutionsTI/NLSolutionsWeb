@@ -21,7 +21,7 @@ const personal = [
         instagram: "https://www.instagram.com/iamenzo_01/"
     },
     {
-        names: "Aldhair Lujan Nicolini",
+        names: "Aldhair Lujan",
         cargo: "Desarrollador Fullstack",
         description:
             "Apasionado por la tecnología y el desarrollo de software, con experiencia en la creación de aplicaciones web modernas y escalables. ",

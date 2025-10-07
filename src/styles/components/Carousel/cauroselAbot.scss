@@ -40,6 +40,11 @@
     align-items: center;
     p{
       text-align: left;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      overflow: hidden;
     }
     h3{
       text-align: center;
