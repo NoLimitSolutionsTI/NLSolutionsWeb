@@ -19,7 +19,7 @@ export default function ContactPage() {
 
     const API_URL = "https://nlwebbackend.onrender.com/api/NLWeb";
     const HEALTH_URL = "https://nlwebbackend.onrender.com/health";
-    const MAIL_ENDPOINT = "http://localhost:8000/sendMail.php"; // tu PHP local
+    const MAIL_ENDPOINT = "https://nlsolutionsti.com/api/sendMail.php";
 
     const fetchWithTimeout = (input, init = {}, ms = 60000) => {
         const controller = new AbortController();
