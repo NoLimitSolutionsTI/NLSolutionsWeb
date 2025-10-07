@@ -16,6 +16,7 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
+    "emailjs-com": "^3.2.0",
     "fortawesome": "^0.0.1-security",
     "nlsolutions": "file:",
     "node": "^23.9.0",
@@ -23,6 +24,7 @@
     "react-dom": "^19.0.0",
     "react-head": "^3.4.2",
     "react-router-dom": "^7.4.0",
+    "sweetalert2": "^11.23.0",
     "swiper": "^11.2.5"
   },
   "devDependencies": {

@@ -3,6 +3,7 @@ import '@/styles/ContactPage/contactpage.scss'
 import logo from '@/assets/logoNL-sin fondo-negro.png'
 import { HeadProvider } from "react-head"
 import AOS from 'aos';
+import Swal from "sweetalert2";
 
 export default function ContactPage() {
     const [formData, setFormData] = useState({
@@ -16,22 +17,87 @@ export default function ContactPage() {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const API_URL = "https://nlwebbackend.onrender.com/api/NLWeb";
+    const HEALTH_URL = "https://nlwebbackend.onrender.com/health";
+    const MAIL_ENDPOINT = "http://localhost:8000/sendMail.php"; // tu PHP local
+
+    const fetchWithTimeout = (input, init = {}, ms = 60000) => {
+        const controller = new AbortController();
+        const id = setTimeout(() => controller.abort(), ms);
+        return fetch(input, { ...init, signal: controller.signal })
+            .finally(() => clearTimeout(id));
+    };
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
-        fetch("https://localhost:7141/api/NLWeb", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(formData)
-        })
-            .then(response => response.json())
-            .then(data => {
-                console.log("Respuesta del servidor:", data);
-                alert("Mensaje enviado con éxito");
-            })
-            .catch(error => console.error("Error:", error));
+        Swal.fire({
+            title: 'Enviando...',
+            allowOutsideClick: false,
+            allowEscapeKey: false,
+            didOpen: () => Swal.showLoading()
+        });
+
+        try {
+            // 1) Precalienta Render (no bloqueante)
+            await fetchWithTimeout(HEALTH_URL, {}, 10000).catch(() => {});
+
+            // 2) Guarda en tu API con timeout largo (60s)
+            const saveRes = await fetchWithTimeout(API_URL, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData)
+            }, 60000);
+
+            const ct = saveRes.headers.get("content-type") || "";
+            const savePayload = saveRes.status !== 204
+                ? (ct.includes("application/json") ? await saveRes.json() : await saveRes.text())
+                : null;
+
+            if (!saveRes.ok) {
+                const details =
+                    (savePayload && typeof savePayload !== "string" && (
+                        savePayload.message || savePayload.error ||
+                        (savePayload.errors && Object.values(savePayload.errors).flat().join("\n"))
+                    )) || (typeof savePayload === "string" ? savePayload : null);
+                throw new Error(details || `Error ${saveRes.status}`);
+            }
+
+            // 3) Envía correo con tu PHP local (sin apiKey, solo CORS)
+            let mailOk = false;
+            try {
+                const mailRes = await fetchWithTimeout(MAIL_ENDPOINT, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                        fullName: formData.fullName,
+                        email: formData.email,
+                        telephone: formData.telephone,
+                        message: formData.message
+                    })
+                }, 15000);
+                const mailJson = await mailRes.json().catch(() => ({}));
+                mailOk = mailRes.ok && mailJson?.success === true;
+                // eslint-disable-next-line no-unused-vars
+            } catch (_) { mailOk = false; }
+
+            await Swal.fire({
+                icon: mailOk ? 'success' : 'warning',
+                title: mailOk ? '¡Mensaje enviado!' : 'Guardado OK',
+                text: mailOk
+                    ? 'Se guardó y enviamos un correo de confirmación.'
+                    : 'Se guardó, pero no pudimos enviar el correo de confirmación.'
+            });
+
+        } catch (err) {
+            await Swal.fire({
+                icon: 'error',
+                title: 'No pudimos enviar tu mensaje',
+                text: err.name === 'AbortError'
+                    ? 'El servidor está despertando y tardó más de lo esperado. Inténtalo de nuevo.'
+                    : (err.message || 'Ocurrió un error inesperado.')
+            });
+        }
     };
 
     return(
@@ -76,7 +142,7 @@ export default function ContactPage() {
                             </div>
                         </div>
                         <div className="button-container">
-                            <a className="btn-details" type="submit" aria-label="Enviar formulario de contacto">Enviar</a>
+                            <button className="btn-details" type="submit" aria-label="Enviar formulario de contacto">Enviar</button>
                         </div>
                     </div>
                 </form>
