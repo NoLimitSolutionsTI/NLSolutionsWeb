@@ -15,7 +15,7 @@ const personal = [
         cargo: "Desarrollador Fullstack",
         description:
             "Me encanta convertir ideas en soluciones tecnológicas funcionales, intuitivas y escalables. Siempre explorando nuevas herramientas y enfoques para optimizar cada proyecto.",
-        image: "https://i.imgur.com/Sup9hpK.png",
+        image: "https://i.imgur.com/YReNyC7.png",
         linkedin: "https://www.linkedin.com/in/enzomartinez24/",
         github: "https://github.com/EnzoMartinez01",
         instagram: "https://www.instagram.com/iamenzo_01/"
@@ -25,7 +25,7 @@ const personal = [
         cargo: "Desarrollador Fullstack",
         description:
             "Apasionado por la tecnología y el desarrollo de software, con experiencia en la creación de aplicaciones web modernas y escalables. ",
-        image: "https://i.imgur.com/Sup9hpK.png",
+        image: "https://i.imgur.com/rDJIDrA.jpeg",
         linkedin: "https://www.linkedin.com/in/aldhair-lujan-nicolini-997278173/",
         github: "https://github.com/Aldhair11",
         instagram: "https://www.instagram.com/aldhair_nicolini/"
@@ -35,7 +35,7 @@ const personal = [
         cargo: "Desarrollador Fullstack",
         description:
             "Apasionado por la programación y el desarrollo web, siempre en busca de nuevos retos que impulsen mi creatividad y aprendizaje en el mundo digital.",
-        image: "https://i.imgur.com/Sup9hpK.png",
+        image: "https://i.imgur.com/mQj5Ls7.png",
         linkedin: "https://www.linkedin.com/in/anthonylecarnaque/",
         github: "https://github.com/Thony-Leca/",
         instagram: "https://www.instagram.com/thony__leca/"

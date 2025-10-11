@@ -59,10 +59,10 @@ export default function Footer() {
                         <div className="nav-container">
                             <span onClick={() => toggle_navFooter(2)}>Síguenos {ShowNavFooter && (<FontAwesomeIcon icon={NavFooterOpen[2]?faCaretUp: faCaretDown}/>)}</span>
                             <ul className={`nav-footer ${NavFooterOpen[2] ? "open" : ""}`}>
-                                <li><a href="https://facebook.com" target="_blank"><FontAwesomeIcon icon={faFacebook} /> Facebook</a></li>
-                                <li><a href="https://instagram.com" target="_blank"><FontAwesomeIcon icon={faInstagram} /> Instagram</a></li>
-                                <li><a href="https://linkedin.com" target="_blank"><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</a></li>
-                                <li><a href="https://tiktok.com" target="_blank"><FontAwesomeIcon icon={faTiktok} /> TikTok</a></li>
+                                <li><a href="https://www.facebook.com/NLSolutionsTI" target="_blank"><FontAwesomeIcon icon={faFacebook} /> Facebook</a></li>
+                                <li><a href="https://www.instagram.com/nl_solutions_ti/" target="_blank"><FontAwesomeIcon icon={faInstagram} /> Instagram</a></li>
+                                <li><a href="https://www.linkedin.com/company/nl-solutions-ti/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</a></li>
+                                <li><a href="https://www.tiktok.com/@nlsolutionsti" target="_blank"><FontAwesomeIcon icon={faTiktok} /> TikTok</a></li>
                             </ul>
                         </div>
                     </div>

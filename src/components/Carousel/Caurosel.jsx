@@ -11,22 +11,22 @@ import {useState, useEffect, useRef} from "react";
 
 const projects = [
     {
-        title: "Proyecto A",
+        title: "Ecommerce",
         description:
-            "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        image: "https://i.imgur.com/Sup9hpK.png",
+            "Tienda online enfocada en ventas: catálogo administrable, carrito de compras, pasarela de pago segura y panel para gestión de productos, pedidos y clientes.",
+        image: "https://i.imgur.com/KIFZfnH.png",
     },
     {
-        title: "Proyecto B",
+        title: "Lujan Rabello & Abogados",
         description:
-            "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        image: "https://i.imgur.com/Sup9hpK.png",
+            "Landing informativa para estudio jurídico: presentación de servicios y áreas de práctica, equipo, testimonios y formulario de contacto con llamada a la acción.",
+        image: "https://i.imgur.com/3pF5biD.png",
     },
     {
-        title: "Proyecto C",
+        title: "Portafolios",
         description:
-            "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        image: "https://i.imgur.com/Sup9hpK.png",
+            "Galería de portafolios para distintas personas: plantillas personalizables con secciones de 'Sobre mí', proyectos y contacto para publicar su trabajo de forma profesional.",
+        image: "https://i.imgur.com/4Or7LG8.png",
     },
 ];
 const Carousel = () => {

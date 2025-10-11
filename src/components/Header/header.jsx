@@ -59,10 +59,10 @@ export default function Header() {
                 {showBar && (
                     <div className={'social-header'}>
                         <ul>
-                            <li><a href="https://facebook.com" target="_blank"><FontAwesomeIcon icon={faFacebook} /></a></li>
-                            <li><a href="https://instagram.com" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                            <li><a href="https://linkedin.com" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a></li>
-                            <li><a href="https://tiktok.com" target="_blank"><FontAwesomeIcon icon={faTiktok} /></a></li>
+                            <li><a href="https://www.facebook.com/NLSolutionsTI" target="_blank"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                            <li><a href="https://www.instagram.com/nl_solutions_ti/" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                            <li><a href="https://www.linkedin.com/company/nl-solutions-ti/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                            <li><a href="https://www.tiktok.com/@nlsolutionsti" target="_blank"><FontAwesomeIcon icon={faTiktok} /></a></li>
                         </ul>
                     </div>
                 )}
