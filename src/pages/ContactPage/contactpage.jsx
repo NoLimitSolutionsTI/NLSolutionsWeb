@@ -117,8 +117,6 @@ export default function ContactPage() {
             <section className={'contact-logo-section container-sm'} data-aos="fade-up" data-aos-delay="100">
                 <img src={logo} alt="Logo" />
             </section>
-
-
             <section className=" contact-section contact-form-section container-sm">
                 <form onSubmit={handleSubmit}>
                     <div className="mb-3" data-aos="fade-up" data-aos-delay="200">
@@ -142,6 +140,7 @@ export default function ContactPage() {
                             </div>
                         </div>
                         <div className="button-container">
+                            <button className="btn-details" type="submit" aria-label="Enviar formulario de contacto">Enviar</button>
                             <button className="btn-details" type="submit" aria-label="Enviar formulario de contacto">Enviar</button>
                         </div>
                     </div>

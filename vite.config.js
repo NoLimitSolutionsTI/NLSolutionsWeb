@@ -8,5 +8,14 @@ export default defineConfig({
   resolve: { 
     alias: { '@': path.resolve(__dirname, 'src') }
   },
-  server: { port: 5500,}
+  server: { 
+    port: 5500,
+    proxy: {  
+      '/api': {
+        target: 'https://nlwebbackend.onrender.com',
+        changeOrigin: true,
+        secure: true,
+      }
+    }
+  }
 })

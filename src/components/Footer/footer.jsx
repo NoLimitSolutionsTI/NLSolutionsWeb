@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faEnvelope, faPhone, faUsers,faCode, faCaretDown, faCaretUp} from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faInstagram, faLinkedin, faTiktok } from "@fortawesome/free-brands-svg-icons";
-
+import {logoNL} from "@/App";
 import '@/styles/components/Footer/footer.scss'
 
 export default function Footer() {
@@ -32,7 +32,8 @@ export default function Footer() {
             <div className={'footer-content'}>
                 <div className={'container-footer'}>
                     <div className={'logo-footer'}>
-                        <img src="/src/assets/nl-logotype-min.webp" alt="Logo NL"/>
+                        {logoNL}
+                        <span>NL Solutions TI</span>
                     </div>
                     <div className={'nav-container-footer'}>
                         <div className="nav-container">
