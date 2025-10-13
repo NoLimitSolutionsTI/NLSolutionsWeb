@@ -6,17 +6,8 @@ import Caurosel from "@/components/Carousel/Caurosel.jsx";
 import { HeadProvider } from "react-head"
 import {useNavigate} from "react-router-dom";
 import { useState } from "react";
+import { rutaImagenes } from "@/App";
 import AOS from 'aos';
-import Smodal1 from "@/assets/modal1.jpg"
-import Smodal2 from "@/assets/modal2.jpg";
-import Smodal3 from "@/assets/modal3.jpg";
-import Rmodal1 from "@/assets/reparacion.png"
-import Rmodal2 from "@/assets/optimizacion.png";
-import Rmodal3 from "@/assets/web.png";
-import Emodal1 from "@/assets/GESTION.jpg";
-import Emodal2 from "@/assets/DASHBOARD.png";
-import Emodal3 from "@/assets/crm.png"
-import SliderImage from "@/assets/slider-services.png"
 
 
 export default function ServicesPage() {
@@ -34,7 +25,7 @@ export default function ServicesPage() {
           <section className={'slider-section '}>
           <div className={'slider-container'}>
             <div>
-              <img  src={SliderImage} alt="Img-slider" />
+              <img  src={`${rutaImagenes}slider-services.webp`} alt="Img-slider" />
             </div>
             <div className={'slider-text'}>
               <h1>¿Buscas un servicio de calidad?</h1>
@@ -126,17 +117,17 @@ export default function ServicesPage() {
                         <p>Creación de sitios web a medida, sin límites, para negocios, educación y más.</p>
                         <div className={'modal-grid'}>
                             <div className={'modal-grid-item'}>
-                                <img className={'img-fluid'} src={Smodal1} alt="img-modal" />
+                                <img className={'img-fluid'} src={`${rutaImagenes}modal1.webp`} alt="img-modal" />
                                 <h3>Diseñamos sitios web a medida, sin límites.</h3>
                                 <p>Webs únicas y personalizadas según tus necesidades.</p>
                             </div>
                             <div className={'modal-grid-item'}>
-                                <img className={'img-fluid'} src={Smodal2} alt="img-modal" />
+                                <img className={'img-fluid'} src={`${rutaImagenes}modal2.webp`} alt="img-modal" />
                                 <h3>Tiendas online, páginas informativas y aulas virtuales.</h3>
                                 <p>Soluciones digitales para negocios, educación y más.</p>
                             </div>
                             <div className={'modal-grid-item'}>
-                                <img className={'img-fluid'} src={Smodal3} alt="img-modal" />
+                                <img className={'img-fluid'} src={`${rutaImagenes}modal3.webp`} alt="img-modal" />
                                 <h3>Convertimos tu idea en realidad con tecnología de vanguardia.</h3>
                                 <p>Usamos herramientas modernas para hacer crecer tu proyecto.</p>
                             </div>
@@ -190,17 +181,17 @@ export default function ServicesPage() {
                         <p>Servicio técnico especializado en reparación, mantenimiento y optimización de equipos.</p>
                         <div className={'modal-grid'}>
                             <div className={'modal-grid-item'}>
-                                <img className={'img-fluid'} src={Rmodal1} alt="img-modal" />
+                                <img className={'img-fluid'} src={`${rutaImagenes}reparacion.webp`} alt="img-modal" />
                                 <h3>Mantenimiento y reparación de computadoras y laptops.</h3>
                                 <p>Diagnóstico, limpieza y reparación para mantener tu equipo en óptimas condiciones.</p>
                             </div>
                             <div className={'modal-grid-item'}>
-                                <img className={'img-fluid'} src={Rmodal2} alt="img-modal" />
+                                <img className={'img-fluid'} src={`${rutaImagenes}optimizacion.webp`} alt="img-modal" />
                                 <h3>Venta de repuestos y optimización de sistemas.</h3>
                                 <p>Componentes de calidad y mejoras de software para mayor rendimiento.</p>
                             </div>
                             <div className={'modal-grid-item'}>
-                                <img className={'img-fluid'} src={Rmodal3} alt="img-modal" />
+                                <img className={'img-fluid'} src={`${rutaImagenes}web.webp`} alt="img-modal" />
                                 <h3>Soluciones rápidas y efectivas para tu tecnología.</h3>
                                 <p>Soporte técnico ágil para resolver problemas y mejorar tu experiencia digital.</p>
                             </div>
@@ -254,17 +245,17 @@ export default function ServicesPage() {
                         <p>Desarrollamos soluciones como ERP, CRM y sistemas de gestión para optimizar tu negocio.</p>
                         <div className={'modal-grid'}>
                             <div className={'modal-grid-item'}>
-                                <img className={'img-fluid'} src={Emodal1} alt="img-modal" />
+                                <img className={'img-fluid'} src={`${rutaImagenes}GESTION.webp`} alt="img-modal" />
                                 <h3>ERP, CRM, puntos de venta e inventarios.</h3>
                                 <p>Automatiza procesos con sistemas integrales que optimizan la gestión empresarial.</p>
                             </div>
                             <div className={'modal-grid-item'}>
-                                <img className={'img-fluid'} src={Emodal2} alt="img-modal" />
+                                <img className={'img-fluid'} src={`${rutaImagenes}DASHBOARD.webp`} alt="img-modal" />
                                 <h3>Sistemas para restaurantes y gestión empresarial.</h3>
                                 <p>Soluciones digitales para mejorar la administración y eficiencia de tu negocio.</p>
                             </div>
                             <div className={'modal-grid-item'}>
-                                <img className={'img-fluid'} src={Emodal3} alt="img-modal" />
+                                <img className={'img-fluid'} src={`${rutaImagenes}crm.webp`} alt="img-modal" />
                                 <h3>Optimiza tu negocio con tecnología eficiente. 🚀</h3>
                                 <p>Impulsa tu empresa con herramientas diseñadas para aumentar productividad y control.</p>
                             </div>

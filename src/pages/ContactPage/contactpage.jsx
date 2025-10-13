@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import '@/styles/ContactPage/contactpage.scss'
-import logo from '@/assets/logoNL-sin fondo-negro.png'
 import { HeadProvider } from "react-head"
 import AOS from 'aos';
 import Swal from "sweetalert2";
+import { rutaImagenes } from "@/App";
 
 export default function ContactPage() {
     const [formData, setFormData] = useState({
@@ -128,7 +128,7 @@ export default function ContactPage() {
 
             <div className={'contact-container container-sm'}>
                 <section className={'contact-logo-section container-sm'} data-aos="fade-up" data-aos-delay="100">
-                    <img src={logo} alt="Logo" />
+                    <img src={`${rutaImagenes}logoNL-sin fondo-negro.webp`} alt="Logo" />
                 </section>
                 <section className=" contact-section contact-form-section container-sm">
                     <form onSubmit={handleSubmit}>

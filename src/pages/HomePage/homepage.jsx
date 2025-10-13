@@ -7,18 +7,12 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { HeadProvider } from "react-head"
-import Abraza from "@/assets/abraza.png"
-import Impulsa from "@/assets/impulsa.png"
-import Sueño from "@/assets/sueño.png"
-import solucionesWeb from "@/assets/soluciones-web.png";
-import soporteTI from "@/assets/soporte-ti.png";
-import sistemaEmpresarial from "@/assets/erp.jpg";
-import cardImage from "@/assets/card-home.png";
+import { rutaImagenes  } from '@/App';
 import AOS from 'aos';
 const slides_home = [
-    { image: Abraza,title: "Abraza la transformación digital", text: "Convierte tu sueño en una realidad con nuestra experiencia en consultoria de software.", link:"#"},
-    { image: Impulsa,title: "Impulsa tu negocio con tecnología", text: "Desarrollamos soluciones digitales a medida para optimizar procesos y hacer crecer tu empresa.", link:"#" },
-    { image: Sueño, title: "Del sueño a la realidad digital", text: "Llevamos tus ideas al siguiente nivel con software innovador y eficiente.", link:"#" }
+    { image: `${rutaImagenes}abraza.webp`,title: "Abraza la transformación digital", text: "Convierte tu sueño en una realidad con nuestra experiencia en consultoria de software.", link:"#"},
+    { image: `${rutaImagenes}impulsa.webp`,title: "Impulsa tu negocio con tecnología", text: "Desarrollamos soluciones digitales a medida para optimizar procesos y hacer crecer tu empresa.", link:"#" },
+    { image: `${rutaImagenes}sueño.webp`, title: "Del sueño a la realidad digital", text: "Llevamos tus ideas al siguiente nivel con software innovador y eficiente.", link:"#" }
   ];
 export default function Homepage() {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -88,7 +82,7 @@ export default function Homepage() {
                     <a href='/services' className='btn-details'>Ver más</a>
                 </div>
                 <div className={'media-image col-md-6 ms-md-auto order-sm-0 order-md-1 d-flex'} data-aos="fade-down" data-aos-delay="200">
-                    <img className={'img-fluid m-md-auto ms-lg-auto'} src={solucionesWeb} alt="Imagen" />
+                    <img className={'img-fluid m-md-auto ms-lg-auto'} src= {`${rutaImagenes}soluciones-web.webp`} alt="Imagen" />
                 </div>
             </div>
             <div className={'row gx-4 py-5 flex-md-row flex-sm-column'} data-aos="fade-up" data-aos-delay="100">
@@ -98,7 +92,7 @@ export default function Homepage() {
                     <a href='/services' className='btn-details'>Ver más</a>
                 </div>
                 <div className={'media-image order-sm-0 col-md-6 me-md-auto m-sm-auto d-flex'} data-aos="fade-down" data-aos-delay="200">
-                    <img className={'img-fluid me-lg-auto'} src={soporteTI} alt="Imagen" />
+                    <img className={'img-fluid me-lg-auto'} src={`${rutaImagenes}soporte-ti.webp`} alt="Imagen" />
                 </div>
             </div>
             <div className={'row gx-4 pt-5 flex-md-row flex-sm-column'} data-aos="fade-up" data-aos-delay="100">
@@ -108,7 +102,7 @@ export default function Homepage() {
                     <a href='/services' className='btn-details'>Ver más</a>
                 </div>
                 <div className={'media-image col-md-6 ms-md-auto m-sm-auto order-sm-0 order-md-1 d-flex'} data-aos="fade-down" data-aos-delay="200">
-                    <img className={'img-fluid ms-lg-auto'} src={sistemaEmpresarial} alt="Imagen" />
+                    <img className={'img-fluid ms-lg-auto'} src={`${rutaImagenes}sistemaEmpresarial.webp`} alt="Imagen" />
                 </div>
             </div>
         </section>
@@ -120,7 +114,7 @@ export default function Homepage() {
                     <a href='/contact' className='btn-details'>Hablemos</a>
                 </div>
                 <div className='col-md-6 order-0 media' data-aos="fade-right">
-                    <img className={'img-fluid'} src={cardImage} alt="Imagen" />
+                    <img className={'img-fluid'} src={`${rutaImagenes}card-home.webp`} alt="Imagen" />
                 </div>
             </div>
         </section>

@@ -4,8 +4,8 @@ import { HeadProvider } from "react-head"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faLightbulb, faStar, faHandshake, faShieldAlt, faUsers } from '@fortawesome/free-solid-svg-icons';
 import CarouselAbout from "@/components/Carousel/CarouselAbout.jsx";
-import SliderAbout from "@/assets/about-slider.png"
 import AOS from 'aos';
+import { rutaImagenes  } from '@/App';
 
 
 export default function AboutPage() {
@@ -18,7 +18,7 @@ export default function AboutPage() {
             <section className={'slider-section'}>
                 <div className={'slider-container'}>
                     <div>
-                        <img src={SliderAbout} alt="Img-slider" />
+                        <img src={`${rutaImagenes}about-slider.webp`} alt="Img-slider" />
                     </div>
                     <div className={'slider-text'}>
                         <h1>¿Tiene interés en conocernos?</h1>

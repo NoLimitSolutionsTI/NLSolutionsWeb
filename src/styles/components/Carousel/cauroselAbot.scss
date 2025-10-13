@@ -1,13 +1,14 @@
 .card-caurosel-about {
   display: flex;
-  flex-direction: row;
+  height: 300px;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   width: 70%;
   margin: 5em auto 2em auto;
   border-radius: 20px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+
   @media (max-width: 930px) {
     flex-direction: column-reverse;
     width: 90%;
@@ -21,24 +22,29 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 20px;
+
   h3 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 10px !important;
   }
+
   h4 {
     color: #757575;
     font-size: 1rem;
     margin-bottom: 10px !important;
   }
+
   p {
     text-align: left;
     display: contents;
   }
+
   @media (max-width: 930px) {
     width: 100%;
     align-items: center;
-    p{
+
+    p {
       text-align: left;
       display: -webkit-box;
       -webkit-box-orient: vertical;
@@ -46,21 +52,28 @@
       line-clamp: 3;
       overflow: hidden;
     }
-    h3{
+
+    h3 {
       text-align: center;
     }
   }
 
 }
-img{
-  width: 50%;
-  height: 300px;
+
+img {
+  width: 35%;
+  object-fit: cover;
+  height: 100%;
+  object-position: center 15%;
+  display: block;
+
   @media (max-width: 930px) {
     width: 90%;
     height: 250px;
     margin-bottom: 15px;
   }
 }
+
 .social-media {
   display: flex;
   gap: 20px;
@@ -68,19 +81,23 @@ img{
 }
 
 
-.linkedin, .github, .instagram {
+.linkedin,
+.github,
+.instagram {
   font-size: 40px !important;
   color: #192C31;
   transition: color 0.2s ease-in-out;
 }
 
-.linkedin:hover, .github:hover, .instagram:hover {
+.linkedin:hover,
+.github:hover,
+.instagram:hover {
   color: #4494A2;
 
 }
 
-.swiper-pagination-bullet-active{
-  background:#192C31 !important;
+.swiper-pagination-bullet-active {
+  background: #192C31 !important;
 }
 
 
@@ -92,6 +109,3 @@ img{
   transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 
 }
-
-
-
